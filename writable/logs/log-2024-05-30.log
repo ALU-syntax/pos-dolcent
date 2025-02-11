@@ -1,0 +1,562 @@
+INFO - 2024-05-30 02:18:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 02:18:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 03:42:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 05:51:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 11:22:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 11:22:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 11:22:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 11:22:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 12:02:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 12:02:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 12:03:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 12:06:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 12:06:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 12:06:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 13:06:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-05-30 13:06:11 --> [DEPRECATED] strtolower(): Passing null to parameter #1 ($string) of type string is deprecated in ROOTPATH/modul/Kasir/Controllers/Kasir.php on line 312.
+ 1 ROOTPATH/modul/Kasir/Controllers/Kasir.php(312): strtolower(null)
+ 2 SYSTEMPATH/CodeIgniter.php(919): Modul\Kasir\Controllers\Kasir->getPelanggan()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Kasir\Controllers\Kasir))
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-30 13:06:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-05-30 13:06:22 --> [DEPRECATED] strtolower(): Passing null to parameter #1 ($string) of type string is deprecated in ROOTPATH/modul/Kasir/Controllers/Kasir.php on line 312.
+ 1 ROOTPATH/modul/Kasir/Controllers/Kasir.php(312): strtolower(null)
+ 2 SYSTEMPATH/CodeIgniter.php(919): Modul\Kasir\Controllers\Kasir->getPelanggan()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Kasir\Controllers\Kasir))
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-30 13:07:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-05-30 13:07:02 --> [DEPRECATED] strtolower(): Passing null to parameter #1 ($string) of type string is deprecated in ROOTPATH/modul/Kasir/Controllers/Kasir.php on line 312.
+ 1 ROOTPATH/modul/Kasir/Controllers/Kasir.php(312): strtolower(null)
+ 2 SYSTEMPATH/CodeIgniter.php(919): Modul\Kasir\Controllers\Kasir->getPelanggan()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Kasir\Controllers\Kasir))
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-30 13:10:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-05-30 13:10:15 --> [DEPRECATED] strtolower(): Passing null to parameter #1 ($string) of type string is deprecated in ROOTPATH/modul/Kasir/Controllers/Kasir.php on line 312.
+ 1 ROOTPATH/modul/Kasir/Controllers/Kasir.php(312): strtolower(null)
+ 2 SYSTEMPATH/CodeIgniter.php(919): Modul\Kasir\Controllers\Kasir->getPelanggan()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Kasir\Controllers\Kasir))
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-30 13:10:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-05-30 13:10:21 --> [DEPRECATED] strtolower(): Passing null to parameter #1 ($string) of type string is deprecated in ROOTPATH/modul/Kasir/Controllers/Kasir.php on line 312.
+ 1 ROOTPATH/modul/Kasir/Controllers/Kasir.php(312): strtolower(null)
+ 2 SYSTEMPATH/CodeIgniter.php(919): Modul\Kasir\Controllers\Kasir->getPelanggan()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Kasir\Controllers\Kasir))
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-30 13:10:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-05-30 13:10:27 --> [DEPRECATED] strtolower(): Passing null to parameter #1 ($string) of type string is deprecated in ROOTPATH/modul/Kasir/Controllers/Kasir.php on line 312.
+ 1 ROOTPATH/modul/Kasir/Controllers/Kasir.php(312): strtolower(null)
+ 2 SYSTEMPATH/CodeIgniter.php(919): Modul\Kasir\Controllers\Kasir->getPelanggan()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Kasir\Controllers\Kasir))
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-30 13:10:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 13:10:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-05-30 13:10:43 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH/modul/Kasir/Views/viewStruk.php on line 93.
+ 1 ROOTPATH/modul/Kasir/Views/viewStruk.php(93): number_format(null)
+ 2 SYSTEMPATH/View/View.php(226): include('/home/ngabardashmart/foodcourt.ngabarmart.com/modul/Kasir/Views/viewStruk.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render('Modul\\Kasir\\Views\\viewStruk', [], true)
+ 5 ROOTPATH/modul/Kasir/Controllers/Kasir.php(557): view('Modul\\Kasir\\Views\\viewStruk', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(919): Modul\Kasir\Controllers\Kasir->struk('76')
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Kasir\Controllers\Kasir))
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-30 13:11:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 13:11:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 13:11:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 13:11:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 13:12:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-05-30 13:12:01 --> [DEPRECATED] explode(): Passing null to parameter #2 ($string) of type string is deprecated in ROOTPATH/modul/User/Controllers/User.php on line 283.
+ 1 ROOTPATH/modul/User/Controllers/User.php(283): explode(',', null)
+ 2 SYSTEMPATH/CodeIgniter.php(919): Modul\User\Controllers\User->getAksesMenu()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\User\Controllers\User))
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-30 13:12:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 13:12:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 13:12:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 13:12:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 13:12:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 13:12:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 13:12:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 13:12:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 13:12:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 13:12:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 13:12:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-05-30 13:12:44 --> [DEPRECATED] strtolower(): Passing null to parameter #1 ($string) of type string is deprecated in ROOTPATH/modul/Produk/Controllers/Produk.php on line 1057.
+ 1 ROOTPATH/modul/Produk/Controllers/Produk.php(1057): strtolower(null)
+ 2 SYSTEMPATH/CodeIgniter.php(919): Modul\Produk\Controllers\Produk->getBahan()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Produk\Controllers\Produk))
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-30 13:12:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 13:13:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-05-30 13:13:16 --> [DEPRECATED] strtolower(): Passing null to parameter #1 ($string) of type string is deprecated in ROOTPATH/modul/Produk/Controllers/Produk.php on line 1057.
+ 1 ROOTPATH/modul/Produk/Controllers/Produk.php(1057): strtolower(null)
+ 2 SYSTEMPATH/CodeIgniter.php(919): Modul\Produk\Controllers\Produk->getBahan()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Produk\Controllers\Produk))
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-30 13:13:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-05-30 13:13:20 --> [DEPRECATED] strtolower(): Passing null to parameter #1 ($string) of type string is deprecated in ROOTPATH/modul/Produk/Controllers/Produk.php on line 1057.
+ 1 ROOTPATH/modul/Produk/Controllers/Produk.php(1057): strtolower(null)
+ 2 SYSTEMPATH/CodeIgniter.php(919): Modul\Produk\Controllers\Produk->getBahan()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Produk\Controllers\Produk))
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-30 13:13:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 13:13:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-05-30 13:13:41 --> [DEPRECATED] strtolower(): Passing null to parameter #1 ($string) of type string is deprecated in ROOTPATH/modul/Produk/Controllers/Produk.php on line 1057.
+ 1 ROOTPATH/modul/Produk/Controllers/Produk.php(1057): strtolower(null)
+ 2 SYSTEMPATH/CodeIgniter.php(919): Modul\Produk\Controllers\Produk->getBahan()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Produk\Controllers\Produk))
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-30 13:13:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 13:14:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-05-30 13:14:03 --> [DEPRECATED] strtolower(): Passing null to parameter #1 ($string) of type string is deprecated in ROOTPATH/modul/Produk/Controllers/Produk.php on line 1057.
+ 1 ROOTPATH/modul/Produk/Controllers/Produk.php(1057): strtolower(null)
+ 2 SYSTEMPATH/CodeIgniter.php(919): Modul\Produk\Controllers\Produk->getBahan()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Produk\Controllers\Produk))
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-30 13:14:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-05-30 13:14:04 --> [DEPRECATED] strtolower(): Passing null to parameter #1 ($string) of type string is deprecated in ROOTPATH/modul/Produk/Controllers/Produk.php on line 1057.
+ 1 ROOTPATH/modul/Produk/Controllers/Produk.php(1057): strtolower(null)
+ 2 SYSTEMPATH/CodeIgniter.php(919): Modul\Produk\Controllers\Produk->getBahan()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Produk\Controllers\Produk))
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-30 13:14:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-05-30 13:14:05 --> [DEPRECATED] strtolower(): Passing null to parameter #1 ($string) of type string is deprecated in ROOTPATH/modul/Produk/Controllers/Produk.php on line 1057.
+ 1 ROOTPATH/modul/Produk/Controllers/Produk.php(1057): strtolower(null)
+ 2 SYSTEMPATH/CodeIgniter.php(919): Modul\Produk\Controllers\Produk->getBahan()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Produk\Controllers\Produk))
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-30 13:14:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 13:14:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 13:14:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 13:14:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 13:14:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 13:15:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 13:15:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 13:15:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 13:15:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-05-30 13:15:18 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH/modul/Utang/Controllers/Utang.php on line 70.
+ 1 ROOTPATH/modul/Utang/Controllers/Utang.php(70): number_format(null)
+ 2 APPPATH/ThirdParty/codeigniter4-datatables/src/DataTableQuery.php(91): Modul\Utang\Controllers\Utang->Modul\Utang\Controllers\{closure}(Object(stdClass))
+ 3 APPPATH/ThirdParty/codeigniter4-datatables/src/DataTable.php(176): Hermawan\DataTables\DataTableQuery->getDataResult()
+ 4 ROOTPATH/modul/Utang/Controllers/Utang.php(93): Hermawan\DataTables\DataTable->toJson(true)
+ 5 SYSTEMPATH/CodeIgniter.php(919): Modul\Utang\Controllers\Utang->datatable()
+ 6 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Utang\Controllers\Utang))
+ 7 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-30 13:15:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 13:15:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-05-30 13:15:20 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH/modul/Piutang/Controllers/Piutang.php on line 48.
+ 1 ROOTPATH/modul/Piutang/Controllers/Piutang.php(48): number_format(null)
+ 2 APPPATH/ThirdParty/codeigniter4-datatables/src/DataTableQuery.php(91): Modul\Piutang\Controllers\Piutang->Modul\Piutang\Controllers\{closure}(Object(stdClass))
+ 3 APPPATH/ThirdParty/codeigniter4-datatables/src/DataTable.php(176): Hermawan\DataTables\DataTableQuery->getDataResult()
+ 4 ROOTPATH/modul/Piutang/Controllers/Piutang.php(71): Hermawan\DataTables\DataTable->toJson(true)
+ 5 SYSTEMPATH/CodeIgniter.php(919): Modul\Piutang\Controllers\Piutang->datatable()
+ 6 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Piutang\Controllers\Piutang))
+ 7 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-30 13:15:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 13:15:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 13:15:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 13:15:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-05-30 13:15:38 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH/modul/Summary/Views/viewSummary.php on line 44.
+ 1 ROOTPATH/modul/Summary/Views/viewSummary.php(44): number_format(null)
+ 2 SYSTEMPATH/View/View.php(226): include('/home/ngabardashmart/foodcourt.ngabarmart.com/modul/Summary/Views/viewSummary.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render('Modul\\Summary\\Views\\viewSummary', [], true)
+ 5 ROOTPATH/modul/Summary/Controllers/Summary.php(34): view('Modul\\Summary\\Views\\viewSummary', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(919): Modul\Summary\Controllers\Summary->index()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Summary\Controllers\Summary))
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-05-30 13:15:38 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH/modul/Summary/Views/viewSummary.php on line 57.
+ 1 ROOTPATH/modul/Summary/Views/viewSummary.php(57): number_format(null)
+ 2 SYSTEMPATH/View/View.php(226): include('/home/ngabardashmart/foodcourt.ngabarmart.com/modul/Summary/Views/viewSummary.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render('Modul\\Summary\\Views\\viewSummary', [], true)
+ 5 ROOTPATH/modul/Summary/Controllers/Summary.php(34): view('Modul\\Summary\\Views\\viewSummary', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(919): Modul\Summary\Controllers\Summary->index()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Summary\Controllers\Summary))
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-05-30 13:15:38 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH/modul/Summary/Views/viewSummary.php on line 57.
+ 1 ROOTPATH/modul/Summary/Views/viewSummary.php(57): number_format(null)
+ 2 SYSTEMPATH/View/View.php(226): include('/home/ngabardashmart/foodcourt.ngabarmart.com/modul/Summary/Views/viewSummary.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render('Modul\\Summary\\Views\\viewSummary', [], true)
+ 5 ROOTPATH/modul/Summary/Controllers/Summary.php(34): view('Modul\\Summary\\Views\\viewSummary', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(919): Modul\Summary\Controllers\Summary->index()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Summary\Controllers\Summary))
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-05-30 13:15:38 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH/modul/Summary/Views/viewSummary.php on line 57.
+ 1 ROOTPATH/modul/Summary/Views/viewSummary.php(57): number_format(null)
+ 2 SYSTEMPATH/View/View.php(226): include('/home/ngabardashmart/foodcourt.ngabarmart.com/modul/Summary/Views/viewSummary.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render('Modul\\Summary\\Views\\viewSummary', [], true)
+ 5 ROOTPATH/modul/Summary/Controllers/Summary.php(34): view('Modul\\Summary\\Views\\viewSummary', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(919): Modul\Summary\Controllers\Summary->index()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Summary\Controllers\Summary))
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-05-30 13:15:38 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH/modul/Summary/Views/viewSummary.php on line 57.
+ 1 ROOTPATH/modul/Summary/Views/viewSummary.php(57): number_format(null)
+ 2 SYSTEMPATH/View/View.php(226): include('/home/ngabardashmart/foodcourt.ngabarmart.com/modul/Summary/Views/viewSummary.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render('Modul\\Summary\\Views\\viewSummary', [], true)
+ 5 ROOTPATH/modul/Summary/Controllers/Summary.php(34): view('Modul\\Summary\\Views\\viewSummary', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(919): Modul\Summary\Controllers\Summary->index()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Summary\Controllers\Summary))
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-30 13:15:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 13:15:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 13:15:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 13:16:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-05-30 13:16:14 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH/modul/Summary/Controllers/Summary.php on line 93.
+ 1 ROOTPATH/modul/Summary/Controllers/Summary.php(93): number_format(null)
+ 2 SYSTEMPATH/CodeIgniter.php(919): Modul\Summary\Controllers\Summary->filter()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Summary\Controllers\Summary))
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-05-30 13:16:14 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH/modul/Summary/Controllers/Summary.php on line 97.
+ 1 ROOTPATH/modul/Summary/Controllers/Summary.php(97): number_format(null)
+ 2 SYSTEMPATH/CodeIgniter.php(919): Modul\Summary\Controllers\Summary->filter()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Summary\Controllers\Summary))
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-05-30 13:16:14 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH/modul/Summary/Controllers/Summary.php on line 101.
+ 1 ROOTPATH/modul/Summary/Controllers/Summary.php(101): number_format(null)
+ 2 SYSTEMPATH/CodeIgniter.php(919): Modul\Summary\Controllers\Summary->filter()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Summary\Controllers\Summary))
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-05-30 13:16:14 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH/modul/Summary/Controllers/Summary.php on line 111.
+ 1 ROOTPATH/modul/Summary/Controllers/Summary.php(111): number_format(null)
+ 2 SYSTEMPATH/CodeIgniter.php(919): Modul\Summary\Controllers\Summary->filter()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Summary\Controllers\Summary))
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-05-30 13:16:14 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH/modul/Summary/Controllers/Summary.php on line 111.
+ 1 ROOTPATH/modul/Summary/Controllers/Summary.php(111): number_format(null)
+ 2 SYSTEMPATH/CodeIgniter.php(919): Modul\Summary\Controllers\Summary->filter()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Summary\Controllers\Summary))
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-05-30 13:16:14 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH/modul/Summary/Controllers/Summary.php on line 111.
+ 1 ROOTPATH/modul/Summary/Controllers/Summary.php(111): number_format(null)
+ 2 SYSTEMPATH/CodeIgniter.php(919): Modul\Summary\Controllers\Summary->filter()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Summary\Controllers\Summary))
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-05-30 13:16:14 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH/modul/Summary/Controllers/Summary.php on line 111.
+ 1 ROOTPATH/modul/Summary/Controllers/Summary.php(111): number_format(null)
+ 2 SYSTEMPATH/CodeIgniter.php(919): Modul\Summary\Controllers\Summary->filter()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Summary\Controllers\Summary))
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-05-30 13:16:14 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH/modul/Summary/Controllers/Summary.php on line 111.
+ 1 ROOTPATH/modul/Summary/Controllers/Summary.php(111): number_format(null)
+ 2 SYSTEMPATH/CodeIgniter.php(919): Modul\Summary\Controllers\Summary->filter()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Summary\Controllers\Summary))
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-30 13:16:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-05-30 13:16:21 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH/modul/Summary/Controllers/Summary.php on line 93.
+ 1 ROOTPATH/modul/Summary/Controllers/Summary.php(93): number_format(null)
+ 2 SYSTEMPATH/CodeIgniter.php(919): Modul\Summary\Controllers\Summary->filter()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Summary\Controllers\Summary))
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-05-30 13:16:21 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH/modul/Summary/Controllers/Summary.php on line 97.
+ 1 ROOTPATH/modul/Summary/Controllers/Summary.php(97): number_format(null)
+ 2 SYSTEMPATH/CodeIgniter.php(919): Modul\Summary\Controllers\Summary->filter()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Summary\Controllers\Summary))
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-05-30 13:16:21 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH/modul/Summary/Controllers/Summary.php on line 101.
+ 1 ROOTPATH/modul/Summary/Controllers/Summary.php(101): number_format(null)
+ 2 SYSTEMPATH/CodeIgniter.php(919): Modul\Summary\Controllers\Summary->filter()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Summary\Controllers\Summary))
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-05-30 13:16:21 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH/modul/Summary/Controllers/Summary.php on line 111.
+ 1 ROOTPATH/modul/Summary/Controllers/Summary.php(111): number_format(null)
+ 2 SYSTEMPATH/CodeIgniter.php(919): Modul\Summary\Controllers\Summary->filter()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Summary\Controllers\Summary))
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-05-30 13:16:21 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH/modul/Summary/Controllers/Summary.php on line 111.
+ 1 ROOTPATH/modul/Summary/Controllers/Summary.php(111): number_format(null)
+ 2 SYSTEMPATH/CodeIgniter.php(919): Modul\Summary\Controllers\Summary->filter()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Summary\Controllers\Summary))
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-05-30 13:16:21 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH/modul/Summary/Controllers/Summary.php on line 111.
+ 1 ROOTPATH/modul/Summary/Controllers/Summary.php(111): number_format(null)
+ 2 SYSTEMPATH/CodeIgniter.php(919): Modul\Summary\Controllers\Summary->filter()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Summary\Controllers\Summary))
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-05-30 13:16:21 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH/modul/Summary/Controllers/Summary.php on line 111.
+ 1 ROOTPATH/modul/Summary/Controllers/Summary.php(111): number_format(null)
+ 2 SYSTEMPATH/CodeIgniter.php(919): Modul\Summary\Controllers\Summary->filter()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Summary\Controllers\Summary))
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-05-30 13:16:21 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH/modul/Summary/Controllers/Summary.php on line 111.
+ 1 ROOTPATH/modul/Summary/Controllers/Summary.php(111): number_format(null)
+ 2 SYSTEMPATH/CodeIgniter.php(919): Modul\Summary\Controllers\Summary->filter()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Summary\Controllers\Summary))
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-30 13:17:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 13:20:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-05-30 13:20:27 --> [DEPRECATED] strtolower(): Passing null to parameter #1 ($string) of type string is deprecated in ROOTPATH/modul/Kasir/Controllers/Kasir.php on line 312.
+ 1 ROOTPATH/modul/Kasir/Controllers/Kasir.php(312): strtolower(null)
+ 2 SYSTEMPATH/CodeIgniter.php(919): Modul\Kasir\Controllers\Kasir->getPelanggan()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Kasir\Controllers\Kasir))
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-30 13:20:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 13:21:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 13:21:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 13:21:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 13:21:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 13:21:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 13:21:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 13:21:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 13:21:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 13:21:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 13:21:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 13:21:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 13:21:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 13:21:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 13:21:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 13:21:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 13:21:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 13:21:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 13:21:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 13:21:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 13:21:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 13:21:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 13:22:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 13:22:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 13:22:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 13:22:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 13:22:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 13:30:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 13:30:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 13:30:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 13:30:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 13:30:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 13:30:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 13:30:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 13:30:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 13:30:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-05-30 13:30:53 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH/modul/Utang/Controllers/Utang.php on line 70.
+ 1 ROOTPATH/modul/Utang/Controllers/Utang.php(70): number_format(null)
+ 2 APPPATH/ThirdParty/codeigniter4-datatables/src/DataTableQuery.php(91): Modul\Utang\Controllers\Utang->Modul\Utang\Controllers\{closure}(Object(stdClass))
+ 3 APPPATH/ThirdParty/codeigniter4-datatables/src/DataTable.php(176): Hermawan\DataTables\DataTableQuery->getDataResult()
+ 4 ROOTPATH/modul/Utang/Controllers/Utang.php(93): Hermawan\DataTables\DataTable->toJson(true)
+ 5 SYSTEMPATH/CodeIgniter.php(919): Modul\Utang\Controllers\Utang->datatable()
+ 6 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Utang\Controllers\Utang))
+ 7 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-30 13:30:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 13:30:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-05-30 13:30:56 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH/modul/Piutang/Controllers/Piutang.php on line 48.
+ 1 ROOTPATH/modul/Piutang/Controllers/Piutang.php(48): number_format(null)
+ 2 APPPATH/ThirdParty/codeigniter4-datatables/src/DataTableQuery.php(91): Modul\Piutang\Controllers\Piutang->Modul\Piutang\Controllers\{closure}(Object(stdClass))
+ 3 APPPATH/ThirdParty/codeigniter4-datatables/src/DataTable.php(176): Hermawan\DataTables\DataTableQuery->getDataResult()
+ 4 ROOTPATH/modul/Piutang/Controllers/Piutang.php(71): Hermawan\DataTables\DataTable->toJson(true)
+ 5 SYSTEMPATH/CodeIgniter.php(919): Modul\Piutang\Controllers\Piutang->datatable()
+ 6 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Piutang\Controllers\Piutang))
+ 7 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-30 13:31:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 13:31:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 13:31:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 13:31:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-05-30 13:31:04 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH/modul/Summary/Views/viewSummary.php on line 44.
+ 1 ROOTPATH/modul/Summary/Views/viewSummary.php(44): number_format(null)
+ 2 SYSTEMPATH/View/View.php(226): include('/home/ngabardashmart/foodcourt.ngabarmart.com/modul/Summary/Views/viewSummary.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render('Modul\\Summary\\Views\\viewSummary', [], true)
+ 5 ROOTPATH/modul/Summary/Controllers/Summary.php(34): view('Modul\\Summary\\Views\\viewSummary', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(919): Modul\Summary\Controllers\Summary->index()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Summary\Controllers\Summary))
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-05-30 13:31:04 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH/modul/Summary/Views/viewSummary.php on line 57.
+ 1 ROOTPATH/modul/Summary/Views/viewSummary.php(57): number_format(null)
+ 2 SYSTEMPATH/View/View.php(226): include('/home/ngabardashmart/foodcourt.ngabarmart.com/modul/Summary/Views/viewSummary.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render('Modul\\Summary\\Views\\viewSummary', [], true)
+ 5 ROOTPATH/modul/Summary/Controllers/Summary.php(34): view('Modul\\Summary\\Views\\viewSummary', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(919): Modul\Summary\Controllers\Summary->index()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Summary\Controllers\Summary))
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-05-30 13:31:04 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH/modul/Summary/Views/viewSummary.php on line 57.
+ 1 ROOTPATH/modul/Summary/Views/viewSummary.php(57): number_format(null)
+ 2 SYSTEMPATH/View/View.php(226): include('/home/ngabardashmart/foodcourt.ngabarmart.com/modul/Summary/Views/viewSummary.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render('Modul\\Summary\\Views\\viewSummary', [], true)
+ 5 ROOTPATH/modul/Summary/Controllers/Summary.php(34): view('Modul\\Summary\\Views\\viewSummary', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(919): Modul\Summary\Controllers\Summary->index()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Summary\Controllers\Summary))
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-05-30 13:31:04 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH/modul/Summary/Views/viewSummary.php on line 57.
+ 1 ROOTPATH/modul/Summary/Views/viewSummary.php(57): number_format(null)
+ 2 SYSTEMPATH/View/View.php(226): include('/home/ngabardashmart/foodcourt.ngabarmart.com/modul/Summary/Views/viewSummary.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render('Modul\\Summary\\Views\\viewSummary', [], true)
+ 5 ROOTPATH/modul/Summary/Controllers/Summary.php(34): view('Modul\\Summary\\Views\\viewSummary', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(919): Modul\Summary\Controllers\Summary->index()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Summary\Controllers\Summary))
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-05-30 13:31:04 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH/modul/Summary/Views/viewSummary.php on line 57.
+ 1 ROOTPATH/modul/Summary/Views/viewSummary.php(57): number_format(null)
+ 2 SYSTEMPATH/View/View.php(226): include('/home/ngabardashmart/foodcourt.ngabarmart.com/modul/Summary/Views/viewSummary.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render('Modul\\Summary\\Views\\viewSummary', [], true)
+ 5 ROOTPATH/modul/Summary/Controllers/Summary.php(34): view('Modul\\Summary\\Views\\viewSummary', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(919): Modul\Summary\Controllers\Summary->index()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Summary\Controllers\Summary))
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-30 13:31:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 13:31:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 13:31:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 13:31:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-05-30 13:31:15 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH/modul/Summary/Views/viewSummary.php on line 44.
+ 1 ROOTPATH/modul/Summary/Views/viewSummary.php(44): number_format(null)
+ 2 SYSTEMPATH/View/View.php(226): include('/home/ngabardashmart/foodcourt.ngabarmart.com/modul/Summary/Views/viewSummary.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render('Modul\\Summary\\Views\\viewSummary', [], true)
+ 5 ROOTPATH/modul/Summary/Controllers/Summary.php(34): view('Modul\\Summary\\Views\\viewSummary', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(919): Modul\Summary\Controllers\Summary->index()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Summary\Controllers\Summary))
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-05-30 13:31:15 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH/modul/Summary/Views/viewSummary.php on line 57.
+ 1 ROOTPATH/modul/Summary/Views/viewSummary.php(57): number_format(null)
+ 2 SYSTEMPATH/View/View.php(226): include('/home/ngabardashmart/foodcourt.ngabarmart.com/modul/Summary/Views/viewSummary.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render('Modul\\Summary\\Views\\viewSummary', [], true)
+ 5 ROOTPATH/modul/Summary/Controllers/Summary.php(34): view('Modul\\Summary\\Views\\viewSummary', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(919): Modul\Summary\Controllers\Summary->index()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Summary\Controllers\Summary))
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-05-30 13:31:15 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH/modul/Summary/Views/viewSummary.php on line 57.
+ 1 ROOTPATH/modul/Summary/Views/viewSummary.php(57): number_format(null)
+ 2 SYSTEMPATH/View/View.php(226): include('/home/ngabardashmart/foodcourt.ngabarmart.com/modul/Summary/Views/viewSummary.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render('Modul\\Summary\\Views\\viewSummary', [], true)
+ 5 ROOTPATH/modul/Summary/Controllers/Summary.php(34): view('Modul\\Summary\\Views\\viewSummary', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(919): Modul\Summary\Controllers\Summary->index()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Summary\Controllers\Summary))
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-05-30 13:31:15 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH/modul/Summary/Views/viewSummary.php on line 57.
+ 1 ROOTPATH/modul/Summary/Views/viewSummary.php(57): number_format(null)
+ 2 SYSTEMPATH/View/View.php(226): include('/home/ngabardashmart/foodcourt.ngabarmart.com/modul/Summary/Views/viewSummary.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render('Modul\\Summary\\Views\\viewSummary', [], true)
+ 5 ROOTPATH/modul/Summary/Controllers/Summary.php(34): view('Modul\\Summary\\Views\\viewSummary', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(919): Modul\Summary\Controllers\Summary->index()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Summary\Controllers\Summary))
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-05-30 13:31:15 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH/modul/Summary/Views/viewSummary.php on line 57.
+ 1 ROOTPATH/modul/Summary/Views/viewSummary.php(57): number_format(null)
+ 2 SYSTEMPATH/View/View.php(226): include('/home/ngabardashmart/foodcourt.ngabarmart.com/modul/Summary/Views/viewSummary.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render('Modul\\Summary\\Views\\viewSummary', [], true)
+ 5 ROOTPATH/modul/Summary/Controllers/Summary.php(34): view('Modul\\Summary\\Views\\viewSummary', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(919): Modul\Summary\Controllers\Summary->index()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Summary\Controllers\Summary))
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-30 13:31:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 13:31:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 13:31:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 13:31:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 13:31:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 13:31:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 13:31:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 13:31:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 13:31:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 13:31:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 13:31:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 13:32:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 13:32:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 13:32:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 13:32:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 13:32:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 13:32:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-05-30 13:32:30 --> [DEPRECATED] explode(): Passing null to parameter #2 ($string) of type string is deprecated in ROOTPATH/modul/User/Controllers/User.php on line 283.
+ 1 ROOTPATH/modul/User/Controllers/User.php(283): explode(',', null)
+ 2 SYSTEMPATH/CodeIgniter.php(919): Modul\User\Controllers\User->getAksesMenu()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\User\Controllers\User))
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-30 13:37:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 13:37:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 13:37:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 13:37:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 13:37:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 13:37:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 13:37:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 13:37:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 13:38:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 13:38:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-05-30 13:38:01 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH/modul/Kasir/Views/viewStruk.php on line 93.
+ 1 ROOTPATH/modul/Kasir/Views/viewStruk.php(93): number_format(null)
+ 2 SYSTEMPATH/View/View.php(226): include('/home/ngabardashmart/foodcourt.ngabarmart.com/modul/Kasir/Views/viewStruk.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render('Modul\\Kasir\\Views\\viewStruk', [], true)
+ 5 ROOTPATH/modul/Kasir/Controllers/Kasir.php(557): view('Modul\\Kasir\\Views\\viewStruk', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(919): Modul\Kasir\Controllers\Kasir->struk('78')
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Kasir\Controllers\Kasir))
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-30 13:40:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-05-30 13:40:44 --> [DEPRECATED] strtolower(): Passing null to parameter #1 ($string) of type string is deprecated in ROOTPATH/modul/Kasir/Controllers/Kasir.php on line 312.
+ 1 ROOTPATH/modul/Kasir/Controllers/Kasir.php(312): strtolower(null)
+ 2 SYSTEMPATH/CodeIgniter.php(919): Modul\Kasir\Controllers\Kasir->getPelanggan()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Kasir\Controllers\Kasir))
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-30 13:41:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 13:41:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 13:41:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 13:41:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 13:43:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 13:43:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 13:43:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 13:43:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 13:43:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 15:26:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 19:05:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 19:05:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 19:05:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 21:23:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 21:23:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

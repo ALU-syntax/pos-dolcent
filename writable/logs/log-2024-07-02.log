@@ -1,0 +1,289 @@
+INFO - 2024-07-02 10:01:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-02 10:02:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-02 10:02:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 10:02:07 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH\modul\Dashboard\Controllers\Dashboard.php on line 48.
+ 1 ROOTPATH\modul\Dashboard\Controllers\Dashboard.php(48): number_format(null)
+ 2 SYSTEMPATH\CodeIgniter.php(919): Modul\Dashboard\Controllers\Dashboard->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Dashboard\Controllers\Dashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\foodcourt\\public\\index.php')
+WARNING - 2024-07-02 10:02:07 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH\modul\Dashboard\Controllers\Dashboard.php on line 53.
+ 1 ROOTPATH\modul\Dashboard\Controllers\Dashboard.php(53): number_format(null)
+ 2 SYSTEMPATH\CodeIgniter.php(919): Modul\Dashboard\Controllers\Dashboard->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Dashboard\Controllers\Dashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\foodcourt\\public\\index.php')
+INFO - 2024-07-02 11:37:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-02 11:37:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 11:37:25 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH\modul\Dashboard\Controllers\Dashboard.php on line 48.
+ 1 ROOTPATH\modul\Dashboard\Controllers\Dashboard.php(48): number_format(null)
+ 2 SYSTEMPATH\CodeIgniter.php(919): Modul\Dashboard\Controllers\Dashboard->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Dashboard\Controllers\Dashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\foodcourt\\public\\index.php')
+WARNING - 2024-07-02 11:37:25 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH\modul\Dashboard\Controllers\Dashboard.php on line 53.
+ 1 ROOTPATH\modul\Dashboard\Controllers\Dashboard.php(53): number_format(null)
+ 2 SYSTEMPATH\CodeIgniter.php(919): Modul\Dashboard\Controllers\Dashboard->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Dashboard\Controllers\Dashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\foodcourt\\public\\index.php')
+INFO - 2024-07-02 11:38:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-02 11:38:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 11:38:08 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH\modul\Dashboard\Controllers\Dashboard.php on line 48.
+ 1 ROOTPATH\modul\Dashboard\Controllers\Dashboard.php(48): number_format(null)
+ 2 SYSTEMPATH\CodeIgniter.php(919): Modul\Dashboard\Controllers\Dashboard->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Dashboard\Controllers\Dashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\foodcourt\\public\\index.php')
+WARNING - 2024-07-02 11:38:08 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH\modul\Dashboard\Controllers\Dashboard.php on line 53.
+ 1 ROOTPATH\modul\Dashboard\Controllers\Dashboard.php(53): number_format(null)
+ 2 SYSTEMPATH\CodeIgniter.php(919): Modul\Dashboard\Controllers\Dashboard->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Dashboard\Controllers\Dashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\foodcourt\\public\\index.php')
+INFO - 2024-07-02 11:39:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 11:39:40 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH\modul\Dashboard\Controllers\Dashboard.php on line 48.
+ 1 ROOTPATH\modul\Dashboard\Controllers\Dashboard.php(48): number_format(null)
+ 2 SYSTEMPATH\CodeIgniter.php(919): Modul\Dashboard\Controllers\Dashboard->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Dashboard\Controllers\Dashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\foodcourt\\public\\index.php')
+WARNING - 2024-07-02 11:39:40 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH\modul\Dashboard\Controllers\Dashboard.php on line 53.
+ 1 ROOTPATH\modul\Dashboard\Controllers\Dashboard.php(53): number_format(null)
+ 2 SYSTEMPATH\CodeIgniter.php(919): Modul\Dashboard\Controllers\Dashboard->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Dashboard\Controllers\Dashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\foodcourt\\public\\index.php')
+INFO - 2024-07-02 11:41:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 11:41:08 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH\modul\Dashboard\Controllers\Dashboard.php on line 48.
+ 1 ROOTPATH\modul\Dashboard\Controllers\Dashboard.php(48): number_format(null)
+ 2 SYSTEMPATH\CodeIgniter.php(919): Modul\Dashboard\Controllers\Dashboard->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Dashboard\Controllers\Dashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\foodcourt\\public\\index.php')
+WARNING - 2024-07-02 11:41:08 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH\modul\Dashboard\Controllers\Dashboard.php on line 53.
+ 1 ROOTPATH\modul\Dashboard\Controllers\Dashboard.php(53): number_format(null)
+ 2 SYSTEMPATH\CodeIgniter.php(919): Modul\Dashboard\Controllers\Dashboard->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Dashboard\Controllers\Dashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\foodcourt\\public\\index.php')
+INFO - 2024-07-02 11:42:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 11:42:29 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH\modul\Dashboard\Controllers\Dashboard.php on line 48.
+ 1 ROOTPATH\modul\Dashboard\Controllers\Dashboard.php(48): number_format(null)
+ 2 SYSTEMPATH\CodeIgniter.php(919): Modul\Dashboard\Controllers\Dashboard->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Dashboard\Controllers\Dashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\foodcourt\\public\\index.php')
+WARNING - 2024-07-02 11:42:29 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH\modul\Dashboard\Controllers\Dashboard.php on line 53.
+ 1 ROOTPATH\modul\Dashboard\Controllers\Dashboard.php(53): number_format(null)
+ 2 SYSTEMPATH\CodeIgniter.php(919): Modul\Dashboard\Controllers\Dashboard->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Dashboard\Controllers\Dashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\foodcourt\\public\\index.php')
+INFO - 2024-07-02 11:42:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 11:42:48 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH\modul\Dashboard\Controllers\Dashboard.php on line 48.
+ 1 ROOTPATH\modul\Dashboard\Controllers\Dashboard.php(48): number_format(null)
+ 2 SYSTEMPATH\CodeIgniter.php(919): Modul\Dashboard\Controllers\Dashboard->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Dashboard\Controllers\Dashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\foodcourt\\public\\index.php')
+WARNING - 2024-07-02 11:42:48 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH\modul\Dashboard\Controllers\Dashboard.php on line 53.
+ 1 ROOTPATH\modul\Dashboard\Controllers\Dashboard.php(53): number_format(null)
+ 2 SYSTEMPATH\CodeIgniter.php(919): Modul\Dashboard\Controllers\Dashboard->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Dashboard\Controllers\Dashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\foodcourt\\public\\index.php')
+INFO - 2024-07-02 11:43:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 11:43:40 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH\modul\Dashboard\Controllers\Dashboard.php on line 48.
+ 1 ROOTPATH\modul\Dashboard\Controllers\Dashboard.php(48): number_format(null)
+ 2 SYSTEMPATH\CodeIgniter.php(919): Modul\Dashboard\Controllers\Dashboard->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Dashboard\Controllers\Dashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\foodcourt\\public\\index.php')
+WARNING - 2024-07-02 11:43:40 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH\modul\Dashboard\Controllers\Dashboard.php on line 53.
+ 1 ROOTPATH\modul\Dashboard\Controllers\Dashboard.php(53): number_format(null)
+ 2 SYSTEMPATH\CodeIgniter.php(919): Modul\Dashboard\Controllers\Dashboard->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Dashboard\Controllers\Dashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\foodcourt\\public\\index.php')
+INFO - 2024-07-02 16:05:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-02 16:05:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-02 16:05:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 16:05:36 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH\modul\Dashboard\Controllers\Dashboard.php on line 48.
+ 1 ROOTPATH\modul\Dashboard\Controllers\Dashboard.php(48): number_format(null)
+ 2 SYSTEMPATH\CodeIgniter.php(919): Modul\Dashboard\Controllers\Dashboard->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Dashboard\Controllers\Dashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\foodcourt\\public\\index.php')
+WARNING - 2024-07-02 16:05:36 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH\modul\Dashboard\Controllers\Dashboard.php on line 53.
+ 1 ROOTPATH\modul\Dashboard\Controllers\Dashboard.php(53): number_format(null)
+ 2 SYSTEMPATH\CodeIgniter.php(919): Modul\Dashboard\Controllers\Dashboard->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Dashboard\Controllers\Dashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\foodcourt\\public\\index.php')
+INFO - 2024-07-02 16:06:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 16:06:19 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH\modul\Dashboard\Controllers\Dashboard.php on line 48.
+ 1 ROOTPATH\modul\Dashboard\Controllers\Dashboard.php(48): number_format(null)
+ 2 SYSTEMPATH\CodeIgniter.php(919): Modul\Dashboard\Controllers\Dashboard->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Dashboard\Controllers\Dashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\foodcourt\\public\\index.php')
+WARNING - 2024-07-02 16:06:19 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH\modul\Dashboard\Controllers\Dashboard.php on line 53.
+ 1 ROOTPATH\modul\Dashboard\Controllers\Dashboard.php(53): number_format(null)
+ 2 SYSTEMPATH\CodeIgniter.php(919): Modul\Dashboard\Controllers\Dashboard->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Dashboard\Controllers\Dashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\foodcourt\\public\\index.php')
+INFO - 2024-07-02 16:07:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-02 16:09:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-02 16:09:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-02 16:09:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 16:09:46 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH\modul\Summary\Views\viewSummary.php on line 40.
+ 1 ROOTPATH\modul\Summary\Views\viewSummary.php(40): number_format(null)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\foodcourt\\modul\\Summary\\Views\\viewSummary.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('Modul\\Summary\\Views\\viewSummary', [], true)
+ 5 ROOTPATH\modul\Summary\Controllers\Summary.php(34): view('Modul\\Summary\\Views\\viewSummary', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): Modul\Summary\Controllers\Summary->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Summary\Controllers\Summary))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\foodcourt\\public\\index.php')
+WARNING - 2024-07-02 16:09:46 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH\modul\Summary\Views\viewSummary.php on line 44.
+ 1 ROOTPATH\modul\Summary\Views\viewSummary.php(44): number_format(null)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\foodcourt\\modul\\Summary\\Views\\viewSummary.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('Modul\\Summary\\Views\\viewSummary', [], true)
+ 5 ROOTPATH\modul\Summary\Controllers\Summary.php(34): view('Modul\\Summary\\Views\\viewSummary', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): Modul\Summary\Controllers\Summary->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Summary\Controllers\Summary))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\foodcourt\\public\\index.php')
+WARNING - 2024-07-02 16:09:46 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH\modul\Summary\Views\viewSummary.php on line 48.
+ 1 ROOTPATH\modul\Summary\Views\viewSummary.php(48): number_format(null)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\foodcourt\\modul\\Summary\\Views\\viewSummary.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('Modul\\Summary\\Views\\viewSummary', [], true)
+ 5 ROOTPATH\modul\Summary\Controllers\Summary.php(34): view('Modul\\Summary\\Views\\viewSummary', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): Modul\Summary\Controllers\Summary->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Summary\Controllers\Summary))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\foodcourt\\public\\index.php')
+WARNING - 2024-07-02 16:09:46 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH\modul\Summary\Views\viewSummary.php on line 57.
+ 1 ROOTPATH\modul\Summary\Views\viewSummary.php(57): number_format(null)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\foodcourt\\modul\\Summary\\Views\\viewSummary.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('Modul\\Summary\\Views\\viewSummary', [], true)
+ 5 ROOTPATH\modul\Summary\Controllers\Summary.php(34): view('Modul\\Summary\\Views\\viewSummary', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): Modul\Summary\Controllers\Summary->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Summary\Controllers\Summary))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\foodcourt\\public\\index.php')
+WARNING - 2024-07-02 16:09:46 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH\modul\Summary\Views\viewSummary.php on line 57.
+ 1 ROOTPATH\modul\Summary\Views\viewSummary.php(57): number_format(null)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\foodcourt\\modul\\Summary\\Views\\viewSummary.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('Modul\\Summary\\Views\\viewSummary', [], true)
+ 5 ROOTPATH\modul\Summary\Controllers\Summary.php(34): view('Modul\\Summary\\Views\\viewSummary', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): Modul\Summary\Controllers\Summary->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Summary\Controllers\Summary))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\foodcourt\\public\\index.php')
+WARNING - 2024-07-02 16:09:46 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH\modul\Summary\Views\viewSummary.php on line 57.
+ 1 ROOTPATH\modul\Summary\Views\viewSummary.php(57): number_format(null)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\foodcourt\\modul\\Summary\\Views\\viewSummary.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('Modul\\Summary\\Views\\viewSummary', [], true)
+ 5 ROOTPATH\modul\Summary\Controllers\Summary.php(34): view('Modul\\Summary\\Views\\viewSummary', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): Modul\Summary\Controllers\Summary->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Summary\Controllers\Summary))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\foodcourt\\public\\index.php')
+WARNING - 2024-07-02 16:09:46 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH\modul\Summary\Views\viewSummary.php on line 57.
+ 1 ROOTPATH\modul\Summary\Views\viewSummary.php(57): number_format(null)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\foodcourt\\modul\\Summary\\Views\\viewSummary.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('Modul\\Summary\\Views\\viewSummary', [], true)
+ 5 ROOTPATH\modul\Summary\Controllers\Summary.php(34): view('Modul\\Summary\\Views\\viewSummary', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): Modul\Summary\Controllers\Summary->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Summary\Controllers\Summary))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\foodcourt\\public\\index.php')
+WARNING - 2024-07-02 16:09:46 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH\modul\Summary\Views\viewSummary.php on line 57.
+ 1 ROOTPATH\modul\Summary\Views\viewSummary.php(57): number_format(null)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\foodcourt\\modul\\Summary\\Views\\viewSummary.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('Modul\\Summary\\Views\\viewSummary', [], true)
+ 5 ROOTPATH\modul\Summary\Controllers\Summary.php(34): view('Modul\\Summary\\Views\\viewSummary', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): Modul\Summary\Controllers\Summary->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Summary\Controllers\Summary))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\foodcourt\\public\\index.php')
+INFO - 2024-07-02 16:09:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-02 16:09:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-02 16:09:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-02 16:12:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-02 16:12:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-02 16:16:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-02 16:16:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-02 16:16:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-02 16:16:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-02 16:16:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-02 16:16:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-02 16:16:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-02 16:16:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-02 16:17:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-02 16:17:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-02 16:17:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-02 16:17:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-02 16:17:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-02 16:17:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-02 16:17:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-02 16:17:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-02 16:20:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-02 16:20:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-02 16:21:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-02 16:21:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-02 16:23:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-02 16:23:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-02 16:23:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-02 16:23:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-02 16:23:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-02 16:23:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-02 16:24:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-02 16:24:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-02 16:24:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-02 16:24:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-02 16:24:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-02 16:24:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-02 16:24:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-02 16:24:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-02 16:35:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-02 16:35:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

@@ -1,0 +1,147 @@
+INFO - 2024-05-21 23:14:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-21 23:14:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-21 23:14:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-21 23:14:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-05-21 23:14:58 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH\modul\Piutang\Controllers\Piutang.php on line 48.
+ 1 ROOTPATH\modul\Piutang\Controllers\Piutang.php(48): number_format(null)
+ 2 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(91): Modul\Piutang\Controllers\Piutang->Modul\Piutang\Controllers\{closure}(Object(stdClass))
+ 3 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTable.php(176): Hermawan\DataTables\DataTableQuery->getDataResult()
+ 4 ROOTPATH\modul\Piutang\Controllers\Piutang.php(71): Hermawan\DataTables\DataTable->toJson(true)
+ 5 SYSTEMPATH\CodeIgniter.php(919): Modul\Piutang\Controllers\Piutang->datatable()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Piutang\Controllers\Piutang))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-21 23:15:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-21 23:15:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-21 23:15:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-21 23:15:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-21 23:27:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-21 23:27:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-21 23:28:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-21 23:33:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-21 23:33:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-21 23:33:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-05-21 23:33:28 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`posbysikoding`.`kredit`, CONSTRAINT `kredit_ibfk_1` FOREIGN KEY (`id_pelanggan`) REFERENCES `pelanggan` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT) in C:\Project\posbysikoding\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Project\posbysikoding\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `pe...', 0)
+#1 C:\Project\posbysikoding\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `pe...')
+#2 C:\Project\posbysikoding\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `pe...')
+#3 C:\Project\posbysikoding\system\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `pe...', Array, false)
+#4 C:\Project\posbysikoding\system\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\Project\posbysikoding\system\BaseModel.php(1080): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\Project\posbysikoding\modul\Pelanggan\Controllers\Pelanggan.php(163): CodeIgniter\BaseModel->delete(Array)
+#7 C:\Project\posbysikoding\system\CodeIgniter.php(919): Modul\Pelanggan\Controllers\Pelanggan->hapus()
+#8 C:\Project\posbysikoding\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Pelanggan\Controllers\Pelanggan))
+#9 C:\Project\posbysikoding\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Project\posbysikoding\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+INFO - 2024-05-21 23:33:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-21 23:33:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-21 23:33:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-05-21 23:33:53 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`posbysikoding`.`kredit`, CONSTRAINT `kredit_ibfk_1` FOREIGN KEY (`id_pelanggan`) REFERENCES `pelanggan` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT) in C:\Project\posbysikoding\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Project\posbysikoding\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `pe...', 0)
+#1 C:\Project\posbysikoding\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `pe...')
+#2 C:\Project\posbysikoding\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `pe...')
+#3 C:\Project\posbysikoding\system\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `pe...', Array, false)
+#4 C:\Project\posbysikoding\system\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\Project\posbysikoding\system\BaseModel.php(1080): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\Project\posbysikoding\modul\Pelanggan\Controllers\Pelanggan.php(163): CodeIgniter\BaseModel->delete(Array)
+#7 C:\Project\posbysikoding\system\CodeIgniter.php(919): Modul\Pelanggan\Controllers\Pelanggan->hapus()
+#8 C:\Project\posbysikoding\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Pelanggan\Controllers\Pelanggan))
+#9 C:\Project\posbysikoding\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Project\posbysikoding\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+INFO - 2024-05-21 23:34:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-21 23:37:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-21 23:37:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-21 23:41:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-05-21 23:41:54 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH\modul\Dashboard\Controllers\Dashboard.php on line 48.
+ 1 ROOTPATH\modul\Dashboard\Controllers\Dashboard.php(48): number_format(null)
+ 2 SYSTEMPATH\CodeIgniter.php(919): Modul\Dashboard\Controllers\Dashboard->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Dashboard\Controllers\Dashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-21 23:46:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-05-21 23:46:05 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH\modul\Dashboard\Controllers\Dashboard.php on line 48.
+ 1 ROOTPATH\modul\Dashboard\Controllers\Dashboard.php(48): number_format(null)
+ 2 SYSTEMPATH\CodeIgniter.php(919): Modul\Dashboard\Controllers\Dashboard->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Dashboard\Controllers\Dashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-21 23:46:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-21 23:46:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-21 23:46:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-21 23:46:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-21 23:47:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-21 23:47:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-21 23:47:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-21 23:47:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-21 23:47:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-21 23:47:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-21 23:48:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-21 23:48:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-21 23:48:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-21 23:48:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-21 23:49:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-21 23:49:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-21 23:49:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-21 23:49:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-05-21 23:49:48 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH\modul\Summary\Views\viewSummary.php on line 40.
+ 1 ROOTPATH\modul\Summary\Views\viewSummary.php(40): number_format(null)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Project\\posbysikoding\\modul\\Summary\\Views\\viewSummary.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('Modul\\Summary\\Views\\viewSummary', [], true)
+ 5 ROOTPATH\modul\Summary\Controllers\Summary.php(34): view('Modul\\Summary\\Views\\viewSummary', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): Modul\Summary\Controllers\Summary->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Summary\Controllers\Summary))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-05-21 23:49:48 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH\modul\Summary\Views\viewSummary.php on line 44.
+ 1 ROOTPATH\modul\Summary\Views\viewSummary.php(44): number_format(null)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Project\\posbysikoding\\modul\\Summary\\Views\\viewSummary.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('Modul\\Summary\\Views\\viewSummary', [], true)
+ 5 ROOTPATH\modul\Summary\Controllers\Summary.php(34): view('Modul\\Summary\\Views\\viewSummary', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): Modul\Summary\Controllers\Summary->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Summary\Controllers\Summary))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-05-21 23:49:48 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH\modul\Summary\Views\viewSummary.php on line 48.
+ 1 ROOTPATH\modul\Summary\Views\viewSummary.php(48): number_format(null)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Project\\posbysikoding\\modul\\Summary\\Views\\viewSummary.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('Modul\\Summary\\Views\\viewSummary', [], true)
+ 5 ROOTPATH\modul\Summary\Controllers\Summary.php(34): view('Modul\\Summary\\Views\\viewSummary', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): Modul\Summary\Controllers\Summary->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Summary\Controllers\Summary))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-05-21 23:49:48 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH\modul\Summary\Views\viewSummary.php on line 57.
+ 1 ROOTPATH\modul\Summary\Views\viewSummary.php(57): number_format(null)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Project\\posbysikoding\\modul\\Summary\\Views\\viewSummary.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('Modul\\Summary\\Views\\viewSummary', [], true)
+ 5 ROOTPATH\modul\Summary\Controllers\Summary.php(34): view('Modul\\Summary\\Views\\viewSummary', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): Modul\Summary\Controllers\Summary->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Summary\Controllers\Summary))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-05-21 23:49:48 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH\modul\Summary\Views\viewSummary.php on line 57.
+ 1 ROOTPATH\modul\Summary\Views\viewSummary.php(57): number_format(null)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Project\\posbysikoding\\modul\\Summary\\Views\\viewSummary.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('Modul\\Summary\\Views\\viewSummary', [], true)
+ 5 ROOTPATH\modul\Summary\Controllers\Summary.php(34): view('Modul\\Summary\\Views\\viewSummary', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): Modul\Summary\Controllers\Summary->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Summary\Controllers\Summary))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-21 23:49:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-21 23:50:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-21 23:50:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-21 23:51:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-21 23:51:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-21 23:51:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-21 23:52:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-21 23:52:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

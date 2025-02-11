@@ -1,0 +1,1018 @@
+INFO - 2024-06-13 01:09:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 01:09:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 01:46:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 03:48:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 08:25:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 09:44:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 10:10:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 10:19:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 10:43:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 11:36:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 12:21:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 12:32:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 13:08:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 13:45:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 13:45:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 13:45:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 13:45:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-13 13:45:59 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH/modul/Dashboard/Controllers/Dashboard.php on line 43.
+ 1 ROOTPATH/modul/Dashboard/Controllers/Dashboard.php(43): number_format(null)
+ 2 SYSTEMPATH/CodeIgniter.php(919): Modul\Dashboard\Controllers\Dashboard->index()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Dashboard\Controllers\Dashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-13 13:45:59 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH/modul/Dashboard/Controllers/Dashboard.php on line 48.
+ 1 ROOTPATH/modul/Dashboard/Controllers/Dashboard.php(48): number_format(null)
+ 2 SYSTEMPATH/CodeIgniter.php(919): Modul\Dashboard\Controllers\Dashboard->index()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Dashboard\Controllers\Dashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-13 13:46:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 13:46:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-13 13:46:21 --> [DEPRECATED] strtolower(): Passing null to parameter #1 ($string) of type string is deprecated in ROOTPATH/modul/Kasir/Controllers/Kasir.php on line 312.
+ 1 ROOTPATH/modul/Kasir/Controllers/Kasir.php(312): strtolower(null)
+ 2 SYSTEMPATH/CodeIgniter.php(919): Modul\Kasir\Controllers\Kasir->getPelanggan()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Kasir\Controllers\Kasir))
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-13 13:46:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 13:46:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 13:46:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 13:46:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 13:46:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 13:46:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 13:46:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-13 13:46:38 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH/modul/Dashboard/Controllers/Dashboard.php on line 43.
+ 1 ROOTPATH/modul/Dashboard/Controllers/Dashboard.php(43): number_format(null)
+ 2 SYSTEMPATH/CodeIgniter.php(919): Modul\Dashboard\Controllers\Dashboard->index()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Dashboard\Controllers\Dashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-13 13:46:38 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH/modul/Dashboard/Controllers/Dashboard.php on line 48.
+ 1 ROOTPATH/modul/Dashboard/Controllers/Dashboard.php(48): number_format(null)
+ 2 SYSTEMPATH/CodeIgniter.php(919): Modul\Dashboard\Controllers\Dashboard->index()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Dashboard\Controllers\Dashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-13 13:48:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 13:48:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-13 13:48:00 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH/modul/Dashboard/Controllers/Dashboard.php on line 43.
+ 1 ROOTPATH/modul/Dashboard/Controllers/Dashboard.php(43): number_format(null)
+ 2 SYSTEMPATH/CodeIgniter.php(919): Modul\Dashboard\Controllers\Dashboard->index()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Dashboard\Controllers\Dashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-13 13:48:00 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH/modul/Dashboard/Controllers/Dashboard.php on line 48.
+ 1 ROOTPATH/modul/Dashboard/Controllers/Dashboard.php(48): number_format(null)
+ 2 SYSTEMPATH/CodeIgniter.php(919): Modul\Dashboard\Controllers\Dashboard->index()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Dashboard\Controllers\Dashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-13 13:48:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 13:48:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-13 13:48:06 --> [DEPRECATED] strtolower(): Passing null to parameter #1 ($string) of type string is deprecated in ROOTPATH/modul/Kasir/Controllers/Kasir.php on line 312.
+ 1 ROOTPATH/modul/Kasir/Controllers/Kasir.php(312): strtolower(null)
+ 2 SYSTEMPATH/CodeIgniter.php(919): Modul\Kasir\Controllers\Kasir->getPelanggan()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Kasir\Controllers\Kasir))
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-13 13:48:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 13:48:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 13:48:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 13:48:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 13:48:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 13:48:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-13 13:48:43 --> [DEPRECATED] strtolower(): Passing null to parameter #1 ($string) of type string is deprecated in ROOTPATH/modul/Kasir/Controllers/Kasir.php on line 312.
+ 1 ROOTPATH/modul/Kasir/Controllers/Kasir.php(312): strtolower(null)
+ 2 SYSTEMPATH/CodeIgniter.php(919): Modul\Kasir\Controllers\Kasir->getPelanggan()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Kasir\Controllers\Kasir))
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-13 13:48:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 13:48:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 13:48:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 13:48:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 13:49:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 13:49:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-13 13:49:11 --> Class "Modul\Kasir\Controllers\ResponseInterface" not found
+in ROOTPATH/modul/Kasir/Controllers/Kasir.php on line 581.
+ 1 SYSTEMPATH/CodeIgniter.php(919): Modul\Kasir\Controllers\Kasir->SaveImageStruk('NjMz')
+ 2 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Kasir\Controllers\Kasir))
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-13 13:49:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 13:49:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 13:49:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-13 13:49:49 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH/modul/Dashboard/Controllers/Dashboard.php on line 43.
+ 1 ROOTPATH/modul/Dashboard/Controllers/Dashboard.php(43): number_format(null)
+ 2 SYSTEMPATH/CodeIgniter.php(919): Modul\Dashboard\Controllers\Dashboard->index()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Dashboard\Controllers\Dashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-13 13:49:49 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH/modul/Dashboard/Controllers/Dashboard.php on line 48.
+ 1 ROOTPATH/modul/Dashboard/Controllers/Dashboard.php(48): number_format(null)
+ 2 SYSTEMPATH/CodeIgniter.php(919): Modul\Dashboard\Controllers\Dashboard->index()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Dashboard\Controllers\Dashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-13 13:49:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 13:49:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 13:50:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 13:50:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 13:50:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 13:50:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 13:50:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 13:50:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 13:50:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 13:50:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 13:50:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 13:50:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 13:50:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 13:51:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-13 13:51:01 --> [DEPRECATED] strtolower(): Passing null to parameter #1 ($string) of type string is deprecated in ROOTPATH/modul/Kasir/Controllers/Kasir.php on line 312.
+ 1 ROOTPATH/modul/Kasir/Controllers/Kasir.php(312): strtolower(null)
+ 2 SYSTEMPATH/CodeIgniter.php(919): Modul\Kasir\Controllers\Kasir->getPelanggan()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Kasir\Controllers\Kasir))
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-13 13:51:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 13:51:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 13:51:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 13:51:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-13 13:51:56 --> [DEPRECATED] strtolower(): Passing null to parameter #1 ($string) of type string is deprecated in ROOTPATH/modul/Kasir/Controllers/Kasir.php on line 312.
+ 1 ROOTPATH/modul/Kasir/Controllers/Kasir.php(312): strtolower(null)
+ 2 SYSTEMPATH/CodeIgniter.php(919): Modul\Kasir\Controllers\Kasir->getPelanggan()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Kasir\Controllers\Kasir))
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-13 13:51:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 13:51:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 13:52:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 13:52:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 13:52:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 13:52:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 13:52:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-13 13:52:11 --> Class "Modul\Kasir\Controllers\ResponseInterface" not found
+in ROOTPATH/modul/Kasir/Controllers/Kasir.php on line 581.
+ 1 SYSTEMPATH/CodeIgniter.php(919): Modul\Kasir\Controllers\Kasir->SaveImageStruk('NjM1')
+ 2 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Kasir\Controllers\Kasir))
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-13 13:52:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 13:52:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 13:52:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-13 13:52:29 --> [DEPRECATED] strtolower(): Passing null to parameter #1 ($string) of type string is deprecated in ROOTPATH/modul/Kasir/Controllers/Kasir.php on line 312.
+ 1 ROOTPATH/modul/Kasir/Controllers/Kasir.php(312): strtolower(null)
+ 2 SYSTEMPATH/CodeIgniter.php(919): Modul\Kasir\Controllers\Kasir->getPelanggan()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Kasir\Controllers\Kasir))
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-13 13:52:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 13:52:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 13:52:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 13:52:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 13:52:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 13:52:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 13:52:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-13 13:52:47 --> Class "Modul\Kasir\Controllers\ResponseInterface" not found
+in ROOTPATH/modul/Kasir/Controllers/Kasir.php on line 581.
+ 1 SYSTEMPATH/CodeIgniter.php(919): Modul\Kasir\Controllers\Kasir->SaveImageStruk('NjM2')
+ 2 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Kasir\Controllers\Kasir))
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-13 13:52:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 13:53:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 13:53:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-13 13:53:16 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH/modul/Dashboard/Controllers/Dashboard.php on line 43.
+ 1 ROOTPATH/modul/Dashboard/Controllers/Dashboard.php(43): number_format(null)
+ 2 SYSTEMPATH/CodeIgniter.php(919): Modul\Dashboard\Controllers\Dashboard->index()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Dashboard\Controllers\Dashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-13 13:53:16 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH/modul/Dashboard/Controllers/Dashboard.php on line 48.
+ 1 ROOTPATH/modul/Dashboard/Controllers/Dashboard.php(48): number_format(null)
+ 2 SYSTEMPATH/CodeIgniter.php(919): Modul\Dashboard\Controllers\Dashboard->index()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Dashboard\Controllers\Dashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-13 13:53:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 13:53:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-13 13:53:22 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH/modul/Dashboard/Controllers/Dashboard.php on line 43.
+ 1 ROOTPATH/modul/Dashboard/Controllers/Dashboard.php(43): number_format(null)
+ 2 SYSTEMPATH/CodeIgniter.php(919): Modul\Dashboard\Controllers\Dashboard->index()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Dashboard\Controllers\Dashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-13 13:53:22 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH/modul/Dashboard/Controllers/Dashboard.php on line 48.
+ 1 ROOTPATH/modul/Dashboard/Controllers/Dashboard.php(48): number_format(null)
+ 2 SYSTEMPATH/CodeIgniter.php(919): Modul\Dashboard\Controllers\Dashboard->index()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Dashboard\Controllers\Dashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-13 13:53:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 13:53:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 13:53:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 13:53:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 13:53:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 13:54:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 13:54:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 13:55:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-13 13:55:47 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH/modul/Dashboard/Controllers/Dashboard.php on line 43.
+ 1 ROOTPATH/modul/Dashboard/Controllers/Dashboard.php(43): number_format(null)
+ 2 SYSTEMPATH/CodeIgniter.php(919): Modul\Dashboard\Controllers\Dashboard->index()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Dashboard\Controllers\Dashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-13 13:55:47 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH/modul/Dashboard/Controllers/Dashboard.php on line 48.
+ 1 ROOTPATH/modul/Dashboard/Controllers/Dashboard.php(48): number_format(null)
+ 2 SYSTEMPATH/CodeIgniter.php(919): Modul\Dashboard\Controllers\Dashboard->index()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Dashboard\Controllers\Dashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-13 13:55:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 13:56:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-13 13:56:26 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH/modul/Dashboard/Controllers/Dashboard.php on line 43.
+ 1 ROOTPATH/modul/Dashboard/Controllers/Dashboard.php(43): number_format(null)
+ 2 SYSTEMPATH/CodeIgniter.php(919): Modul\Dashboard\Controllers\Dashboard->index()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Dashboard\Controllers\Dashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-13 13:56:26 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH/modul/Dashboard/Controllers/Dashboard.php on line 48.
+ 1 ROOTPATH/modul/Dashboard/Controllers/Dashboard.php(48): number_format(null)
+ 2 SYSTEMPATH/CodeIgniter.php(919): Modul\Dashboard\Controllers\Dashboard->index()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Dashboard\Controllers\Dashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-13 13:56:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 13:57:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 13:57:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-13 13:57:15 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH/modul/Dashboard/Controllers/Dashboard.php on line 43.
+ 1 ROOTPATH/modul/Dashboard/Controllers/Dashboard.php(43): number_format(null)
+ 2 SYSTEMPATH/CodeIgniter.php(919): Modul\Dashboard\Controllers\Dashboard->index()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Dashboard\Controllers\Dashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-13 13:57:15 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH/modul/Dashboard/Controllers/Dashboard.php on line 48.
+ 1 ROOTPATH/modul/Dashboard/Controllers/Dashboard.php(48): number_format(null)
+ 2 SYSTEMPATH/CodeIgniter.php(919): Modul\Dashboard\Controllers\Dashboard->index()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Dashboard\Controllers\Dashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-13 13:57:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 13:58:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 14:13:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 14:13:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 14:13:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 14:13:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-13 14:13:33 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH/modul/Dashboard/Controllers/Dashboard.php on line 43.
+ 1 ROOTPATH/modul/Dashboard/Controllers/Dashboard.php(43): number_format(null)
+ 2 SYSTEMPATH/CodeIgniter.php(919): Modul\Dashboard\Controllers\Dashboard->index()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Dashboard\Controllers\Dashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-13 14:13:33 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH/modul/Dashboard/Controllers/Dashboard.php on line 48.
+ 1 ROOTPATH/modul/Dashboard/Controllers/Dashboard.php(48): number_format(null)
+ 2 SYSTEMPATH/CodeIgniter.php(919): Modul\Dashboard\Controllers\Dashboard->index()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Dashboard\Controllers\Dashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-13 14:13:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 14:13:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-13 14:13:52 --> [DEPRECATED] strtolower(): Passing null to parameter #1 ($string) of type string is deprecated in ROOTPATH/modul/Kasir/Controllers/Kasir.php on line 312.
+ 1 ROOTPATH/modul/Kasir/Controllers/Kasir.php(312): strtolower(null)
+ 2 SYSTEMPATH/CodeIgniter.php(919): Modul\Kasir\Controllers\Kasir->getPelanggan()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Kasir\Controllers\Kasir))
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-13 14:13:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 14:13:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 14:14:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-13 14:14:24 --> [DEPRECATED] strtolower(): Passing null to parameter #1 ($string) of type string is deprecated in ROOTPATH/modul/Kasir/Controllers/Kasir.php on line 312.
+ 1 ROOTPATH/modul/Kasir/Controllers/Kasir.php(312): strtolower(null)
+ 2 SYSTEMPATH/CodeIgniter.php(919): Modul\Kasir\Controllers\Kasir->getPelanggan()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Kasir\Controllers\Kasir))
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-13 14:14:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-13 14:14:56 --> [DEPRECATED] strtolower(): Passing null to parameter #1 ($string) of type string is deprecated in ROOTPATH/modul/Kasir/Controllers/Kasir.php on line 312.
+ 1 ROOTPATH/modul/Kasir/Controllers/Kasir.php(312): strtolower(null)
+ 2 SYSTEMPATH/CodeIgniter.php(919): Modul\Kasir\Controllers\Kasir->getPelanggan()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Kasir\Controllers\Kasir))
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-13 14:15:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 14:15:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 14:15:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 14:15:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-13 14:15:44 --> [DEPRECATED] strtolower(): Passing null to parameter #1 ($string) of type string is deprecated in ROOTPATH/modul/Kasir/Controllers/Kasir.php on line 312.
+ 1 ROOTPATH/modul/Kasir/Controllers/Kasir.php(312): strtolower(null)
+ 2 SYSTEMPATH/CodeIgniter.php(919): Modul\Kasir\Controllers\Kasir->getPelanggan()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Kasir\Controllers\Kasir))
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-13 14:20:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 14:20:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-13 14:20:15 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH/modul/Dashboard/Controllers/Dashboard.php on line 43.
+ 1 ROOTPATH/modul/Dashboard/Controllers/Dashboard.php(43): number_format(null)
+ 2 SYSTEMPATH/CodeIgniter.php(919): Modul\Dashboard\Controllers\Dashboard->index()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Dashboard\Controllers\Dashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-13 14:20:15 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH/modul/Dashboard/Controllers/Dashboard.php on line 48.
+ 1 ROOTPATH/modul/Dashboard/Controllers/Dashboard.php(48): number_format(null)
+ 2 SYSTEMPATH/CodeIgniter.php(919): Modul\Dashboard\Controllers\Dashboard->index()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Dashboard\Controllers\Dashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-13 14:20:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 14:20:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-13 14:20:16 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH/modul/Dashboard/Controllers/Dashboard.php on line 43.
+ 1 ROOTPATH/modul/Dashboard/Controllers/Dashboard.php(43): number_format(null)
+ 2 SYSTEMPATH/CodeIgniter.php(919): Modul\Dashboard\Controllers\Dashboard->index()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Dashboard\Controllers\Dashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-13 14:20:16 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH/modul/Dashboard/Controllers/Dashboard.php on line 48.
+ 1 ROOTPATH/modul/Dashboard/Controllers/Dashboard.php(48): number_format(null)
+ 2 SYSTEMPATH/CodeIgniter.php(919): Modul\Dashboard\Controllers\Dashboard->index()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Dashboard\Controllers\Dashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-13 14:20:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 14:20:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-13 14:20:45 --> [DEPRECATED] strtolower(): Passing null to parameter #1 ($string) of type string is deprecated in ROOTPATH/modul/Kasir/Controllers/Kasir.php on line 312.
+ 1 ROOTPATH/modul/Kasir/Controllers/Kasir.php(312): strtolower(null)
+ 2 SYSTEMPATH/CodeIgniter.php(919): Modul\Kasir\Controllers\Kasir->getPelanggan()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Kasir\Controllers\Kasir))
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-13 14:20:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 14:22:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 14:22:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 14:23:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 14:23:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-13 14:23:53 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH/modul/Dashboard/Controllers/Dashboard.php on line 43.
+ 1 ROOTPATH/modul/Dashboard/Controllers/Dashboard.php(43): number_format(null)
+ 2 SYSTEMPATH/CodeIgniter.php(919): Modul\Dashboard\Controllers\Dashboard->index()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Dashboard\Controllers\Dashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-13 14:23:53 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH/modul/Dashboard/Controllers/Dashboard.php on line 48.
+ 1 ROOTPATH/modul/Dashboard/Controllers/Dashboard.php(48): number_format(null)
+ 2 SYSTEMPATH/CodeIgniter.php(919): Modul\Dashboard\Controllers\Dashboard->index()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Dashboard\Controllers\Dashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-13 14:30:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 16:13:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 16:13:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 16:13:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-13 16:13:31 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH/modul/Dashboard/Controllers/Dashboard.php on line 43.
+ 1 ROOTPATH/modul/Dashboard/Controllers/Dashboard.php(43): number_format(null)
+ 2 SYSTEMPATH/CodeIgniter.php(919): Modul\Dashboard\Controllers\Dashboard->index()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Dashboard\Controllers\Dashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-13 16:13:31 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH/modul/Dashboard/Controllers/Dashboard.php on line 48.
+ 1 ROOTPATH/modul/Dashboard/Controllers/Dashboard.php(48): number_format(null)
+ 2 SYSTEMPATH/CodeIgniter.php(919): Modul\Dashboard\Controllers\Dashboard->index()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Dashboard\Controllers\Dashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-13 16:13:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 16:13:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 16:13:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 16:13:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 16:14:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 16:14:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 16:15:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 16:15:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-13 16:15:05 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH/modul/Dashboard/Controllers/Dashboard.php on line 43.
+ 1 ROOTPATH/modul/Dashboard/Controllers/Dashboard.php(43): number_format(null)
+ 2 SYSTEMPATH/CodeIgniter.php(919): Modul\Dashboard\Controllers\Dashboard->index()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Dashboard\Controllers\Dashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-13 16:15:05 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH/modul/Dashboard/Controllers/Dashboard.php on line 48.
+ 1 ROOTPATH/modul/Dashboard/Controllers/Dashboard.php(48): number_format(null)
+ 2 SYSTEMPATH/CodeIgniter.php(919): Modul\Dashboard\Controllers\Dashboard->index()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Dashboard\Controllers\Dashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-13 16:15:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 16:15:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 16:15:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 16:15:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 16:15:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 16:15:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 16:15:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 16:15:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 16:15:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 16:15:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 16:15:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 16:15:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 16:15:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 16:15:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 16:15:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 16:15:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 16:16:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 16:16:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 16:16:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-13 16:16:09 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH/modul/Kasir/Views/viewStruk.php on line 93.
+ 1 ROOTPATH/modul/Kasir/Views/viewStruk.php(93): number_format(null)
+ 2 SYSTEMPATH/View/View.php(226): include('/home/minagroup/food.tukir.biz.id/modul/Kasir/Views/viewStruk.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render('Modul\\Kasir\\Views\\viewStruk', [], true)
+ 5 ROOTPATH/modul/Kasir/Controllers/Kasir.php(557): view('Modul\\Kasir\\Views\\viewStruk', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(919): Modul\Kasir\Controllers\Kasir->struk('631')
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Kasir\Controllers\Kasir))
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-13 16:16:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 16:16:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-13 16:16:18 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH/modul/Dashboard/Controllers/Dashboard.php on line 43.
+ 1 ROOTPATH/modul/Dashboard/Controllers/Dashboard.php(43): number_format(null)
+ 2 SYSTEMPATH/CodeIgniter.php(919): Modul\Dashboard\Controllers\Dashboard->index()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Dashboard\Controllers\Dashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-13 16:16:18 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH/modul/Dashboard/Controllers/Dashboard.php on line 48.
+ 1 ROOTPATH/modul/Dashboard/Controllers/Dashboard.php(48): number_format(null)
+ 2 SYSTEMPATH/CodeIgniter.php(919): Modul\Dashboard\Controllers\Dashboard->index()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Dashboard\Controllers\Dashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-13 16:16:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 16:16:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 16:17:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 16:17:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 16:17:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 16:17:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 16:17:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 16:17:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 16:18:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 16:18:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 16:18:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 16:18:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 16:18:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 16:18:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 16:18:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 16:18:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 16:19:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 16:19:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 16:19:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 16:19:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 16:19:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 16:19:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 16:20:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 16:20:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 16:20:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 16:20:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 16:20:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 16:21:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 16:21:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 16:21:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 16:21:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 16:21:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 16:21:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 16:21:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 16:22:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 16:22:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 16:22:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 16:22:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 16:22:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 16:22:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 16:23:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 16:23:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 16:23:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 16:23:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 16:23:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 16:23:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 16:23:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 16:23:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 16:24:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 16:24:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 16:24:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 16:24:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-13 16:24:24 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH/modul/Kasir/Views/viewStruk.php on line 93.
+ 1 ROOTPATH/modul/Kasir/Views/viewStruk.php(93): number_format(null)
+ 2 SYSTEMPATH/View/View.php(226): include('/home/minagroup/food.tukir.biz.id/modul/Kasir/Views/viewStruk.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render('Modul\\Kasir\\Views\\viewStruk', [], true)
+ 5 ROOTPATH/modul/Kasir/Controllers/Kasir.php(557): view('Modul\\Kasir\\Views\\viewStruk', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(919): Modul\Kasir\Controllers\Kasir->struk('661')
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Kasir\Controllers\Kasir))
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-13 16:24:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 16:24:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 16:24:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 16:24:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 16:24:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 16:25:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 16:25:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 16:25:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 16:25:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 16:26:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 16:26:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 16:26:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 16:26:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 16:26:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 16:26:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 16:26:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-13 16:26:54 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH/modul/Dashboard/Controllers/Dashboard.php on line 43.
+ 1 ROOTPATH/modul/Dashboard/Controllers/Dashboard.php(43): number_format(null)
+ 2 SYSTEMPATH/CodeIgniter.php(919): Modul\Dashboard\Controllers\Dashboard->index()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Dashboard\Controllers\Dashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-13 16:26:54 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH/modul/Dashboard/Controllers/Dashboard.php on line 48.
+ 1 ROOTPATH/modul/Dashboard/Controllers/Dashboard.php(48): number_format(null)
+ 2 SYSTEMPATH/CodeIgniter.php(919): Modul\Dashboard\Controllers\Dashboard->index()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Dashboard\Controllers\Dashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-13 16:27:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 16:27:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 16:28:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 16:28:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 16:28:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 16:28:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 16:28:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 16:28:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-13 16:28:57 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH/modul/Utang/Controllers/Utang.php on line 70.
+ 1 ROOTPATH/modul/Utang/Controllers/Utang.php(70): number_format(null)
+ 2 APPPATH/ThirdParty/codeigniter4-datatables/src/DataTableQuery.php(91): Modul\Utang\Controllers\Utang->Modul\Utang\Controllers\{closure}(Object(stdClass))
+ 3 APPPATH/ThirdParty/codeigniter4-datatables/src/DataTable.php(176): Hermawan\DataTables\DataTableQuery->getDataResult()
+ 4 ROOTPATH/modul/Utang/Controllers/Utang.php(93): Hermawan\DataTables\DataTable->toJson(true)
+ 5 SYSTEMPATH/CodeIgniter.php(919): Modul\Utang\Controllers\Utang->datatable()
+ 6 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Utang\Controllers\Utang))
+ 7 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-13 16:28:57 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH/modul/Utang/Controllers/Utang.php on line 70.
+ 1 ROOTPATH/modul/Utang/Controllers/Utang.php(70): number_format(null)
+ 2 APPPATH/ThirdParty/codeigniter4-datatables/src/DataTableQuery.php(91): Modul\Utang\Controllers\Utang->Modul\Utang\Controllers\{closure}(Object(stdClass))
+ 3 APPPATH/ThirdParty/codeigniter4-datatables/src/DataTable.php(176): Hermawan\DataTables\DataTableQuery->getDataResult()
+ 4 ROOTPATH/modul/Utang/Controllers/Utang.php(93): Hermawan\DataTables\DataTable->toJson(true)
+ 5 SYSTEMPATH/CodeIgniter.php(919): Modul\Utang\Controllers\Utang->datatable()
+ 6 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Utang\Controllers\Utang))
+ 7 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-13 16:28:57 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH/modul/Utang/Controllers/Utang.php on line 70.
+ 1 ROOTPATH/modul/Utang/Controllers/Utang.php(70): number_format(null)
+ 2 APPPATH/ThirdParty/codeigniter4-datatables/src/DataTableQuery.php(91): Modul\Utang\Controllers\Utang->Modul\Utang\Controllers\{closure}(Object(stdClass))
+ 3 APPPATH/ThirdParty/codeigniter4-datatables/src/DataTable.php(176): Hermawan\DataTables\DataTableQuery->getDataResult()
+ 4 ROOTPATH/modul/Utang/Controllers/Utang.php(93): Hermawan\DataTables\DataTable->toJson(true)
+ 5 SYSTEMPATH/CodeIgniter.php(919): Modul\Utang\Controllers\Utang->datatable()
+ 6 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Utang\Controllers\Utang))
+ 7 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-13 16:28:57 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH/modul/Utang/Controllers/Utang.php on line 70.
+ 1 ROOTPATH/modul/Utang/Controllers/Utang.php(70): number_format(null)
+ 2 APPPATH/ThirdParty/codeigniter4-datatables/src/DataTableQuery.php(91): Modul\Utang\Controllers\Utang->Modul\Utang\Controllers\{closure}(Object(stdClass))
+ 3 APPPATH/ThirdParty/codeigniter4-datatables/src/DataTable.php(176): Hermawan\DataTables\DataTableQuery->getDataResult()
+ 4 ROOTPATH/modul/Utang/Controllers/Utang.php(93): Hermawan\DataTables\DataTable->toJson(true)
+ 5 SYSTEMPATH/CodeIgniter.php(919): Modul\Utang\Controllers\Utang->datatable()
+ 6 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Utang\Controllers\Utang))
+ 7 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-13 16:28:57 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH/modul/Utang/Controllers/Utang.php on line 70.
+ 1 ROOTPATH/modul/Utang/Controllers/Utang.php(70): number_format(null)
+ 2 APPPATH/ThirdParty/codeigniter4-datatables/src/DataTableQuery.php(91): Modul\Utang\Controllers\Utang->Modul\Utang\Controllers\{closure}(Object(stdClass))
+ 3 APPPATH/ThirdParty/codeigniter4-datatables/src/DataTable.php(176): Hermawan\DataTables\DataTableQuery->getDataResult()
+ 4 ROOTPATH/modul/Utang/Controllers/Utang.php(93): Hermawan\DataTables\DataTable->toJson(true)
+ 5 SYSTEMPATH/CodeIgniter.php(919): Modul\Utang\Controllers\Utang->datatable()
+ 6 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Utang\Controllers\Utang))
+ 7 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-13 16:28:57 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH/modul/Utang/Controllers/Utang.php on line 70.
+ 1 ROOTPATH/modul/Utang/Controllers/Utang.php(70): number_format(null)
+ 2 APPPATH/ThirdParty/codeigniter4-datatables/src/DataTableQuery.php(91): Modul\Utang\Controllers\Utang->Modul\Utang\Controllers\{closure}(Object(stdClass))
+ 3 APPPATH/ThirdParty/codeigniter4-datatables/src/DataTable.php(176): Hermawan\DataTables\DataTableQuery->getDataResult()
+ 4 ROOTPATH/modul/Utang/Controllers/Utang.php(93): Hermawan\DataTables\DataTable->toJson(true)
+ 5 SYSTEMPATH/CodeIgniter.php(919): Modul\Utang\Controllers\Utang->datatable()
+ 6 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Utang\Controllers\Utang))
+ 7 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-13 16:28:57 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH/modul/Utang/Controllers/Utang.php on line 70.
+ 1 ROOTPATH/modul/Utang/Controllers/Utang.php(70): number_format(null)
+ 2 APPPATH/ThirdParty/codeigniter4-datatables/src/DataTableQuery.php(91): Modul\Utang\Controllers\Utang->Modul\Utang\Controllers\{closure}(Object(stdClass))
+ 3 APPPATH/ThirdParty/codeigniter4-datatables/src/DataTable.php(176): Hermawan\DataTables\DataTableQuery->getDataResult()
+ 4 ROOTPATH/modul/Utang/Controllers/Utang.php(93): Hermawan\DataTables\DataTable->toJson(true)
+ 5 SYSTEMPATH/CodeIgniter.php(919): Modul\Utang\Controllers\Utang->datatable()
+ 6 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Utang\Controllers\Utang))
+ 7 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-13 16:28:57 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH/modul/Utang/Controllers/Utang.php on line 70.
+ 1 ROOTPATH/modul/Utang/Controllers/Utang.php(70): number_format(null)
+ 2 APPPATH/ThirdParty/codeigniter4-datatables/src/DataTableQuery.php(91): Modul\Utang\Controllers\Utang->Modul\Utang\Controllers\{closure}(Object(stdClass))
+ 3 APPPATH/ThirdParty/codeigniter4-datatables/src/DataTable.php(176): Hermawan\DataTables\DataTableQuery->getDataResult()
+ 4 ROOTPATH/modul/Utang/Controllers/Utang.php(93): Hermawan\DataTables\DataTable->toJson(true)
+ 5 SYSTEMPATH/CodeIgniter.php(919): Modul\Utang\Controllers\Utang->datatable()
+ 6 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Utang\Controllers\Utang))
+ 7 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-13 16:28:57 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH/modul/Utang/Controllers/Utang.php on line 70.
+ 1 ROOTPATH/modul/Utang/Controllers/Utang.php(70): number_format(null)
+ 2 APPPATH/ThirdParty/codeigniter4-datatables/src/DataTableQuery.php(91): Modul\Utang\Controllers\Utang->Modul\Utang\Controllers\{closure}(Object(stdClass))
+ 3 APPPATH/ThirdParty/codeigniter4-datatables/src/DataTable.php(176): Hermawan\DataTables\DataTableQuery->getDataResult()
+ 4 ROOTPATH/modul/Utang/Controllers/Utang.php(93): Hermawan\DataTables\DataTable->toJson(true)
+ 5 SYSTEMPATH/CodeIgniter.php(919): Modul\Utang\Controllers\Utang->datatable()
+ 6 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Utang\Controllers\Utang))
+ 7 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-13 16:28:57 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH/modul/Utang/Controllers/Utang.php on line 70.
+ 1 ROOTPATH/modul/Utang/Controllers/Utang.php(70): number_format(null)
+ 2 APPPATH/ThirdParty/codeigniter4-datatables/src/DataTableQuery.php(91): Modul\Utang\Controllers\Utang->Modul\Utang\Controllers\{closure}(Object(stdClass))
+ 3 APPPATH/ThirdParty/codeigniter4-datatables/src/DataTable.php(176): Hermawan\DataTables\DataTableQuery->getDataResult()
+ 4 ROOTPATH/modul/Utang/Controllers/Utang.php(93): Hermawan\DataTables\DataTable->toJson(true)
+ 5 SYSTEMPATH/CodeIgniter.php(919): Modul\Utang\Controllers\Utang->datatable()
+ 6 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Utang\Controllers\Utang))
+ 7 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-13 16:29:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 16:29:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-13 16:29:27 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH/modul/Utang/Controllers/Utang.php on line 70.
+ 1 ROOTPATH/modul/Utang/Controllers/Utang.php(70): number_format(null)
+ 2 APPPATH/ThirdParty/codeigniter4-datatables/src/DataTableQuery.php(91): Modul\Utang\Controllers\Utang->Modul\Utang\Controllers\{closure}(Object(stdClass))
+ 3 APPPATH/ThirdParty/codeigniter4-datatables/src/DataTable.php(176): Hermawan\DataTables\DataTableQuery->getDataResult()
+ 4 ROOTPATH/modul/Utang/Controllers/Utang.php(93): Hermawan\DataTables\DataTable->toJson(true)
+ 5 SYSTEMPATH/CodeIgniter.php(919): Modul\Utang\Controllers\Utang->datatable()
+ 6 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Utang\Controllers\Utang))
+ 7 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-13 16:29:27 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH/modul/Utang/Controllers/Utang.php on line 70.
+ 1 ROOTPATH/modul/Utang/Controllers/Utang.php(70): number_format(null)
+ 2 APPPATH/ThirdParty/codeigniter4-datatables/src/DataTableQuery.php(91): Modul\Utang\Controllers\Utang->Modul\Utang\Controllers\{closure}(Object(stdClass))
+ 3 APPPATH/ThirdParty/codeigniter4-datatables/src/DataTable.php(176): Hermawan\DataTables\DataTableQuery->getDataResult()
+ 4 ROOTPATH/modul/Utang/Controllers/Utang.php(93): Hermawan\DataTables\DataTable->toJson(true)
+ 5 SYSTEMPATH/CodeIgniter.php(919): Modul\Utang\Controllers\Utang->datatable()
+ 6 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Utang\Controllers\Utang))
+ 7 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-13 16:29:27 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH/modul/Utang/Controllers/Utang.php on line 70.
+ 1 ROOTPATH/modul/Utang/Controllers/Utang.php(70): number_format(null)
+ 2 APPPATH/ThirdParty/codeigniter4-datatables/src/DataTableQuery.php(91): Modul\Utang\Controllers\Utang->Modul\Utang\Controllers\{closure}(Object(stdClass))
+ 3 APPPATH/ThirdParty/codeigniter4-datatables/src/DataTable.php(176): Hermawan\DataTables\DataTableQuery->getDataResult()
+ 4 ROOTPATH/modul/Utang/Controllers/Utang.php(93): Hermawan\DataTables\DataTable->toJson(true)
+ 5 SYSTEMPATH/CodeIgniter.php(919): Modul\Utang\Controllers\Utang->datatable()
+ 6 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Utang\Controllers\Utang))
+ 7 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-13 16:29:27 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH/modul/Utang/Controllers/Utang.php on line 70.
+ 1 ROOTPATH/modul/Utang/Controllers/Utang.php(70): number_format(null)
+ 2 APPPATH/ThirdParty/codeigniter4-datatables/src/DataTableQuery.php(91): Modul\Utang\Controllers\Utang->Modul\Utang\Controllers\{closure}(Object(stdClass))
+ 3 APPPATH/ThirdParty/codeigniter4-datatables/src/DataTable.php(176): Hermawan\DataTables\DataTableQuery->getDataResult()
+ 4 ROOTPATH/modul/Utang/Controllers/Utang.php(93): Hermawan\DataTables\DataTable->toJson(true)
+ 5 SYSTEMPATH/CodeIgniter.php(919): Modul\Utang\Controllers\Utang->datatable()
+ 6 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Utang\Controllers\Utang))
+ 7 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-13 16:29:27 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH/modul/Utang/Controllers/Utang.php on line 70.
+ 1 ROOTPATH/modul/Utang/Controllers/Utang.php(70): number_format(null)
+ 2 APPPATH/ThirdParty/codeigniter4-datatables/src/DataTableQuery.php(91): Modul\Utang\Controllers\Utang->Modul\Utang\Controllers\{closure}(Object(stdClass))
+ 3 APPPATH/ThirdParty/codeigniter4-datatables/src/DataTable.php(176): Hermawan\DataTables\DataTableQuery->getDataResult()
+ 4 ROOTPATH/modul/Utang/Controllers/Utang.php(93): Hermawan\DataTables\DataTable->toJson(true)
+ 5 SYSTEMPATH/CodeIgniter.php(919): Modul\Utang\Controllers\Utang->datatable()
+ 6 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Utang\Controllers\Utang))
+ 7 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-13 16:29:27 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH/modul/Utang/Controllers/Utang.php on line 70.
+ 1 ROOTPATH/modul/Utang/Controllers/Utang.php(70): number_format(null)
+ 2 APPPATH/ThirdParty/codeigniter4-datatables/src/DataTableQuery.php(91): Modul\Utang\Controllers\Utang->Modul\Utang\Controllers\{closure}(Object(stdClass))
+ 3 APPPATH/ThirdParty/codeigniter4-datatables/src/DataTable.php(176): Hermawan\DataTables\DataTableQuery->getDataResult()
+ 4 ROOTPATH/modul/Utang/Controllers/Utang.php(93): Hermawan\DataTables\DataTable->toJson(true)
+ 5 SYSTEMPATH/CodeIgniter.php(919): Modul\Utang\Controllers\Utang->datatable()
+ 6 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Utang\Controllers\Utang))
+ 7 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-13 16:29:27 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH/modul/Utang/Controllers/Utang.php on line 70.
+ 1 ROOTPATH/modul/Utang/Controllers/Utang.php(70): number_format(null)
+ 2 APPPATH/ThirdParty/codeigniter4-datatables/src/DataTableQuery.php(91): Modul\Utang\Controllers\Utang->Modul\Utang\Controllers\{closure}(Object(stdClass))
+ 3 APPPATH/ThirdParty/codeigniter4-datatables/src/DataTable.php(176): Hermawan\DataTables\DataTableQuery->getDataResult()
+ 4 ROOTPATH/modul/Utang/Controllers/Utang.php(93): Hermawan\DataTables\DataTable->toJson(true)
+ 5 SYSTEMPATH/CodeIgniter.php(919): Modul\Utang\Controllers\Utang->datatable()
+ 6 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Utang\Controllers\Utang))
+ 7 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-13 16:29:27 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH/modul/Utang/Controllers/Utang.php on line 70.
+ 1 ROOTPATH/modul/Utang/Controllers/Utang.php(70): number_format(null)
+ 2 APPPATH/ThirdParty/codeigniter4-datatables/src/DataTableQuery.php(91): Modul\Utang\Controllers\Utang->Modul\Utang\Controllers\{closure}(Object(stdClass))
+ 3 APPPATH/ThirdParty/codeigniter4-datatables/src/DataTable.php(176): Hermawan\DataTables\DataTableQuery->getDataResult()
+ 4 ROOTPATH/modul/Utang/Controllers/Utang.php(93): Hermawan\DataTables\DataTable->toJson(true)
+ 5 SYSTEMPATH/CodeIgniter.php(919): Modul\Utang\Controllers\Utang->datatable()
+ 6 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Utang\Controllers\Utang))
+ 7 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-13 16:29:27 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH/modul/Utang/Controllers/Utang.php on line 70.
+ 1 ROOTPATH/modul/Utang/Controllers/Utang.php(70): number_format(null)
+ 2 APPPATH/ThirdParty/codeigniter4-datatables/src/DataTableQuery.php(91): Modul\Utang\Controllers\Utang->Modul\Utang\Controllers\{closure}(Object(stdClass))
+ 3 APPPATH/ThirdParty/codeigniter4-datatables/src/DataTable.php(176): Hermawan\DataTables\DataTableQuery->getDataResult()
+ 4 ROOTPATH/modul/Utang/Controllers/Utang.php(93): Hermawan\DataTables\DataTable->toJson(true)
+ 5 SYSTEMPATH/CodeIgniter.php(919): Modul\Utang\Controllers\Utang->datatable()
+ 6 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Utang\Controllers\Utang))
+ 7 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-13 16:29:27 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH/modul/Utang/Controllers/Utang.php on line 70.
+ 1 ROOTPATH/modul/Utang/Controllers/Utang.php(70): number_format(null)
+ 2 APPPATH/ThirdParty/codeigniter4-datatables/src/DataTableQuery.php(91): Modul\Utang\Controllers\Utang->Modul\Utang\Controllers\{closure}(Object(stdClass))
+ 3 APPPATH/ThirdParty/codeigniter4-datatables/src/DataTable.php(176): Hermawan\DataTables\DataTableQuery->getDataResult()
+ 4 ROOTPATH/modul/Utang/Controllers/Utang.php(93): Hermawan\DataTables\DataTable->toJson(true)
+ 5 SYSTEMPATH/CodeIgniter.php(919): Modul\Utang\Controllers\Utang->datatable()
+ 6 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Utang\Controllers\Utang))
+ 7 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-13 16:29:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 16:29:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-13 16:29:56 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH/modul/Utang/Controllers/Utang.php on line 70.
+ 1 ROOTPATH/modul/Utang/Controllers/Utang.php(70): number_format(null)
+ 2 APPPATH/ThirdParty/codeigniter4-datatables/src/DataTableQuery.php(91): Modul\Utang\Controllers\Utang->Modul\Utang\Controllers\{closure}(Object(stdClass))
+ 3 APPPATH/ThirdParty/codeigniter4-datatables/src/DataTable.php(176): Hermawan\DataTables\DataTableQuery->getDataResult()
+ 4 ROOTPATH/modul/Utang/Controllers/Utang.php(93): Hermawan\DataTables\DataTable->toJson(true)
+ 5 SYSTEMPATH/CodeIgniter.php(919): Modul\Utang\Controllers\Utang->datatable()
+ 6 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Utang\Controllers\Utang))
+ 7 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-13 16:29:56 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH/modul/Utang/Controllers/Utang.php on line 70.
+ 1 ROOTPATH/modul/Utang/Controllers/Utang.php(70): number_format(null)
+ 2 APPPATH/ThirdParty/codeigniter4-datatables/src/DataTableQuery.php(91): Modul\Utang\Controllers\Utang->Modul\Utang\Controllers\{closure}(Object(stdClass))
+ 3 APPPATH/ThirdParty/codeigniter4-datatables/src/DataTable.php(176): Hermawan\DataTables\DataTableQuery->getDataResult()
+ 4 ROOTPATH/modul/Utang/Controllers/Utang.php(93): Hermawan\DataTables\DataTable->toJson(true)
+ 5 SYSTEMPATH/CodeIgniter.php(919): Modul\Utang\Controllers\Utang->datatable()
+ 6 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Utang\Controllers\Utang))
+ 7 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-13 16:29:56 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH/modul/Utang/Controllers/Utang.php on line 70.
+ 1 ROOTPATH/modul/Utang/Controllers/Utang.php(70): number_format(null)
+ 2 APPPATH/ThirdParty/codeigniter4-datatables/src/DataTableQuery.php(91): Modul\Utang\Controllers\Utang->Modul\Utang\Controllers\{closure}(Object(stdClass))
+ 3 APPPATH/ThirdParty/codeigniter4-datatables/src/DataTable.php(176): Hermawan\DataTables\DataTableQuery->getDataResult()
+ 4 ROOTPATH/modul/Utang/Controllers/Utang.php(93): Hermawan\DataTables\DataTable->toJson(true)
+ 5 SYSTEMPATH/CodeIgniter.php(919): Modul\Utang\Controllers\Utang->datatable()
+ 6 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Utang\Controllers\Utang))
+ 7 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-13 16:29:56 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH/modul/Utang/Controllers/Utang.php on line 70.
+ 1 ROOTPATH/modul/Utang/Controllers/Utang.php(70): number_format(null)
+ 2 APPPATH/ThirdParty/codeigniter4-datatables/src/DataTableQuery.php(91): Modul\Utang\Controllers\Utang->Modul\Utang\Controllers\{closure}(Object(stdClass))
+ 3 APPPATH/ThirdParty/codeigniter4-datatables/src/DataTable.php(176): Hermawan\DataTables\DataTableQuery->getDataResult()
+ 4 ROOTPATH/modul/Utang/Controllers/Utang.php(93): Hermawan\DataTables\DataTable->toJson(true)
+ 5 SYSTEMPATH/CodeIgniter.php(919): Modul\Utang\Controllers\Utang->datatable()
+ 6 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Utang\Controllers\Utang))
+ 7 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-13 16:29:56 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH/modul/Utang/Controllers/Utang.php on line 70.
+ 1 ROOTPATH/modul/Utang/Controllers/Utang.php(70): number_format(null)
+ 2 APPPATH/ThirdParty/codeigniter4-datatables/src/DataTableQuery.php(91): Modul\Utang\Controllers\Utang->Modul\Utang\Controllers\{closure}(Object(stdClass))
+ 3 APPPATH/ThirdParty/codeigniter4-datatables/src/DataTable.php(176): Hermawan\DataTables\DataTableQuery->getDataResult()
+ 4 ROOTPATH/modul/Utang/Controllers/Utang.php(93): Hermawan\DataTables\DataTable->toJson(true)
+ 5 SYSTEMPATH/CodeIgniter.php(919): Modul\Utang\Controllers\Utang->datatable()
+ 6 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Utang\Controllers\Utang))
+ 7 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-13 16:29:56 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH/modul/Utang/Controllers/Utang.php on line 70.
+ 1 ROOTPATH/modul/Utang/Controllers/Utang.php(70): number_format(null)
+ 2 APPPATH/ThirdParty/codeigniter4-datatables/src/DataTableQuery.php(91): Modul\Utang\Controllers\Utang->Modul\Utang\Controllers\{closure}(Object(stdClass))
+ 3 APPPATH/ThirdParty/codeigniter4-datatables/src/DataTable.php(176): Hermawan\DataTables\DataTableQuery->getDataResult()
+ 4 ROOTPATH/modul/Utang/Controllers/Utang.php(93): Hermawan\DataTables\DataTable->toJson(true)
+ 5 SYSTEMPATH/CodeIgniter.php(919): Modul\Utang\Controllers\Utang->datatable()
+ 6 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Utang\Controllers\Utang))
+ 7 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-13 16:29:56 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH/modul/Utang/Controllers/Utang.php on line 70.
+ 1 ROOTPATH/modul/Utang/Controllers/Utang.php(70): number_format(null)
+ 2 APPPATH/ThirdParty/codeigniter4-datatables/src/DataTableQuery.php(91): Modul\Utang\Controllers\Utang->Modul\Utang\Controllers\{closure}(Object(stdClass))
+ 3 APPPATH/ThirdParty/codeigniter4-datatables/src/DataTable.php(176): Hermawan\DataTables\DataTableQuery->getDataResult()
+ 4 ROOTPATH/modul/Utang/Controllers/Utang.php(93): Hermawan\DataTables\DataTable->toJson(true)
+ 5 SYSTEMPATH/CodeIgniter.php(919): Modul\Utang\Controllers\Utang->datatable()
+ 6 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Utang\Controllers\Utang))
+ 7 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-13 16:29:56 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH/modul/Utang/Controllers/Utang.php on line 70.
+ 1 ROOTPATH/modul/Utang/Controllers/Utang.php(70): number_format(null)
+ 2 APPPATH/ThirdParty/codeigniter4-datatables/src/DataTableQuery.php(91): Modul\Utang\Controllers\Utang->Modul\Utang\Controllers\{closure}(Object(stdClass))
+ 3 APPPATH/ThirdParty/codeigniter4-datatables/src/DataTable.php(176): Hermawan\DataTables\DataTableQuery->getDataResult()
+ 4 ROOTPATH/modul/Utang/Controllers/Utang.php(93): Hermawan\DataTables\DataTable->toJson(true)
+ 5 SYSTEMPATH/CodeIgniter.php(919): Modul\Utang\Controllers\Utang->datatable()
+ 6 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Utang\Controllers\Utang))
+ 7 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-13 16:29:56 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH/modul/Utang/Controllers/Utang.php on line 70.
+ 1 ROOTPATH/modul/Utang/Controllers/Utang.php(70): number_format(null)
+ 2 APPPATH/ThirdParty/codeigniter4-datatables/src/DataTableQuery.php(91): Modul\Utang\Controllers\Utang->Modul\Utang\Controllers\{closure}(Object(stdClass))
+ 3 APPPATH/ThirdParty/codeigniter4-datatables/src/DataTable.php(176): Hermawan\DataTables\DataTableQuery->getDataResult()
+ 4 ROOTPATH/modul/Utang/Controllers/Utang.php(93): Hermawan\DataTables\DataTable->toJson(true)
+ 5 SYSTEMPATH/CodeIgniter.php(919): Modul\Utang\Controllers\Utang->datatable()
+ 6 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Utang\Controllers\Utang))
+ 7 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-13 16:29:56 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH/modul/Utang/Controllers/Utang.php on line 70.
+ 1 ROOTPATH/modul/Utang/Controllers/Utang.php(70): number_format(null)
+ 2 APPPATH/ThirdParty/codeigniter4-datatables/src/DataTableQuery.php(91): Modul\Utang\Controllers\Utang->Modul\Utang\Controllers\{closure}(Object(stdClass))
+ 3 APPPATH/ThirdParty/codeigniter4-datatables/src/DataTable.php(176): Hermawan\DataTables\DataTableQuery->getDataResult()
+ 4 ROOTPATH/modul/Utang/Controllers/Utang.php(93): Hermawan\DataTables\DataTable->toJson(true)
+ 5 SYSTEMPATH/CodeIgniter.php(919): Modul\Utang\Controllers\Utang->datatable()
+ 6 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Utang\Controllers\Utang))
+ 7 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-13 16:30:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 16:30:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-13 16:30:32 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH/modul/Utang/Controllers/Utang.php on line 70.
+ 1 ROOTPATH/modul/Utang/Controllers/Utang.php(70): number_format(null)
+ 2 APPPATH/ThirdParty/codeigniter4-datatables/src/DataTableQuery.php(91): Modul\Utang\Controllers\Utang->Modul\Utang\Controllers\{closure}(Object(stdClass))
+ 3 APPPATH/ThirdParty/codeigniter4-datatables/src/DataTable.php(176): Hermawan\DataTables\DataTableQuery->getDataResult()
+ 4 ROOTPATH/modul/Utang/Controllers/Utang.php(93): Hermawan\DataTables\DataTable->toJson(true)
+ 5 SYSTEMPATH/CodeIgniter.php(919): Modul\Utang\Controllers\Utang->datatable()
+ 6 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Utang\Controllers\Utang))
+ 7 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-13 16:30:32 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH/modul/Utang/Controllers/Utang.php on line 70.
+ 1 ROOTPATH/modul/Utang/Controllers/Utang.php(70): number_format(null)
+ 2 APPPATH/ThirdParty/codeigniter4-datatables/src/DataTableQuery.php(91): Modul\Utang\Controllers\Utang->Modul\Utang\Controllers\{closure}(Object(stdClass))
+ 3 APPPATH/ThirdParty/codeigniter4-datatables/src/DataTable.php(176): Hermawan\DataTables\DataTableQuery->getDataResult()
+ 4 ROOTPATH/modul/Utang/Controllers/Utang.php(93): Hermawan\DataTables\DataTable->toJson(true)
+ 5 SYSTEMPATH/CodeIgniter.php(919): Modul\Utang\Controllers\Utang->datatable()
+ 6 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Utang\Controllers\Utang))
+ 7 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-13 16:30:32 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH/modul/Utang/Controllers/Utang.php on line 70.
+ 1 ROOTPATH/modul/Utang/Controllers/Utang.php(70): number_format(null)
+ 2 APPPATH/ThirdParty/codeigniter4-datatables/src/DataTableQuery.php(91): Modul\Utang\Controllers\Utang->Modul\Utang\Controllers\{closure}(Object(stdClass))
+ 3 APPPATH/ThirdParty/codeigniter4-datatables/src/DataTable.php(176): Hermawan\DataTables\DataTableQuery->getDataResult()
+ 4 ROOTPATH/modul/Utang/Controllers/Utang.php(93): Hermawan\DataTables\DataTable->toJson(true)
+ 5 SYSTEMPATH/CodeIgniter.php(919): Modul\Utang\Controllers\Utang->datatable()
+ 6 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Utang\Controllers\Utang))
+ 7 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-13 16:30:32 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH/modul/Utang/Controllers/Utang.php on line 70.
+ 1 ROOTPATH/modul/Utang/Controllers/Utang.php(70): number_format(null)
+ 2 APPPATH/ThirdParty/codeigniter4-datatables/src/DataTableQuery.php(91): Modul\Utang\Controllers\Utang->Modul\Utang\Controllers\{closure}(Object(stdClass))
+ 3 APPPATH/ThirdParty/codeigniter4-datatables/src/DataTable.php(176): Hermawan\DataTables\DataTableQuery->getDataResult()
+ 4 ROOTPATH/modul/Utang/Controllers/Utang.php(93): Hermawan\DataTables\DataTable->toJson(true)
+ 5 SYSTEMPATH/CodeIgniter.php(919): Modul\Utang\Controllers\Utang->datatable()
+ 6 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Utang\Controllers\Utang))
+ 7 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-13 16:30:32 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH/modul/Utang/Controllers/Utang.php on line 70.
+ 1 ROOTPATH/modul/Utang/Controllers/Utang.php(70): number_format(null)
+ 2 APPPATH/ThirdParty/codeigniter4-datatables/src/DataTableQuery.php(91): Modul\Utang\Controllers\Utang->Modul\Utang\Controllers\{closure}(Object(stdClass))
+ 3 APPPATH/ThirdParty/codeigniter4-datatables/src/DataTable.php(176): Hermawan\DataTables\DataTableQuery->getDataResult()
+ 4 ROOTPATH/modul/Utang/Controllers/Utang.php(93): Hermawan\DataTables\DataTable->toJson(true)
+ 5 SYSTEMPATH/CodeIgniter.php(919): Modul\Utang\Controllers\Utang->datatable()
+ 6 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Utang\Controllers\Utang))
+ 7 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-13 16:30:32 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH/modul/Utang/Controllers/Utang.php on line 70.
+ 1 ROOTPATH/modul/Utang/Controllers/Utang.php(70): number_format(null)
+ 2 APPPATH/ThirdParty/codeigniter4-datatables/src/DataTableQuery.php(91): Modul\Utang\Controllers\Utang->Modul\Utang\Controllers\{closure}(Object(stdClass))
+ 3 APPPATH/ThirdParty/codeigniter4-datatables/src/DataTable.php(176): Hermawan\DataTables\DataTableQuery->getDataResult()
+ 4 ROOTPATH/modul/Utang/Controllers/Utang.php(93): Hermawan\DataTables\DataTable->toJson(true)
+ 5 SYSTEMPATH/CodeIgniter.php(919): Modul\Utang\Controllers\Utang->datatable()
+ 6 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Utang\Controllers\Utang))
+ 7 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-13 16:30:32 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH/modul/Utang/Controllers/Utang.php on line 70.
+ 1 ROOTPATH/modul/Utang/Controllers/Utang.php(70): number_format(null)
+ 2 APPPATH/ThirdParty/codeigniter4-datatables/src/DataTableQuery.php(91): Modul\Utang\Controllers\Utang->Modul\Utang\Controllers\{closure}(Object(stdClass))
+ 3 APPPATH/ThirdParty/codeigniter4-datatables/src/DataTable.php(176): Hermawan\DataTables\DataTableQuery->getDataResult()
+ 4 ROOTPATH/modul/Utang/Controllers/Utang.php(93): Hermawan\DataTables\DataTable->toJson(true)
+ 5 SYSTEMPATH/CodeIgniter.php(919): Modul\Utang\Controllers\Utang->datatable()
+ 6 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Utang\Controllers\Utang))
+ 7 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-13 16:30:32 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH/modul/Utang/Controllers/Utang.php on line 70.
+ 1 ROOTPATH/modul/Utang/Controllers/Utang.php(70): number_format(null)
+ 2 APPPATH/ThirdParty/codeigniter4-datatables/src/DataTableQuery.php(91): Modul\Utang\Controllers\Utang->Modul\Utang\Controllers\{closure}(Object(stdClass))
+ 3 APPPATH/ThirdParty/codeigniter4-datatables/src/DataTable.php(176): Hermawan\DataTables\DataTableQuery->getDataResult()
+ 4 ROOTPATH/modul/Utang/Controllers/Utang.php(93): Hermawan\DataTables\DataTable->toJson(true)
+ 5 SYSTEMPATH/CodeIgniter.php(919): Modul\Utang\Controllers\Utang->datatable()
+ 6 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Utang\Controllers\Utang))
+ 7 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-13 16:30:32 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH/modul/Utang/Controllers/Utang.php on line 70.
+ 1 ROOTPATH/modul/Utang/Controllers/Utang.php(70): number_format(null)
+ 2 APPPATH/ThirdParty/codeigniter4-datatables/src/DataTableQuery.php(91): Modul\Utang\Controllers\Utang->Modul\Utang\Controllers\{closure}(Object(stdClass))
+ 3 APPPATH/ThirdParty/codeigniter4-datatables/src/DataTable.php(176): Hermawan\DataTables\DataTableQuery->getDataResult()
+ 4 ROOTPATH/modul/Utang/Controllers/Utang.php(93): Hermawan\DataTables\DataTable->toJson(true)
+ 5 SYSTEMPATH/CodeIgniter.php(919): Modul\Utang\Controllers\Utang->datatable()
+ 6 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Utang\Controllers\Utang))
+ 7 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-13 16:30:32 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH/modul/Utang/Controllers/Utang.php on line 70.
+ 1 ROOTPATH/modul/Utang/Controllers/Utang.php(70): number_format(null)
+ 2 APPPATH/ThirdParty/codeigniter4-datatables/src/DataTableQuery.php(91): Modul\Utang\Controllers\Utang->Modul\Utang\Controllers\{closure}(Object(stdClass))
+ 3 APPPATH/ThirdParty/codeigniter4-datatables/src/DataTable.php(176): Hermawan\DataTables\DataTableQuery->getDataResult()
+ 4 ROOTPATH/modul/Utang/Controllers/Utang.php(93): Hermawan\DataTables\DataTable->toJson(true)
+ 5 SYSTEMPATH/CodeIgniter.php(919): Modul\Utang\Controllers\Utang->datatable()
+ 6 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Utang\Controllers\Utang))
+ 7 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-13 16:31:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 16:31:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-13 16:31:00 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH/modul/Utang/Controllers/Utang.php on line 70.
+ 1 ROOTPATH/modul/Utang/Controllers/Utang.php(70): number_format(null)
+ 2 APPPATH/ThirdParty/codeigniter4-datatables/src/DataTableQuery.php(91): Modul\Utang\Controllers\Utang->Modul\Utang\Controllers\{closure}(Object(stdClass))
+ 3 APPPATH/ThirdParty/codeigniter4-datatables/src/DataTable.php(176): Hermawan\DataTables\DataTableQuery->getDataResult()
+ 4 ROOTPATH/modul/Utang/Controllers/Utang.php(93): Hermawan\DataTables\DataTable->toJson(true)
+ 5 SYSTEMPATH/CodeIgniter.php(919): Modul\Utang\Controllers\Utang->datatable()
+ 6 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Utang\Controllers\Utang))
+ 7 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-13 16:31:00 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH/modul/Utang/Controllers/Utang.php on line 70.
+ 1 ROOTPATH/modul/Utang/Controllers/Utang.php(70): number_format(null)
+ 2 APPPATH/ThirdParty/codeigniter4-datatables/src/DataTableQuery.php(91): Modul\Utang\Controllers\Utang->Modul\Utang\Controllers\{closure}(Object(stdClass))
+ 3 APPPATH/ThirdParty/codeigniter4-datatables/src/DataTable.php(176): Hermawan\DataTables\DataTableQuery->getDataResult()
+ 4 ROOTPATH/modul/Utang/Controllers/Utang.php(93): Hermawan\DataTables\DataTable->toJson(true)
+ 5 SYSTEMPATH/CodeIgniter.php(919): Modul\Utang\Controllers\Utang->datatable()
+ 6 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Utang\Controllers\Utang))
+ 7 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-13 16:31:00 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH/modul/Utang/Controllers/Utang.php on line 70.
+ 1 ROOTPATH/modul/Utang/Controllers/Utang.php(70): number_format(null)
+ 2 APPPATH/ThirdParty/codeigniter4-datatables/src/DataTableQuery.php(91): Modul\Utang\Controllers\Utang->Modul\Utang\Controllers\{closure}(Object(stdClass))
+ 3 APPPATH/ThirdParty/codeigniter4-datatables/src/DataTable.php(176): Hermawan\DataTables\DataTableQuery->getDataResult()
+ 4 ROOTPATH/modul/Utang/Controllers/Utang.php(93): Hermawan\DataTables\DataTable->toJson(true)
+ 5 SYSTEMPATH/CodeIgniter.php(919): Modul\Utang\Controllers\Utang->datatable()
+ 6 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Utang\Controllers\Utang))
+ 7 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-13 16:31:00 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH/modul/Utang/Controllers/Utang.php on line 70.
+ 1 ROOTPATH/modul/Utang/Controllers/Utang.php(70): number_format(null)
+ 2 APPPATH/ThirdParty/codeigniter4-datatables/src/DataTableQuery.php(91): Modul\Utang\Controllers\Utang->Modul\Utang\Controllers\{closure}(Object(stdClass))
+ 3 APPPATH/ThirdParty/codeigniter4-datatables/src/DataTable.php(176): Hermawan\DataTables\DataTableQuery->getDataResult()
+ 4 ROOTPATH/modul/Utang/Controllers/Utang.php(93): Hermawan\DataTables\DataTable->toJson(true)
+ 5 SYSTEMPATH/CodeIgniter.php(919): Modul\Utang\Controllers\Utang->datatable()
+ 6 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Utang\Controllers\Utang))
+ 7 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-13 16:31:00 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH/modul/Utang/Controllers/Utang.php on line 70.
+ 1 ROOTPATH/modul/Utang/Controllers/Utang.php(70): number_format(null)
+ 2 APPPATH/ThirdParty/codeigniter4-datatables/src/DataTableQuery.php(91): Modul\Utang\Controllers\Utang->Modul\Utang\Controllers\{closure}(Object(stdClass))
+ 3 APPPATH/ThirdParty/codeigniter4-datatables/src/DataTable.php(176): Hermawan\DataTables\DataTableQuery->getDataResult()
+ 4 ROOTPATH/modul/Utang/Controllers/Utang.php(93): Hermawan\DataTables\DataTable->toJson(true)
+ 5 SYSTEMPATH/CodeIgniter.php(919): Modul\Utang\Controllers\Utang->datatable()
+ 6 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Utang\Controllers\Utang))
+ 7 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-13 16:31:00 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH/modul/Utang/Controllers/Utang.php on line 70.
+ 1 ROOTPATH/modul/Utang/Controllers/Utang.php(70): number_format(null)
+ 2 APPPATH/ThirdParty/codeigniter4-datatables/src/DataTableQuery.php(91): Modul\Utang\Controllers\Utang->Modul\Utang\Controllers\{closure}(Object(stdClass))
+ 3 APPPATH/ThirdParty/codeigniter4-datatables/src/DataTable.php(176): Hermawan\DataTables\DataTableQuery->getDataResult()
+ 4 ROOTPATH/modul/Utang/Controllers/Utang.php(93): Hermawan\DataTables\DataTable->toJson(true)
+ 5 SYSTEMPATH/CodeIgniter.php(919): Modul\Utang\Controllers\Utang->datatable()
+ 6 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Utang\Controllers\Utang))
+ 7 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-13 16:31:00 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH/modul/Utang/Controllers/Utang.php on line 70.
+ 1 ROOTPATH/modul/Utang/Controllers/Utang.php(70): number_format(null)
+ 2 APPPATH/ThirdParty/codeigniter4-datatables/src/DataTableQuery.php(91): Modul\Utang\Controllers\Utang->Modul\Utang\Controllers\{closure}(Object(stdClass))
+ 3 APPPATH/ThirdParty/codeigniter4-datatables/src/DataTable.php(176): Hermawan\DataTables\DataTableQuery->getDataResult()
+ 4 ROOTPATH/modul/Utang/Controllers/Utang.php(93): Hermawan\DataTables\DataTable->toJson(true)
+ 5 SYSTEMPATH/CodeIgniter.php(919): Modul\Utang\Controllers\Utang->datatable()
+ 6 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Utang\Controllers\Utang))
+ 7 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-13 16:31:00 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH/modul/Utang/Controllers/Utang.php on line 70.
+ 1 ROOTPATH/modul/Utang/Controllers/Utang.php(70): number_format(null)
+ 2 APPPATH/ThirdParty/codeigniter4-datatables/src/DataTableQuery.php(91): Modul\Utang\Controllers\Utang->Modul\Utang\Controllers\{closure}(Object(stdClass))
+ 3 APPPATH/ThirdParty/codeigniter4-datatables/src/DataTable.php(176): Hermawan\DataTables\DataTableQuery->getDataResult()
+ 4 ROOTPATH/modul/Utang/Controllers/Utang.php(93): Hermawan\DataTables\DataTable->toJson(true)
+ 5 SYSTEMPATH/CodeIgniter.php(919): Modul\Utang\Controllers\Utang->datatable()
+ 6 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Utang\Controllers\Utang))
+ 7 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-13 16:31:00 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH/modul/Utang/Controllers/Utang.php on line 70.
+ 1 ROOTPATH/modul/Utang/Controllers/Utang.php(70): number_format(null)
+ 2 APPPATH/ThirdParty/codeigniter4-datatables/src/DataTableQuery.php(91): Modul\Utang\Controllers\Utang->Modul\Utang\Controllers\{closure}(Object(stdClass))
+ 3 APPPATH/ThirdParty/codeigniter4-datatables/src/DataTable.php(176): Hermawan\DataTables\DataTableQuery->getDataResult()
+ 4 ROOTPATH/modul/Utang/Controllers/Utang.php(93): Hermawan\DataTables\DataTable->toJson(true)
+ 5 SYSTEMPATH/CodeIgniter.php(919): Modul\Utang\Controllers\Utang->datatable()
+ 6 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Utang\Controllers\Utang))
+ 7 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-13 16:31:00 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH/modul/Utang/Controllers/Utang.php on line 70.
+ 1 ROOTPATH/modul/Utang/Controllers/Utang.php(70): number_format(null)
+ 2 APPPATH/ThirdParty/codeigniter4-datatables/src/DataTableQuery.php(91): Modul\Utang\Controllers\Utang->Modul\Utang\Controllers\{closure}(Object(stdClass))
+ 3 APPPATH/ThirdParty/codeigniter4-datatables/src/DataTable.php(176): Hermawan\DataTables\DataTableQuery->getDataResult()
+ 4 ROOTPATH/modul/Utang/Controllers/Utang.php(93): Hermawan\DataTables\DataTable->toJson(true)
+ 5 SYSTEMPATH/CodeIgniter.php(919): Modul\Utang\Controllers\Utang->datatable()
+ 6 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Utang\Controllers\Utang))
+ 7 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-13 16:31:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-13 16:31:05 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH/modul/Dashboard/Controllers/Dashboard.php on line 43.
+ 1 ROOTPATH/modul/Dashboard/Controllers/Dashboard.php(43): number_format(null)
+ 2 SYSTEMPATH/CodeIgniter.php(919): Modul\Dashboard\Controllers\Dashboard->index()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Dashboard\Controllers\Dashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-13 16:31:05 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in ROOTPATH/modul/Dashboard/Controllers/Dashboard.php on line 48.
+ 1 ROOTPATH/modul/Dashboard/Controllers/Dashboard.php(48): number_format(null)
+ 2 SYSTEMPATH/CodeIgniter.php(919): Modul\Dashboard\Controllers\Dashboard->index()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Dashboard\Controllers\Dashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-13 18:56:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 18:58:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 18:58:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 18:58:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 21:13:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

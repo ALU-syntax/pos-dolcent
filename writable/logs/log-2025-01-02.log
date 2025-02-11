@@ -1,0 +1,60 @@
+ERROR - 2025-01-02 22:12:53 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`foodcourt_chillspace`.`bahan_barang`, CONSTRAINT `bahan_barang_ibfk_1` FOREIGN KEY (`id_barang`) REFERENCES `barang` (`id`)) in /Users/mac/Herd/cilspace/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /Users/mac/Herd/cilspace/system/Database/MySQLi/Connection.php(306): mysqli->query('DELETE FROM `ba...', 0)
+#1 /Users/mac/Herd/cilspace/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `ba...')
+#2 /Users/mac/Herd/cilspace/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `ba...')
+#3 /Users/mac/Herd/cilspace/system/Database/BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `ba...', Array, false)
+#4 /Users/mac/Herd/cilspace/system/Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+#5 /Users/mac/Herd/cilspace/system/BaseModel.php(1080): CodeIgniter\Model->doDelete(Array, false)
+#6 /Users/mac/Herd/cilspace/modul/Produk/Controllers/Produk.php(1134): CodeIgniter\BaseModel->delete(Array)
+#7 /Users/mac/Herd/cilspace/system/CodeIgniter.php(919): Modul\Produk\Controllers\Produk->hapus()
+#8 /Users/mac/Herd/cilspace/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Produk\Controllers\Produk))
+#9 /Users/mac/Herd/cilspace/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Users/mac/Herd/cilspace/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /Applications/Herd.app/Contents/Resources/valet/server.php(167): require('/Users/mac/Herd...')
+#12 {main}
+ERROR - 2025-01-02 22:13:00 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`foodcourt_chillspace`.`bahan_barang`, CONSTRAINT `bahan_barang_ibfk_1` FOREIGN KEY (`id_barang`) REFERENCES `barang` (`id`)) in /Users/mac/Herd/cilspace/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /Users/mac/Herd/cilspace/system/Database/MySQLi/Connection.php(306): mysqli->query('DELETE FROM `ba...', 0)
+#1 /Users/mac/Herd/cilspace/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `ba...')
+#2 /Users/mac/Herd/cilspace/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `ba...')
+#3 /Users/mac/Herd/cilspace/system/Database/BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `ba...', Array, false)
+#4 /Users/mac/Herd/cilspace/system/Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+#5 /Users/mac/Herd/cilspace/system/BaseModel.php(1080): CodeIgniter\Model->doDelete(Array, false)
+#6 /Users/mac/Herd/cilspace/modul/Produk/Controllers/Produk.php(1134): CodeIgniter\BaseModel->delete(Array)
+#7 /Users/mac/Herd/cilspace/system/CodeIgniter.php(919): Modul\Produk\Controllers\Produk->hapus()
+#8 /Users/mac/Herd/cilspace/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Produk\Controllers\Produk))
+#9 /Users/mac/Herd/cilspace/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Users/mac/Herd/cilspace/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /Applications/Herd.app/Contents/Resources/valet/server.php(167): require('/Users/mac/Herd...')
+#12 {main}
+ERROR - 2025-01-02 22:13:12 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`foodcourt_chillspace`.`bahan_barang`, CONSTRAINT `bahan_barang_ibfk_1` FOREIGN KEY (`id_barang`) REFERENCES `barang` (`id`)) in /Users/mac/Herd/cilspace/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /Users/mac/Herd/cilspace/system/Database/MySQLi/Connection.php(306): mysqli->query('DELETE FROM `ba...', 0)
+#1 /Users/mac/Herd/cilspace/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `ba...')
+#2 /Users/mac/Herd/cilspace/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `ba...')
+#3 /Users/mac/Herd/cilspace/system/Database/BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `ba...', Array, false)
+#4 /Users/mac/Herd/cilspace/system/Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+#5 /Users/mac/Herd/cilspace/system/BaseModel.php(1080): CodeIgniter\Model->doDelete(Array, false)
+#6 /Users/mac/Herd/cilspace/modul/Produk/Controllers/Produk.php(1134): CodeIgniter\BaseModel->delete(Array)
+#7 /Users/mac/Herd/cilspace/system/CodeIgniter.php(919): Modul\Produk\Controllers\Produk->hapus()
+#8 /Users/mac/Herd/cilspace/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Produk\Controllers\Produk))
+#9 /Users/mac/Herd/cilspace/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Users/mac/Herd/cilspace/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /Applications/Herd.app/Contents/Resources/valet/server.php(167): require('/Users/mac/Herd...')
+#12 {main}
+ERROR - 2025-01-02 22:13:23 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`foodcourt_chillspace`.`bahan_barang`, CONSTRAINT `bahan_barang_ibfk_1` FOREIGN KEY (`id_barang`) REFERENCES `barang` (`id`)) in /Users/mac/Herd/cilspace/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /Users/mac/Herd/cilspace/system/Database/MySQLi/Connection.php(306): mysqli->query('DELETE FROM `ba...', 0)
+#1 /Users/mac/Herd/cilspace/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `ba...')
+#2 /Users/mac/Herd/cilspace/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `ba...')
+#3 /Users/mac/Herd/cilspace/system/Database/BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `ba...', Array, false)
+#4 /Users/mac/Herd/cilspace/system/Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+#5 /Users/mac/Herd/cilspace/system/BaseModel.php(1080): CodeIgniter\Model->doDelete(Array, false)
+#6 /Users/mac/Herd/cilspace/modul/Produk/Controllers/Produk.php(1134): CodeIgniter\BaseModel->delete(Array)
+#7 /Users/mac/Herd/cilspace/system/CodeIgniter.php(919): Modul\Produk\Controllers\Produk->hapus()
+#8 /Users/mac/Herd/cilspace/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Modul\Produk\Controllers\Produk))
+#9 /Users/mac/Herd/cilspace/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Users/mac/Herd/cilspace/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /Applications/Herd.app/Contents/Resources/valet/server.php(167): require('/Users/mac/Herd...')
+#12 {main}
