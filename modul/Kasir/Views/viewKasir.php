@@ -1332,6 +1332,7 @@ $id_toko = $this->session->get('id_toko');
             function simpanTransaksi() {
                 var form = $('#form')[0];
                 var formData = new FormData(form);
+                console.log(formData);
                 var url = "/kasir/simpan";
                 $.ajax({
                     type: "POST",
@@ -1624,6 +1625,8 @@ $id_toko = $this->session->get('id_toko');
 
                 var form = $('#form')[0];
                 var formData = new FormData(form);
+
+                console.log(formData);
                 if ($("#midtrans").is(":checked")) {
                     $.ajax({
                         type: "POST",

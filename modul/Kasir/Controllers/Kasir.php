@@ -411,6 +411,8 @@ class Kasir extends BaseController
             $totalm += $value * $qty[$key];
         }
 
+        var_dump($this->request->get());
+
         $laba = array_sum($totalb) - $totalm;
 
         if(! is_int($method)) {

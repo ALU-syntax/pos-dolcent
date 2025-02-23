@@ -71,3 +71,31 @@ function decrypt_url($string)
     $output = openssl_decrypt(base64_decode($string), $encrypt_method, $key, 0, $iv);
     return $output;
 }
+
+function formatRupiah($angka, $prefix = null)
+{
+    // Menghapus karakter selain angka dan koma
+    $numberString = preg_replace('/[^,\d]/', '', $angka);
+
+    // Memisahkan angka dengan pecahan desimal (jika ada)
+    $split = explode(',', $numberString);
+    $sisa = strlen($split[0]) % 3;
+
+    // Bagian awal angka (sebelum ribuan)
+    $rupiah = substr($split[0], 0, $sisa);
+
+    // Kelompokkan angka dalam ribuan
+    $ribuan = substr($split[0], $sisa);
+    $ribuan = str_split($ribuan, 3);
+
+    if (!empty($ribuan)) {
+        $separator = $sisa ? '.' : '';
+        $rupiah .= $separator . implode('.', $ribuan);
+    }
+
+    // Tambahkan pecahan desimal (jika ada)
+    $rupiah = isset($split[1]) ? $rupiah . ',' . $split[1] : $rupiah;
+
+    // Tambahkan prefix jika ada
+    return $prefix === null ? $rupiah : ($rupiah ? $prefix . $rupiah : '');
+}
