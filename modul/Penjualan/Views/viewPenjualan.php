@@ -44,6 +44,58 @@
         padding: 10px;
         /* Opsional: menambahkan padding untuk memberikan ruang di sekitar konten */
     }
+
+    .card-custom {
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        width: 100%;
+        transition: transform 0.2s;
+    }
+
+    .card-custom:hover {
+        transform: translateY(-10px);
+    }
+
+    .card-custom-image {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .card-custom-content {
+        padding: 16px;
+    }
+
+    .card-custom-title {
+        font-size: 1.5em;
+        margin: 0 0 10px;
+    }
+
+    .card-custom-description {
+        font-size: 1em;
+        color: #666;
+        margin-bottom: 20px;
+    }
+
+    .card-custom-button {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 4px;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 1em;
+        transition: background-color 0.3s;
+    }
+
+    .card-custom-button:hover {
+        background-color: #0056b3;
+    }
 </style>
 <?= $this->endSection() ?>
 <?= $this->section('content') ?>
@@ -227,8 +279,11 @@
                                 style="border: 2px solid gray; border-radius: 5px;">
 
                                 <?php foreach ($barang as $item) : ?>
-                                <div class="card list-product">
-                                    <div class="card-body">
+                                <div class="card-custom list-product mt-3 p-3" data-id="<?php echo $item->id ?>"
+                                    data-foto="<?php echo $item->foto ?>"
+                                    data-hargaJual="<?php echo $item->harga_jual ?>"
+                                    data-nama="<?php echo $item->nama_barang ?>">
+                                    <div class="card-custom-body">
                                         <div class="row">
                                             <div class="col-4">
                                                 <?php if ($item->foto) { ?>
@@ -237,7 +292,7 @@
                                                     src="/assets/img/barang/<?php echo $item->foto ?>" width="80"
                                                     style="cursor: zoom-in; border-radius: 5px;" />
                                                 <?php } else { ?>
-                                                <image src="/assets/img/noimage.png"  width="80"
+                                                <image src="/assets/img/noimage.png" width="80"
                                                     style="cursor: zoom-in;" />';
                                                 <?php } ?>
                                             </div>
@@ -311,6 +366,7 @@
     var table;
     var modal = $('#modal');
     var modald = $('#modald');
+    var listProductChoose = [];
 
     var startDateInput = document.getElementById("dari");
     var endDateInput = document.getElementById("sampai");
@@ -486,5 +542,62 @@
 
         table.ajax.reload();
     });
+
+    $('.list-product').on('click', function (e) {
+        let item = $(this);
+        let itemId = item.data('id');
+
+        let exist = listProductChoose.find(item => item.id === itemId);
+        if (!exist) {
+            let itemName = item.data('name');
+            let data = {
+                id: itemId,
+                nama: "Koko",
+                harga: 20000,
+                qty: 1,
+            }
+            buildProductCard(item)
+        }
+    });
+
+    function buildProductCard(itemData) {
+        let fotoSrc = itemData.foto ? `/assets/img/barang/${itemData.foto}` : '/assets/img/noimage.png';
+        let hargaFormatted = formatRupiah(itemData.harga_jual, "Rp. ");
+
+        let html = `<div class="card-custom list-product-choose mt-3 p-3">
+                <div class="card-custom-body">
+                    <div class="row">
+                        <div class="col-4">
+                            <img data-fancybox
+                                data-src="${fotoSrc}"
+                                src="${fotoSrc}" width="80"
+                                style="cursor: zoom-in; border-radius: 5px;" />
+                        </div>
+                        <div class="col-6">
+                            <p>${itemData.nama_barang}</p>
+                            <p>${hargaFormatted}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>`;
+
+        $('#container-product-terpilih').append(html);
+    }
+
+    function formatRupiah(angka, prefix) {
+        var number_string = angka.toString().replace(/[^,\d]/g, ''),
+            split = number_string.split(','),
+            sisa = split[0].length % 3,
+            rupiah = split[0].substr(0, sisa),
+            ribuan = split[0].substr(sisa).match(/\d{3}/gi);
+
+        if (ribuan) {
+            separator = sisa ? '.' : '';
+            rupiah += separator + ribuan.join('.');
+        }
+
+        rupiah = split[1] !== undefined ? rupiah + ',' + split[1] : rupiah;
+        return prefix + rupiah;
+    }
 </script>
 <?= $this->endSection() ?>
