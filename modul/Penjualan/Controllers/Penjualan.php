@@ -30,7 +30,9 @@ class Penjualan extends BaseController
         $barang = $this->db->table("barang as a")->select('a.id, a.nama_barang, a.harga_jual, a.harga_modal, a.foto, b.nama_kategori')
             ->join('kategori as b', 'a.id_kategori = b.id')->where('a.id_toko', $id_toko)->where('a.status', 1)->get()->getResult();
 
-        var_dump($barang);
+        // var_dump($discount);
+        $toko = $this->db->query("SELECT ppn, biaya_layanan FROM toko WHERE id = '$id_toko'")->getRow();
+        $bayar = $this->db->query("SELECT * FROM tipe_bayar WHERE status = 1")->getResult();
         $data_page = [
             'menu'      => 'report',
             'submenu'   => 'penjualan',
@@ -39,6 +41,8 @@ class Penjualan extends BaseController
             'metode'    => $metode,
             'discount'  => $discount,
             'barang'    => $barang,
+            'toko'      => $toko,
+            'bayar'     => $bayar
         ];
 
         return view('Modul\Penjualan\Views\viewPenjualan', $data_page);

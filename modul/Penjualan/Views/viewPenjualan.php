@@ -1,5 +1,16 @@
 <?= $this->extend('layout/template'); ?>
 <?= $this->section('css') ?>
+
+<?php 
+    use Config\Database;
+    use Config\Services;
+    
+    $this->db         = Database::connect();
+    $this->session    = Services::session();
+    
+    $id_toko = $this->session->get('id_toko');
+?>
+
 <link href="/assets/extensions/datatables.net-bs5/css/dataTables.bootstrap5.min.css" rel="stylesheet" />
 <link href="/assets/extensions/datatables.net-responsive-bs5/css/responsive.bootstrap5.min.css" rel="stylesheet" />
 
@@ -95,6 +106,52 @@
 
     .card-custom-button:hover {
         background-color: #0056b3;
+    }
+
+    /* Styling the radio button container */
+    .radio-container {
+        align-items: center;
+        margin-bottom: 15px;
+        cursor: pointer;
+    }
+
+    /* Hiding the default radio button */
+    .radio-container input[type="radio"] {
+        display: none;
+    }
+
+    /* Styling the custom radio button */
+    .radio-container label.custom-radio {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        border: 2px solid #ccc;
+        border-radius: 5px;
+        background-color: #fff;
+        transition: border-color 0.3s, background-color 0.3s;
+    }
+
+    .radio-container input[type="radio"]:checked + label.custom-radio {
+        border-color: #2196F3;
+        background-color: #e7f3fe;
+    }
+
+    .radio-container label.custom-radio:hover {
+        border-color: #999;
+    }
+
+    /* Styling the icon */
+    .radio-container .icon {
+        width: 24px;
+        height: 24px;
+        margin-right: 10px;
+        background-color: #2196F3; /* Example color */
+    }
+
+    /* Styling the text */
+    .radio-container .text {
+        font-size: 16px;
+        color: #333;
     }
 </style>
 <?= $this->endSection() ?>
@@ -253,10 +310,12 @@
                                 <option value="" disabled selected>Pilih Diskon</option>
                                 <?php foreach ($discount as $key) : ?>
                                 <?php if ($key->tipe == 1) { ?>
-                                <option value="<?php echo $key->id; ?>"><?php echo $key->nama_discount; ?> (
+                                <option value="<?php echo $key->id; ?>" data-nominal="<?php echo $key->jumlah; ?>"
+                                    data-satuan="<?php echo $key->tipe; ?>"><?php echo $key->nama_discount; ?> (
                                     <?php echo $key->jumlah; ?>% )</option>
                                 <?php } else { ?>
-                                <option value="<?php echo $key->id; ?>"><?php echo $key->nama_discount; ?> (
+                                <option value="<?php echo $key->id; ?>" data-nominal="<?php echo $key->jumlah; ?>"
+                                    data-satuan="<?php echo $key->tipe; ?>"><?php echo $key->nama_discount; ?> (
                                     Rp.<?php echo number_format($key->jumlah); ?> )</option>
                                 <?php } ?>
                                 <?php endforeach ?>
@@ -278,11 +337,15 @@
                             <div class="container" id="container-product"
                                 style="border: 2px solid gray; border-radius: 5px;">
 
-                                <?php foreach ($barang as $item) : ?>
+                                <?php foreach ($barang as $item) : 
+                                    $varian = $this->db->query("SELECT id, nama_varian, id_barang, harga_jual, harga_modal FROM varian WHERE id_barang = '$item->id' AND status = 1")->getResult(); 
+                                    $totalv = $this->db->query("SELECT COUNT(id) as total FROM varian WHERE id_barang = '$item->id' AND status = 1")->getRow()->total;
+                                    $bahan = $this->db->query("SELECT SUM(b.harga * a.qty) as harga, SUM(b.biaya * a.qty) as biaya FROM bahan_barang a JOIN bahan_baku b ON a.id_bahan_baku = b.id WHERE a.id_barang = '$item->id'")->getRow();
+                                ?>
+                                
                                 <div class="card-custom list-product mt-3 p-3" data-id="<?php echo $item->id ?>"
-                                    data-foto="<?php echo $item->foto ?>"
-                                    data-hargaJual="<?php echo $item->harga_jual ?>"
-                                    data-nama="<?php echo $item->nama_barang ?>">
+                                    data-photo="<?php echo $item->foto ?>" data-price="<?php echo ($totalv>=1) ? $varian[0]->harga_jual : $item->harga_jual; ?>"
+                                    data-name="<?php echo $item->nama_barang ?>" data-modal="<?php echo ($totalv >= 1) ? $varian[0]->harga_modal : $item->harga_modal ?>">
                                     <div class="card-custom-body">
                                         <div class="row">
                                             <div class="col-4">
@@ -298,9 +361,36 @@
                                             </div>
                                             <div class="col-6">
                                                 <p> <?php echo $item->nama_barang; ?> </p>
-                                                <p> <?php echo formatRupiah($item->harga_jual, "Rp. ") ?> </p>
+                                                <p class="price">  <?php if($totalv >= 1) {
+                                                    echo formatRupiah($varian[0]->harga_jual, "Rp. ");
+                                                }else{
+                                                    echo formatRupiah($item->harga_jual, "Rp. ");
+                                                }  ?> </p>
                                             </div>
                                         </div>
+                                        
+                                        <hr>
+                                        <?php if($totalv >= 1) {
+                                            foreach ($varian as $key => $dataVariant) :
+                                                if($key == 0 ){ ?>
+                                                    <button type="button" class="btn btn-outline-primary active list-variant product-variant-<?php echo $dataVariant->id_barang ?>"
+                                                     data-namavariant="<?php echo $dataVariant->nama_varian ?>"  
+                                                     data-idbarang="<?php echo $dataVariant->id_barang ?>" 
+                                                     data-idvariant="<?php echo $dataVariant->id ?>" 
+                                                     data-hargavariant="<?php echo $dataVariant->harga_jual ?>"
+                                                     data-modal="<?php echo $dataVariant->harga_modal ?>"
+                                                     onclick="handleClickVariant(this)" ><?php echo $dataVariant->nama_varian ?></button>
+                                                <?php } else{ ?>
+                                                    <button type="button" class="btn btn-outline-primary list-variant product-variant-<?php echo $dataVariant->id_barang ?>" 
+                                                    data-namavariant="<?php echo $dataVariant->nama_varian ?>" 
+                                                    data-idbarang="<?php echo $dataVariant->id_barang ?>" 
+                                                    data-idvariant="<?php echo $dataVariant->id ?>" 
+                                                    data-hargavariant="<?php echo $dataVariant->harga_jual ?>"
+                                                    data-modal="<?php echo $dataVariant->harga_modal ?>"
+                                                    onclick="handleClickVariant(this)" ><?php echo $dataVariant->nama_varian ?></button>
+                                                <?php } ?>
+                                        <?php endforeach ?>
+                                        <?php } ?>
                                     </div>
                                 </div>
                                 <?php endforeach ?>
@@ -312,41 +402,59 @@
                             <div class="container" id="container-product-terpilih"
                                 style="border: 2px solid gray; border-radius: 5px;">
 
-
                             </div>
 
                             <div class="container mt-2" id="container-result"
                                 style="border: 2px solid gray; border-radius: 5px;">
                                 <div class="row">
                                     <div class="col-6">Subtotal : </div>
-                                    <div class="col-6"></div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-6">PPN(1%) : </div>
-                                    <div class="col-6"></div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-6">Biaya Layanan : </div>
-                                    <div class="col-6"></div>
+                                    <div class="col-6" id="subtotal">Rp. 0</div>
                                 </div>
                                 <div class="row">
                                     <div class="col-6">Discount : </div>
-                                    <div class="col-6"></div>
+                                    <div class="col-6" id="discount">Rp. 0</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6">Biaya Layanan : </div>
+                                    <div class="col-6" id="biaya-layanan">Rp. 0</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6">PPN(<?php echo $toko->ppn; ?>%) : </div>
+                                    <div class="col-6" id="ppn">Rp. 0</div>
                                 </div>
                                 <div class="row mt-4">
                                     <div class="col-6"><strong>Total :</strong> </div>
-                                    <div class="col-6"></div>
+                                    <div class="col-6" id="total">Rp. 0</div>
                                 </div>
 
                             </div>
 
-                        </div>
+                            <!--begin::Payment Method-->
+                            <div class="m-0">
+                                <h3 class="fw-bold text-gray-800 mb-2">Metode Pembayaran</h3>
 
+                                <div class="row mb-12">
+                                    <?php $no = 0; foreach ($bayar as $key) : $no++;?>
+                                        <div class="col-6">
+                                            <div class="radio-container">
+                                                <input type="radio" id="payment_<?php echo $no; ?>" name="payment" value="<?php echo $key->nama_tipe ?>">
+                                                <label for="payment_<?php echo $no; ?>" class="custom-radio">
+                                                <i class="<?php echo $key->icon; ?> fs-2hx mb-2 pe-0"><span class="path1"></span><span class="path2"></span><span class="path3"></span></i> &nbsp; &nbsp; 
+                                                    <span class="text"><?php echo $key->nama_tipe ?></span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    <?php endforeach; ?>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
-                <button type="submit" class="btn btn-primary">Simpan</button>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
+                    <button type="submit" id="btnSimpan" class="btn btn-primary" disabled>Simpan</button>
+                </div>
             </div>
             </form>
         </div>
@@ -367,6 +475,11 @@
     var modal = $('#modal');
     var modald = $('#modald');
     var listProductChoose = [];
+    var ppn = <?php echo $toko-> ppn; ?> ;
+    var biayaLayanan = <?php echo $toko-> biaya_layanan; ?> ;
+    var nominalDiskon = 0;
+    var satuanDiskon = 0;
+    var idDiskon = 0;
 
     var startDateInput = document.getElementById("dari");
     var endDateInput = document.getElementById("sampai");
@@ -546,25 +659,64 @@
     $('.list-product').on('click', function (e) {
         let item = $(this);
         let itemId = item.data('id');
+        let itemName = item.data('name');
+        let itemPrice = item.data('price');
+        let itemPhoto = item.data('photo');
+        let itemModal = item.data('modal')
+
+        let data = {
+            id: itemId,
+            name: itemName,
+            price: itemPrice,
+            modal: itemModal,
+            qty: 1,
+            photo: itemPhoto,
+            variantId : null,
+            variantName: null,
+        }
+
+        let idVariant = '';
+        let namaVariant = '';
+        let activeButton = '';
+        if(item.has('.list-variant').length > 0){
+            activeButton = $(`.product-variant-${itemId}`).filter('.active');
+            idVariant = activeButton.data('idvariant');
+            namaVariant = activeButton.data('namavariant');
+        }
 
         let exist = listProductChoose.find(item => item.id === itemId);
         if (!exist) {
-            let itemName = item.data('name');
-            let data = {
-                id: itemId,
-                nama: "Koko",
-                harga: 20000,
-                qty: 1,
+            if(activeButton.length > 0){
+                data.variantId =idVariant;
+                data.variantName = namaVariant;
             }
-            buildProductCard(item)
+        
+            listProductChoose.push(data);
+            buildProductCard(data)
+            syncTotal();
+        }else{
+            let existProductVariant = listProductChoose.find(item => item.variantId === idVariant)
+
+            if(!existProductVariant){
+                data.variantId =idVariant;
+                data.variantName = namaVariant;
+
+                listProductChoose.push(data);
+                buildProductCard(data)
+                syncTotal();
+            }
         }
+
+        $('#btnSimpan').removeAttr('disabled')
     });
 
     function buildProductCard(itemData) {
-        let fotoSrc = itemData.foto ? `/assets/img/barang/${itemData.foto}` : '/assets/img/noimage.png';
-        let hargaFormatted = formatRupiah(itemData.harga_jual, "Rp. ");
+        let fotoSrc = itemData.photo ? `/assets/img/barang/${itemData.photo}` : '/assets/img/noimage.png';
+        let hargaFormatted = formatRupiah(itemData.price.toString(), "Rp. ");
+        let namaProduct = itemData.variantName ? `<p>${itemData.name} - ${itemData.variantName}</p>`  : `<p>${itemData.name}</p>`;
+        
 
-        let html = `<div class="card-custom list-product-choose mt-3 p-3">
+        let html = `<div class="card-custom list-product-choose mt-3 p-3" data-id="${itemData.id}" data-variantid="${itemData.variantId}">
                 <div class="card-custom-body">
                     <div class="row">
                         <div class="col-4">
@@ -574,14 +726,31 @@
                                 style="cursor: zoom-in; border-radius: 5px;" />
                         </div>
                         <div class="col-6">
-                            <p>${itemData.nama_barang}</p>
+                            ${namaProduct}
                             <p>${hargaFormatted}</p>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <button class="btn btn-outline-secondary decrement" type="button" data-id="${itemData.id}" data-variantid="${itemData.variantId}">-</button>
+                                </div>
+                                <input type="text" class="form-control text-center input-quantity" id="quantity" value="1"  readonly>
+                                <div class="input-group-append">
+                                    <button class="btn btn-outline-secondary increment" type="button"  data-id="${itemData.id}" data-variantid="${itemData.variantId}">+</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <button type="button" onclick="removeItemChoose(this)" data-id="${itemData.id}" data-variantid="${itemData.variantId}" class="btn-close" aria-label="Close"></button>
                         </div>
                     </div>
                 </div>
             </div>`;
 
+
         $('#container-product-terpilih').append(html);
+
+        handleIncrementQuantity()
+
+        handleDecrementQuantity()
     }
 
     function formatRupiah(angka, prefix) {
@@ -599,5 +768,256 @@
         rupiah = split[1] !== undefined ? rupiah + ',' + split[1] : rupiah;
         return prefix + rupiah;
     }
+
+    function removeItemChoose(card) {
+        let button = $(card);
+        let id = button.data('id');
+        let variantId = button.data('variantid');
+        
+        // Mencari indeks dari elemen dengan id 2
+        const indexToRemove = listProductChoose.findIndex(item => item.id === id);
+
+        if (indexToRemove !== -1) {
+            if(variantId){
+                const variantIndex = listProductChoose.findIndex(item => item.variantId === variantId);
+                if(variantIndex !== -1){
+                    listProductChoose.splice(variantIndex, 1);
+                    $('#container-product-terpilih').find(`.card-custom[data-variantid="${variantId}"]`).remove();        
+                }
+            }else{
+                // Menghapus elemen pada indeks yang ditemukan
+                listProductChoose.splice(indexToRemove, 1);
+                $('#container-product-terpilih').find(`.card-custom[data-id="${id}"]`).remove();
+            }
+            syncTotal();
+        }
+
+        console.log(listProductChoose.length);
+        if(listProductChoose.length == 0){
+            $('#btnSimpan').attr('disabled', true);
+        }
+    }
+
+    function handleIncrementQuantity(){
+        // Increment button click event
+        $('.increment').off().on('click', function () {
+            let widgetButton = $(this);
+            let itemId = widgetButton.data('id');
+            let variantId = widgetButton.data('variantid');
+
+            let data = listProductChoose.find(item => item.id === itemId);
+            if (data) {
+                if(variantId){
+                    let productVariant = listProductChoose.find(item => item.variantId === variantId)
+                    if(productVariant){
+                        productVariant.qty += 1;
+                    }
+                }else{
+                    data.qty += 1;
+                }
+                let input = $(this).closest('.input-group').find('.input-quantity');
+                let currentValue = parseInt(input.val());
+                input.val(currentValue + 1);
+                syncTotal();
+            }
+        });
+    }
+
+    handleIncrementQuantity();
+
+
+    function handleDecrementQuantity(){
+        // Decrement button click event
+        $('.decrement').off().on('click', function () {
+            let widgetButton = $(this);
+            let itemId = widgetButton.data('id');
+            let variantId = widgetButton.data('variantid');
+
+            let input = $(this).closest('.input-group').find('.input-quantity');
+            let currentValue = parseInt(input.val());
+
+            let data = listProductChoose.find(item => item.id === itemId);
+            if (data) {
+                if(variantId){
+                    let productVariant = listProductChoose.find(item => item.variantId === variantId)
+                    if(productVariant){
+                        productVariant.qty -= 1;
+                    }
+                }else{
+                    if (currentValue > 1) {
+                        data.qty -= 1;
+                    }    
+                }
+
+                if(currentValue > 1){
+                    input.val(currentValue - 1);
+                    syncTotal();
+                }
+                
+            }
+        });
+    }
+
+    handleDecrementQuantity();
+    
+
+    $('#diskon').off().change(function () {
+        // Mengambil nilai dari opsi yang dipilih
+        var selectedValue = $(this).val();
+        // Mengambil data-nominal dan data-satuan dari opsi yang dipilih
+        nominalDiskon = $(this).find('option:selected').data('nominal');
+        satuanDiskon = $(this).find('option:selected').data('satuan');
+        idDiskon = selectedValue;
+        
+        syncTotal();
+    });
+
+    function syncTotal() {
+        let subTotal = 0;
+        let total = 0;
+        let pajak = 0;
+        let discount = 0;
+        listProductChoose.forEach(function (item) {
+            let priceItemTotal = item.price * item.qty;
+            subTotal += priceItemTotal
+        });
+
+        // kalo discount persen
+        if(satuanDiskon == 1){
+            discount = subTotal * nominalDiskon / 100;
+        }else{
+            discount = nominalDiskon;
+        }
+
+        pajak = (subTotal - discount + biayaLayanan) * ppn / 100;
+        
+        total = subTotal - discount + biayaLayanan + pajak;
+
+        $('#subtotal').text(formatRupiah(subTotal.toString(), "Rp. "));
+        $('#discount').text("-" + formatRupiah(discount.toString(), "Rp. "));
+        $('#biaya-layanan').text(formatRupiah(biayaLayanan.toString(), "Rp. "));
+        $('#ppn').text(formatRupiah(pajak.toString(), "Rp. "));
+
+        $('#total').text(formatRupiah(total.toString(), "Rp. "));
+    }
+
+    function handleClickVariant(element){
+        let widget = $(element);
+        let idBarang = widget.data('idbarang');
+        let hargaVariant = widget.data('hargavariant');
+        let modalVariant = widget.data('modal')
+        console.log(hargaVariant);
+
+        let product = $(`.list-product[data-id="${idBarang}"]`);
+        // Mengganti nilai data-price
+        product.data('price', hargaVariant); // Menggunakan .data() untuk mengubah nilai
+        product.data('modal', modalVariant);
+
+        // Memperbarui elemen yang menampilkan harga
+        product.find('p').last().text(formatRupiah(hargaVariant.toString(), "Rp. ")); // Menggunakan .last() untuk mendapatkan <p> terakhir
+
+        $(`.product-variant-${idBarang}`).removeClass('active');
+
+        widget.addClass('active');
+    }
+
+    $('#btnSimpan').off().on('click', function(){
+        var formData = new FormData();
+        listProductChoose.forEach(function(item){
+            formData.append('id_barang[]', item.id);
+            formData.append('id_varian[]', item.variantId);
+            let namaProduct = (item.variantName != null) ? item.name + ' - ' + item.variantName : item.name;
+            formData.append('barang[]', namaProduct);
+            formData.append('qty[]', item.qty);
+            formData.append('harga[]', item.price);
+            formData.append('modal[]', item.modal);
+        });
+
+        let textTotal = $('#total').text().trim();
+        let total = parseInt(textTotal.replace(/[^\d]/g, ""));
+
+        formData.append('granttotal', total);
+        formData.append('subtotal', 0);
+
+        if(idDiskon != 0){
+            formData.append('discount2', nominalDiskon)
+            formData.append('discount', idDiskon);
+        }else{
+            formData.append('discount2', 0)
+            formData.append('discount', '');
+        }
+
+        let textPpn = $('#ppn').text().trim();
+        let ppn = parseInt(textPpn.replace(/[^\d]/g, ""));
+        formData.append('ppn', ppn);
+
+    
+        formData.append()
+        var url = "/kasir/simpan";
+        $.ajax({
+            type: "POST",
+            url: url,
+            data: formData,
+            processData: false,
+            contentType: false,
+            dataType: "JSON",
+            beforeSend: function() {
+                showblockUI();
+            },
+            complete: function() {
+                hideblockUI();
+            },
+            success: function(response) {
+                if (response.status) {
+                    toastr.success('Transaksi berhasil');
+                    $('#totaltrx').text(response.total);
+                    $('#metodetrx').text(response.metode);
+                    // $('#btnstruk').attr('href', '/kasir/struk/' + response.id);
+                    $('#btnstruk').attr('href', 'intent://cetak-struk?id=' + response.id);
+                    $('#btnSettingDevice').attr('href', 'intent://list-bluetooth-device');
+                    console.log("intent://cetak-struk?id=" + response.id)
+                    
+
+                    if(response.pelanggan) {
+                        $('#btninvoice').data('id', response.id)
+                        $('#btninvoice').data('nohp', response.pelanggan.nohp)
+                    } else {
+                        $('#btninvoice').attr('href', response.waLink);
+                    }
+
+                    modals.modal('show');
+                } else {
+                    toastr.warning('Transaksi gagal');
+                }
+            },
+            error: function(jqXHR, textStatus, errorThrown, exception) {
+                var msg = '';
+                if (jqXHR.status === 0) {
+                    msg = 'Not connect.\n Verify Network.';
+                } else if (jqXHR.status == 404) {
+                    msg = 'Requested page not found. [404]';
+                } else if (jqXHR.status == 500) {
+                    msg = 'Internal Server Error [500].';
+                } else if (exception === 'parsererror') {
+                    msg = 'Requested JSON parse failed.';
+                } else if (exception === 'timeout') {
+                    msg = 'Time out error.';
+                } else if (exception === 'abort') {
+                    msg = 'Ajax request aborted.';
+                } else {
+                    msg = 'Uncaught Error.\n' + jqXHR.responseText;
+                }
+                alert(msg);
+            }
+        });
+    })
+
+    $(document).ready(function() {
+        $('.radio-container input[type="radio"]').on('click', function() {
+            // Handle click event
+            $('.radio-container input[type="radio"]').not(this).prop('checked', false);
+            $(this).prop('checked', true);
+        });
+    });
 </script>
 <?= $this->endSection() ?>

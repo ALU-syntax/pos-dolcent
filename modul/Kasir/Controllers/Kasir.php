@@ -385,6 +385,7 @@ class Kasir extends BaseController
 
     public function simpan()
     {
+        var_dump($this->session->get('id_toko'));
         $id_toko      = $this->session->get('id_toko');
         $toko         = $this->db->query("SELECT biaya_layanan FROM toko WHERE id = '$id_toko'")->getRow();
         $id_pelanggan = $this->request->getPost('pelanggan');
