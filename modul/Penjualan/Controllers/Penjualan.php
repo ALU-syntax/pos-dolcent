@@ -58,7 +58,7 @@ class Penjualan extends BaseController
             ->join('tipe_bayar as c', 'c.id = id_tipe_bayar')
             ->where('a.id_toko', $id_toko)
             ->where('a.delete <>', 1)
-            ->orderBy('a.id', 'DESC');
+            ->orderBy('a.tgl', 'DESC');
 
         return DataTable::of($builder)
             ->filter(function ($builder, $request) {

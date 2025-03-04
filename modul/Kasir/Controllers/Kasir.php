@@ -385,7 +385,7 @@ class Kasir extends BaseController
 
     public function simpan()
     {
-        var_dump($this->session->get('id_toko'));
+        // var_dump($this->session->get('id_toko'));
         $id_toko      = $this->session->get('id_toko');
         $toko         = $this->db->query("SELECT biaya_layanan FROM toko WHERE id = '$id_toko'")->getRow();
         $id_pelanggan = $this->request->getPost('pelanggan');
@@ -406,13 +406,21 @@ class Kasir extends BaseController
         $qty          = $this->request->getPost('qty[]');
         $totalb       = $this->request->getPost('harga[]');
         $modal        = $this->request->getPost('modal[]');
+        $tglCustom    = $this->request->getPost('tgl_custom');
+        
+        if($tglCustom){
+            // Membuat objek DateTime dari input
+            $dateTime = new DateTime($tglCustom);
+            // Mengubah format tanggal menjadi 'Y-m-d H:i'
+            $tgl = $dateTime->format('Y-m-d H:i');
+        }
 
         $totalm = 0;
         foreach ($modal as $key => $value) {
             $totalm += $value * $qty[$key];
         }
 
-        var_dump($this->request->get());
+        // var_dump($this->request->get());
 
         $laba = array_sum($totalb) - $totalm;
 
@@ -445,10 +453,12 @@ class Kasir extends BaseController
             $data['discount'] = $discount;
         }
 
-        if ($foto->isValid() && !$foto->hasMoved()) {
-            $namafile = $foto->getRandomName();
-            $foto->move(ROOTPATH . 'public/assets/img/buktibayar/', $namafile);
-            $data['buktibayar'] = $namafile;
+        if($foto){
+            if ($foto->isValid() && !$foto->hasMoved()) {
+                $namafile = $foto->getRandomName();
+                $foto->move(ROOTPATH . 'public/assets/img/buktibayar/', $namafile);
+                $data['buktibayar'] = $namafile;
+            }
         }
 
         if($tipePesanan == 2){

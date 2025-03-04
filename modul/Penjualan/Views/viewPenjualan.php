@@ -291,12 +291,12 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <form id="form" autocomplete="off">
+                <form id="form"  autocomplete="off">
                     <input type="hidden" name="id" id="id">
                     <div class="row">
                         <div class="col-md-4 mb-3">
-                            <label for="pelanggan" class="form-label">Pelanggan</label>
-                            <select class="form-select" name="pelanggan" id="pelanggan">
+                            <label for="input_pelanggan" class="form-label">Pelanggan</label>
+                            <select class="form-select" name="input_pelanggan" id="input_pelanggan">
                                 <option value="" disabled selected>Pilih Pelanggan</option>
                                 <?php foreach ($pelanggan as $key) : ?>
                                 <option value="<?php echo $key->id; ?>"><?php echo $key->nama; ?></option>
@@ -323,8 +323,8 @@
                             <div class="invalid-feedback"></div>
                         </div>
                         <div class="col-md-4 mb-3">
-                            <label for="tanggal" class="form-label">tanggal</label>
-                            <input class="form-control" type="date" name="tanggal">
+                            <label for="tanggal" class="form-label">Tanggal</label>
+                            <input class="form-control" type="datetime-local" name="tanggal" id="tgl_custom" required> 
                             <div class="invalid-feedback"></div>
                         </div>
                     </div>
@@ -437,7 +437,7 @@
                                     <?php $no = 0; foreach ($bayar as $key) : $no++;?>
                                         <div class="col-6">
                                             <div class="radio-container">
-                                                <input type="radio" id="payment_<?php echo $no; ?>" name="payment" value="<?php echo $key->nama_tipe ?>">
+                                                <input type="radio" id="payment_<?php echo $no; ?>" name="payment" value="<?php echo $key->id; ?>" <?php if ($no == 1) : ?> checked <?php endif; ?>>
                                                 <label for="payment_<?php echo $no; ?>" class="custom-radio">
                                                 <i class="<?php echo $key->icon; ?> fs-2hx mb-2 pe-0"><span class="path1"></span><span class="path2"></span><span class="path3"></span></i> &nbsp; &nbsp; 
                                                     <span class="text"><?php echo $key->nama_tipe ?></span>
@@ -590,7 +590,11 @@
 
     function tambah() {
         $('#id').val('');
-
+        $('#form')[0].reset();
+        clearBarang()
+        listProductChoose = [];
+        syncTotal()
+        
         modal.modal('show');
     }
 
@@ -921,11 +925,29 @@
         widget.addClass('active');
     }
 
-    $('#btnSimpan').off().on('click', function(){
+    $('#btnSimpan').off().on('click', function(e){
+        e.preventDefault();
+        var isValid = true;
+        $('#form input[required], select[required], textarea[required]').each(function() {
+            if (!$(this).val()) {
+                isValid = false;
+                $(this).addClass('is-invalid'); // Menandai input yang tidak valid
+                // Tampilkan pesan kesalahan jika diperlukan
+                toastr.warning('Silakan isi semua field yang diperlukan.');
+            } else {
+                $(this).removeClass('is-invalid'); // Menghapus tanda jika valid
+            }
+        });
+
+        if (!isValid) {
+            return; // Hentikan eksekusi jika ada input yang tidak valid
+        }
+
         var formData = new FormData();
         listProductChoose.forEach(function(item){
             formData.append('id_barang[]', item.id);
-            formData.append('id_varian[]', item.variantId);
+            var idVariant = (item.variantId) ? item.variantId : ''; 
+            formData.append('id_varian[]', idVariant);
             let namaProduct = (item.variantName != null) ? item.name + ' - ' + item.variantName : item.name;
             formData.append('barang[]', namaProduct);
             formData.append('qty[]', item.qty);
@@ -951,8 +973,20 @@
         let ppn = parseInt(textPpn.replace(/[^\d]/g, ""));
         formData.append('ppn', ppn);
 
-    
-        formData.append()
+        var selectedMethod = $('input[name="payment"]:checked').val();
+        formData.append('method', selectedMethod);
+        formData.append('tanggal_preorder', '');
+
+        var selectedTanggalCustom = $('#tgl_custom').val();
+        formData.append('tgl_custom', selectedTanggalCustom);
+
+        var selectedPelanggan = $('#input_pelanggan').val();
+        if(selectedPelanggan != null){
+            formData.append('pelanggan', selectedPelanggan);
+        }       
+
+        console.log(selectedTanggalCustom)
+        console.log(formData)
         var url = "/kasir/simpan";
         $.ajax({
             type: "POST",
@@ -969,23 +1003,11 @@
             },
             success: function(response) {
                 if (response.status) {
+                    console.log(response)
+                    $('#form')[0].reset();
                     toastr.success('Transaksi berhasil');
-                    $('#totaltrx').text(response.total);
-                    $('#metodetrx').text(response.metode);
-                    // $('#btnstruk').attr('href', '/kasir/struk/' + response.id);
-                    $('#btnstruk').attr('href', 'intent://cetak-struk?id=' + response.id);
-                    $('#btnSettingDevice').attr('href', 'intent://list-bluetooth-device');
-                    console.log("intent://cetak-struk?id=" + response.id)
-                    
-
-                    if(response.pelanggan) {
-                        $('#btninvoice').data('id', response.id)
-                        $('#btninvoice').data('nohp', response.pelanggan.nohp)
-                    } else {
-                        $('#btninvoice').attr('href', response.waLink);
-                    }
-
-                    modals.modal('show');
+                    table.ajax.reload();
+                    modal.modal('hide');
                 } else {
                     toastr.warning('Transaksi gagal');
                 }
@@ -1019,5 +1041,11 @@
             $(this).prop('checked', true);
         });
     });
+
+    function clearBarang(){
+        $('#container-product-terpilih').empty();
+
+        syncTotal();
+    }
 </script>
 <?= $this->endSection() ?>
