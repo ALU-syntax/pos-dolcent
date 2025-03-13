@@ -163,7 +163,7 @@ class Kasir extends BaseController
         $id_barang = $this->request->getPost('id');
         $id_varian = $this->request->getPost('id_varian');
 
-        $varian    = $this->db->query("SELECT a.id, a.id_barang, a.harga_jual, a.harga_modal, a.keterangan, b.id as id_barang, b.nama_barang, c.nama_satuan FROM varian a JOIN barang b ON a.id_barang = b.id JOIN satuan c ON a.id_satuan = c.id WHERE a.id_barang = '$id_barang' AND a.status = 1 ORDER BY a.id ASC")->getResult();
+        $varian    = $this->db->query("SELECT a.id, a.id_barang, a.harga_jual, a.harga_modal, a.keterangan, a.nama_varian, b.id as id_barang, b.nama_barang, c.nama_satuan FROM varian a JOIN barang b ON a.id_barang = b.id JOIN satuan c ON a.id_satuan = c.id WHERE a.id_barang = '$id_barang' AND a.status = 1 ORDER BY a.id ASC")->getResult();
         $html      = '';
 
         foreach ($varian as $key) {
@@ -192,16 +192,17 @@ class Kasir extends BaseController
                 $harga_modal = $key->harga_modal;
             }
 
+
             $html .= '<div class="row ' . $disabled . '" id="varian' . $key->id . '">
                         <input type="hidden" value="' . $key->nama_barang . '">
                         <input type="hidden" value="' . $harga_jual . '">
                         <input type="hidden" value="' . $harga_modal . '">
-                        <input type="hidden" value="' . $key->nama_satuan . '">
+                        <input type="hidden" value="' . $key->nama_varian . '">
                         <input type="hidden" value="' . $key->id_barang . '">
                         <div class="col-6">
                             <div class="cat action">
                                 <label>
-                                    <input type="checkbox" value="' . $key->id . '" name="varian" id="varian' . $key->id . '"><span>' . $key->nama_satuan . '</span>
+                                    <input type="checkbox" value="' . $key->id . '" name="varian" id="varian' . $key->id . '"><span>' . $key->nama_varian . '</span>
                                 </label>
                             </div>
                         </div>
@@ -385,7 +386,6 @@ class Kasir extends BaseController
 
     public function simpan()
     {
-        // var_dump($this->session->get('id_toko'));
         $id_toko      = $this->session->get('id_toko');
         $toko         = $this->db->query("SELECT biaya_layanan FROM toko WHERE id = '$id_toko'")->getRow();
         $id_pelanggan = $this->request->getPost('pelanggan');
@@ -420,8 +420,6 @@ class Kasir extends BaseController
             $totalm += $value * $qty[$key];
         }
 
-        // var_dump($this->request->get());
-
         $laba = array_sum($totalb) - $totalm;
 
         if(! is_int($method)) {
@@ -439,7 +437,7 @@ class Kasir extends BaseController
             'subtotal'      => array_sum($totalb),
             'ppn'           => $ppn,
             'biaya_layanan' => $toko->biaya_layanan,
-            'total'         => $total,
+            // 'total'         => $total,
             'laba'          => $laba,
             'tipe_pesanan'  => $tipePesanan,
         ];

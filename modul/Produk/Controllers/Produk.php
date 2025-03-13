@@ -587,7 +587,8 @@ class Produk extends BaseController
                         'id_barang'  => $id_barang,
                         'id_user'    => $id_user,
                         'tgl'        => date("Y-m-d H:i:s"),
-                        'keterangan' => 'Penambahan stok (+' . $jumlah . '), Stok update: ' . $new_stok . ''
+                        'keterangan' => 'Penambahan stok (+' . $jumlah . '), Stok update: ' . $new_stok . '',
+                        'tipe'       => 1
                     ];
 
                     $save = $this->logs->save($data);
@@ -596,7 +597,8 @@ class Produk extends BaseController
                         'id_barang'  => $id_barang,
                         'id_user'    => $id_user,
                         'tgl'        => date("Y-m-d H:i:s"),
-                        'keterangan' => 'Pengurangan stok (-' . $jumlah . '), Stok update: ' . $new_stok . ''
+                        'keterangan' => 'Pengurangan stok (-' . $jumlah . '), Stok update: ' . $new_stok . '',
+                        'tipe'       => 0
                     ];
 
                     $save = $this->logs->save($data);
