@@ -93,7 +93,7 @@
                         </div>
                         <div class="col-md-4 mb-3">
                             <label for="modal" class="form-label">Harga Modal</label>
-                            <input type="text" class="form-control harga" id="harga_modal" name="modal" placeholder="Masukkan harga modal">
+                            <input type="text" class="form-control harga" id="harga_modal" name="modal" placeholder="Otomatis dari bahan baku" readonly>
                             <div class="invalid-feedback"></div>
                         </div>
                         <div class="col-md-4 mb-3">
@@ -131,7 +131,7 @@
                                         </tbody>
                                     </table>
                                 </div>
-                                <p class="fw-bold text-end me-2 mt-3 text-dark">Total Harga <span class="ms-4" id="totalharga">Rp 0</span></p>
+                                <!-- <p class="fw-bold text-end me-2 mt-3 text-dark">Total Harga <span class="ms-4" id="totalharga">Rp 0</span></p> -->
                             </div>
                         </div>
                         <div class="col-12">
@@ -363,7 +363,7 @@
                 var nextValue = Number($(this).next().val());
                 total += currentValue * nextValue;
             });
-            $("#totalharga").text(formatRupiah2(total + rupiahToInt($(this).val()), 'Rp'));
+            // $("#totalharga").text(formatRupiah2(total + rupiahToInt($(this).val()), 'Rp'));
 
             $(this).val(formatRupiah($(this).val(), "Rp. "));
         });
@@ -688,7 +688,7 @@
                     $('#nama').val(response.data.nama_barang);
                     $('#harga_modal').val(response.modal);
                     $('#harga').val(response.harga);
-                    $("#totalharga").text(formatRupiah2(response.totalharga), 'Rp');
+                    // $("#totalharga").text(formatRupiah2(response.totalharga), 'Rp');
                     $('#barcode').val(response.data.barcode);
                     $("#kategori").val(response.data.id_kategori).attr("selected", "selected");
                     $('#deskripsi').val(response.data.deskripsi);
@@ -703,7 +703,8 @@
                             var nextValue = Number($(this).next().val());
                             total += currentValue * nextValue;
                         });
-                        $("#totalharga").text(formatRupiah2(total + rupiahToInt($("#harga").val()), 'Rp'));
+                        // $("#totalharga").text(formatRupiah2(total + rupiahToInt($("#harga").val()), 'Rp'));
+                        $('#harga_modal').val(formatRupiah2(total, "Rp"))
                     }
 
                     $(".qty").on("input", function() {
@@ -786,10 +787,12 @@
         });
     }
 
-    function hapusBahan(id) {
+    function hapusBahan(id, idRelasi) {
         var result = confirm("Yakin akan menghapus bahan tersebut dari produk ini?");
 
         if (result) {
+            console.log(id)
+            console.log(idRelasi);
             $.ajax({
                 url: "/produk/hapusBahan",
                 type: "POST",
@@ -804,10 +807,15 @@
                     hideblockUI();
                 },
                 success: function(response) {
+                    console.log(response);
                     if (response.status) {
                         toastr.success('Data Berhasil dihapus');
                         $("#bahan" + response.id).remove();
+                        $("#bahan" + idRelasi).remove();
+                        // document.getElementById("bahan" + response.id).remove()
+                        // document.getElementById("bahan" + response.id).parentNode.removeChild(element);
 
+                        console.log(response);
                         function calculateTotal() {
                             var total = 0;
                             $(".qty").each(function(index) {
@@ -815,14 +823,18 @@
                                 var nextValue = Number($(this).next().val());
                                 total += currentValue * nextValue;
                             });
-                            $("#totalharga").text(formatRupiah2(total + rupiahToInt($("#harga").val()), 'Rp'));
+                            // $("#totalharga").text(formatRupiah2(total + rupiahToInt($("#harga").val()), 'Rp'));
+                            $('#harga_modal').val(formatRupiah2(total, "Rp"))
                         }
+                        console.log(response);
 
                         $(".qty").on("input", function() {
                             calculateTotal();
+                            console.log(response);
                         });
-
+                        console.log(response);
                         calculateTotal();
+                        console.log(response);
                     } else {
                         toastr.warning('Maaf, anda tidak dapat menghapus data tersebut karna telah berelasi dengan data lain.');
                         modald.modal('hide');
@@ -914,9 +926,13 @@
                     $(".qty").each(function(index) {
                         var currentValue = Number($(this).val());
                         var nextValue = Number($(this).next().val());
+                        console.log(currentValue);
+                        console.log(nextValue);
                         total += currentValue * nextValue;
                     });
-                    $("#totalharga").text(formatRupiah2(total + rupiahToInt($("#harga").val()), 'Rp'));
+                    // $("#totalharga").text(formatRupiah2(total + rupiahToInt($("#harga").val()), 'Rp'));
+                    $('#harga_modal').val(formatRupiah2(total, "Rp"))
+
                 }
 
                 $(".qty").on("input", function() {
@@ -956,7 +972,8 @@
                 var nextValue = Number($(this).next().val());
                 total += currentValue * nextValue;
             });
-            $("#totalharga").text(formatRupiah2(total + rupiahToInt($("#harga").val()), 'Rp'));
+            // $("#totalharga").text(formatRupiah2(total + rupiahToInt($("#harga").val()), 'Rp'));
+            $('#harga_modal').val(formatRupiah2(total, "Rp"))
         }
 
         $(".qty").on("input", function() {

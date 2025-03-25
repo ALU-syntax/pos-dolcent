@@ -114,11 +114,13 @@ class Produk extends BaseController
                         </div>';
             })->add("harga_jual", function ($row) {
                 $bahan = $this->db->query("SELECT SUM(b.harga * a.qty) as harga FROM bahan_barang a JOIN bahan_baku b ON a.id_bahan_baku = b.id WHERE a.id_barang = '$row->id'")->getRow();
-                if ($bahan) {
-                    $harga_jual = $row->harga_jual + $bahan->harga;
-                } else {
-                    $harga_jual = $row->harga_jual;
-                }
+                // if ($bahan) {
+                //     $harga_jual = $row->harga_jual + $bahan->harga;
+                // } else {
+                //     $harga_jual = $row->harga_jual;
+                // }
+
+                $harga_jual = $row->harga_jual;
 
                 return 'Rp ' . number_format($harga_jual);
             })
@@ -1028,7 +1030,7 @@ class Produk extends BaseController
                         <input type="number" class="form-control qty" name="qty[]" placeholder="Masukkan qty bahan yang digunakan" value="' . $key->qty . '" required></input>
                         <input type="hidden" class="hargab" value="' . $key->harga . '"></input>
                     </td>
-                    <td><button type="button" class="btn btn-danger" title="Hapus bahan" onclick="hapusBahan(' . $key->id_bahan_barang . ')"><i class="fas fa-trash"></i></button></td>
+                    <td><button type="button" class="btn btn-danger" title="Hapus bahan" onclick="hapusBahan(' . $key->id_bahan_barang .  ',' .  $key->id . ')"><i class="fas fa-trash"></i></button></td>
                 </tr>';
             }
         }
