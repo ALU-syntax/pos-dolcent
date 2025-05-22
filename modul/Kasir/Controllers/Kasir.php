@@ -16,7 +16,7 @@ use Midtrans\Config;
 use Midtrans\Snap;
 use Config\Services;
 use Config\Database;
-
+use Modul\Bahan\Models\Model_stok_bahan;
 
 class Kasir extends BaseController
 {
@@ -25,6 +25,7 @@ class Kasir extends BaseController
         $this->penjualan = new Model_penjualan();
         $this->user      = new Model_user();
         $this->detail    = new Model_detail_penjualan();
+        $this->stok_bahan = new Model_stok_bahan();
 
         // $midtransConfig = config('Midtrans');
         $this->session    = Services::session();
@@ -485,11 +486,21 @@ class Kasir extends BaseController
                 $varian         = $this->db->table('varian')->where('id', $id_varian[$key])->update(['stok' => $new_stok]);
             }
 
-            $bahan = $this->db->query("SELECT a.*, b.stok FROM bahan_barang a JOIN bahan_baku b ON a.id_bahan_baku = b.id WHERE a.id_barang = '$id_barang[$key]'")->getResult();
+            $bahan = $this->db->query("SELECT a.*, b.stok, b.stok_penjualan, b.id AS id_bahan FROM bahan_barang a JOIN bahan_baku b ON a.id_bahan_baku = b.id WHERE a.id_barang = '$id_barang[$key]'")->getResult();
             if ($bahan) {
                 foreach ($bahan as $kuy) {
                     $new_stok = $kuy->stok - $kuy->qty * $qty[$key];
-                    $updateBahan = $this->db->table("bahan_baku")->where("id", $kuy->id_bahan_baku)->update(["stok" => $new_stok]);
+                    $new_stok_penjualan = $kuy->stok_penjualan - $kuy->qty * $qty[$key];
+                    $updateBahan = $this->db->table("bahan_baku")->where("id", $kuy->id_bahan_baku)->update(["stok" => $new_stok, "stok_penjualan" => $new_stok_penjualan]);
+
+                    // $dataStokBahan = [
+                    //     'id_bahan' => $kuy->id_bahan,
+                    //     'tanggal' => $tgl,
+                    //     'jumlah' => $kuy->qty * $qty[$key],
+                    //     'tipe' => 2
+                    // ];
+
+                    // $this->stok_bahan->save($dataStokBahan);
                 }
             }
 

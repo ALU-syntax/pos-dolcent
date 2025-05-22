@@ -85,7 +85,7 @@ class Produk extends BaseController
                                 <i class="bi bi-three-dots-vertical"></i>
                             </button>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item ' . $disabled . '" href="javascript:void(0);" title="Kelola Stok" onclick="stok(\'' . $row->id . '\')" id="btnkel' . $row->id . '"><i class="fa fa-sitemap me-1"></i> Kelola Stok</a></li>
+                                
                                 <li><a class="dropdown-item" href="/produk/varian/' . base64_encode($row->id) . '"><i class="fas fa-th me-1"></i> Kelola Varian</a></li>
                                 <li><a class="dropdown-item" href="javascript:void(0);" onclick="logs(\'' . $row->id . '\', \'' . $row->nama_barang . '\')"><i class="fas fa-history me-1"></i> Logs</a></li>
                                 <li><a class="dropdown-item" href="javascript:void(0);" title="Edit Data" onclick="edit(\'' . $row->id . '\')"><i class="fa fa-edit me-1"></i> Edit</a></li>
@@ -107,11 +107,11 @@ class Produk extends BaseController
             })->add('varian', function ($row) {
                 $varian = $this->db->query("SELECT COUNT(id) as total FROM varian WHERE id_barang = '$row->id'")->getRow()->total;
                 return '<span class="badge bg-success">Total varian: ' . $varian . '</span>';
-            })->add('stok', function ($row) {
-                return '<div class="form-switch">
-                            <input type="checkbox" class="form-check-input"  onclick="changeStok(\'' . $row->id . '\');" id="set_active2' . $row->id . '" ' . isChecked($row->kelola_stok) . '>
-                            <label class="form-check-label" for="set_active2' . $row->id . '">' . isLabelChecked($row->kelola_stok) . '</label>
-                        </div>';
+            // })->add('stok', function ($row) {
+            //     return '<div class="form-switch">
+            //                 <input type="checkbox" class="form-check-input"  onclick="changeStok(\'' . $row->id . '\');" id="set_active2' . $row->id . '" ' . isChecked($row->kelola_stok) . '>
+            //                 <label class="form-check-label" for="set_active2' . $row->id . '">' . isLabelChecked($row->kelola_stok) . '</label>
+            //             </div>';
             })->add("harga_jual", function ($row) {
                 $bahan = $this->db->query("SELECT SUM(b.harga * a.qty) as harga FROM bahan_barang a JOIN bahan_baku b ON a.id_bahan_baku = b.id WHERE a.id_barang = '$row->id'")->getRow();
                 // if ($bahan) {

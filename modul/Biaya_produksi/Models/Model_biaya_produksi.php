@@ -15,12 +15,20 @@ class Model_biaya_produksi extends Model{
     protected $primaryKey = 'id';
     protected $useAutoIncrement = true;
     protected $returnType = 'array';
+
+    protected $useSoftDeletes = true;
+    protected $deletedField  = 'deleted_at'; // nama kolom soft delete, default 'deleted_at'
+
     
     protected $allowedFields = [
         'id_toko',
         'nominal',
         'deskripsi',
         'foto',
-        'tanggal'
+        'tanggal',
+        'quantity',
+        'id_bahan',
+        'biaya_lain',
+        'biaya_pengiriman',
     ];
 }

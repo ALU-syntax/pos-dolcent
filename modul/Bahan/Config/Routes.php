@@ -5,4 +5,6 @@
     $routes->post('setStatus', 'Bahan::setStatus');
     $routes->post('simpan', 'Bahan::simpan');
     $routes->post('hapus', 'Bahan::hapus');
+    $routes->post('getStokBahan', 'Bahan::getStokBahan');
+    $routes->post('updateStokBahan', 'Bahan::updateStokBahan');
 });

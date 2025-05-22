@@ -3,6 +3,8 @@ namespace Modul\Biaya_produksi\Controllers;
 
 use App\Controllers\BaseController;
 use Hermawan\DataTables\DataTable;
+use Modul\Bahan\Models\Model_bahan;
+use Modul\Bahan\Models\Model_stok_bahan;
 use Modul\Biaya_produksi\Models\Model_biaya_produksi;
 use PhpOffice\PhpSpreadsheet\Spreadsheet;
 use PhpOffice\PhpSpreadsheet\Style\Alignment;
@@ -14,16 +16,27 @@ class BiayaProduksi extends BaseController{
 
     public function __construct(){
         $this->biayaProduksi = new Model_biaya_produksi();
+        $this->bahan = new Model_bahan();
+        $this->stok_bahan = new Model_stok_bahan();
     }
 
     public function index(){
         $id_toko = $this->session->get('id_toko');
 
         $biayaProduksi = $this->db->query("SELECT * FROM biaya_produksi ORDER BY tanggal ASC")->getResult();
+
+        //ini report dengan filter transaksi dihapus
+        // $report = $this->db->query("SELECT b.id, b.nama_barang AS nama_barang, b.harga_jual AS harga_jual, b.harga_modal AS harga_modal,
+        //      SUM(CASE WHEN dp.id_barang = b.id THEN dp.total ELSE 0 END) AS total_pendapatan,
+        //      SUM(CASE WHEN dp.id_barang = b.id THEN dp.qty ELSE 0 END) AS qty_terjual FROM barang b 
+        //      LEFT JOIN detail_penjualan dp ON dp.id_barang = b.id LEFT JOIN penjualan p ON dp.id_penjualan = p.id WHERE dp.delete <> 1
+        //      GROUP BY b.id, b.nama_barang, b.harga_jual, b.harga_modal")->getResult();    
+
+        //ini report untuk seluruh transaksi baik yang dihapus maupun tidak
         $report = $this->db->query("SELECT b.id, b.nama_barang AS nama_barang, b.harga_jual AS harga_jual, b.harga_modal AS harga_modal,
              SUM(CASE WHEN dp.id_barang = b.id THEN dp.total ELSE 0 END) AS total_pendapatan,
              SUM(CASE WHEN dp.id_barang = b.id THEN dp.qty ELSE 0 END) AS qty_terjual FROM barang b 
-             LEFT JOIN detail_penjualan dp ON dp.id_barang = b.id LEFT JOIN penjualan p ON dp.id_penjualan = p.id WHERE dp.delete <> 1
+             LEFT JOIN detail_penjualan dp ON dp.id_barang = b.id LEFT JOIN penjualan p ON dp.id_penjualan = p.id
              GROUP BY b.id, b.nama_barang, b.harga_jual, b.harga_modal")->getResult();    
 
         $totalHpp = 0;
@@ -37,13 +50,16 @@ class BiayaProduksi extends BaseController{
         foreach($biayaProduksi as $data){
             $totalNominalBiayaProduksi += $data->nominal;
         }
+
+        $bahanBaku = $this->db->query("SELECT * FROM bahan_baku WHERE id_toko = '$id_toko' AND status = 1 ORDER BY nama_bahan ASC")->getResult();
         $data_page = [
             'menu'      => 'pencatatan',
             'submenu'   => 'biaya-produksi',
             'title'     => 'Data Biaya Produksi',
             'biaya_produksi'  => $biayaProduksi,
             'balance' => $totalHpp,
-            'nominal_biaya_produksi' => $totalNominalBiayaProduksi
+            'nominal_biaya_produksi' => $totalNominalBiayaProduksi,
+            'bahan_baku' => $bahanBaku
             // 'pelanggan' => $pelanggan
         ];
 
@@ -62,8 +78,10 @@ class BiayaProduksi extends BaseController{
         $tanggalAkhirResult = $tanggalAkhir[0]->tanggal_akhir;
     
         $builder = $this->db->table('biaya_produksi as b')
-            ->select('b.id as id, b.nominal as nominal, b.deskripsi as deskripsi, b.foto as foto, b.tanggal as tanggal')
+            ->join('bahan_baku as bb', 'bb.id = b.id_bahan', 'left')
+            ->select('b.id as id, b.nominal as nominal, b.deskripsi as deskripsi, b.foto as foto, b.tanggal as tanggal, b.quantity AS quantity, bb.nama_bahan AS nama_bahan')
             ->where('b.id_toko', $id_toko)
+            ->where('b.deleted_at IS NULL', null, false)
             ->orderBy('b.id', 'DESC');
 
         if ($startDate != "" && $endDate != "") {
@@ -106,10 +124,7 @@ class BiayaProduksi extends BaseController{
             ],
             'deskripsi' => [
                 'label' => 'Deskripsi',
-                'rules' => 'required',
-                'errors' => [
-                    'required' => '{field} harus diisi!'
-                ]
+                'rules' => 'permit_empty',
             ],
             'foto' => [
                 'label' => 'Foto',
@@ -125,8 +140,37 @@ class BiayaProduksi extends BaseController{
                 'errors' => [
                     'required' => '{field} harus diisi!'
                 ]
-            ]
-
+            ],
+            'id_bahan' => [
+                'label' => 'Nama Bahan',
+                'rules' => 'required',
+                'errors' => [
+                    'required' => '{field} harus diisi!'
+                ]
+            ],
+            'quantity' => [
+                'label' => 'Quantity',
+                'rules' => 'required|integer|greater_than[0]',
+                'errors' => [
+                    'required' => '{field} harus diisi!',
+                    'integer' => '{field} harus berupa angka bulat!',
+                    'greater_than' => '{field} minimal adalah 1!'
+                ]
+            ],
+            'biaya_lain' => [
+                'label' => 'Biaya lain-lain',
+                'rules' => 'required',
+                'errors' => [
+                    'required' => '{field} harus diisi!'
+                ]
+            ],
+            'biaya_pengiriman' => [
+                'label' => 'Biaya Pengiriman',
+                'rules' => 'required',
+                'errors' => [
+                    'required' => '{field} harus diisi!'
+                ]
+            ]    
         ]);
 
         if(!$rules){
@@ -134,7 +178,11 @@ class BiayaProduksi extends BaseController{
                 'nominal' => $this->validation->getError('nominal'),
                 'deskripsi' => $this->validation->getError('deskripsi'),
                 'foto' => $this->validation->getError('foto'),
-                'tanggal' => $this->validation->getError('tanggal')
+                'tanggal' => $this->validation->getError('tanggal'),
+                'id_bahan' => $this->validation->getError('id_bahan'),
+                'quantity' => $this->validation->getError('quantity'),
+                'biaya_lain' => $this->validation->getError('biaya_lain'),
+                'biaya_pengiriman' => $this->validation->getError('biaya_pengiriman')
             ];
 
             $respond = [
@@ -143,11 +191,16 @@ class BiayaProduksi extends BaseController{
             ];
         }else{
             $id = $this->request->getPost('id');
+            $id_stok_bahan_baku = $this->request->getPost('id_stok_bahan_baku');
             $id_toko = $this->session->get('id_toko');
             $nominal = $this->request->getPost('nominal');
             $deskripsi = $this->request->getPost('deskripsi');
             $tanggal = $this->request->getPost('tanggal');
             $foto = $this->request->getFile("foto");
+            $idBahan = $this->request->getPost('id_bahan');
+            $quantity = $this->request->getPost('quantity');
+            $biayaLain = $this->request->getPost('biaya_lain');
+            $biayaPengiriman = $this->request->getPost('biaya_pengiriman');
 
             $data = [
                 'id' => $id,
@@ -155,6 +208,10 @@ class BiayaProduksi extends BaseController{
                 'nominal' => getAmount($nominal),
                 'deskripsi' => $deskripsi,
                 'tanggal' => $tanggal,
+                'id_bahan' => $idBahan,
+                'quantity' => $quantity,
+                'biaya_lain' => getAmount($biayaLain),
+                'biaya_pengiriman' => getAmount($biayaPengiriman)
             ];
 
             if($foto->isValid() && !$foto->hasMoved()){
@@ -172,17 +229,72 @@ class BiayaProduksi extends BaseController{
 
             if($id){
                 $dataLama = $this->biayaProduksi->find($id);
+                $stokLama = $dataLama['quantity'];
+            } else {
+                $stokLama = 0; // Jika insert baru, stok lama dianggap 0
             }
+
             $save = $this->biayaProduksi->save($data);
 
             if($save){
+                $lastInsertId = $id ? $id : $this->biayaProduksi->insertID();
+
                 if($id){
+                    $bahan = $this->bahan->find($idBahan);
+                                    // Hitung selisih quantity lama dan baru
+                    $selisih = $stokLama - $quantity;
+
+                    
+
+                    if ($selisih > 0) {
+                        // Quantity lama lebih besar, berarti stok harus bertambah (dikurangi pembelian sebelumnya)
+                        $bahan['stok'] -= $selisih;
+                        $bahan['stok_penjualan'] -= $selisih;
+                    } else if ($selisih < 0) {
+                        // Quantity baru lebih besar, berarti stok harus berkurang (ada pembelian tambahan)
+                        $bahan['stok'] -= $selisih; // selisih negatif, jadi stok berkurang
+                        $bahan['stok_penjualan'] -= $selisih;
+                    }
+                    // Jika selisih == 0, tidak ada perubahan stok
+
+                    $this->bahan->update($idBahan, $bahan);
+
+                    $dataStokBahanBaku = [
+                        'id' => $id_stok_bahan_baku,
+                        'id_bahan'     => $idBahan,
+                        'tanggal'       => $tanggal,
+                        'jumlah'        => $quantity,
+                        'tipe'          => 1,
+                        'id_biaya_produksi' => $lastInsertId
+                    ];
+
+                    $this->stok_bahan->save($dataStokBahanBaku);
+
                     $respond = [
                         'status' => TRUE,
                         'notif' => "Data Berhasil diperbaharui",
                         'dataLama' => $dataLama
                     ];
                 } else{
+                    $dataStokBahanBaku = [
+                        'id_bahan'     => $idBahan,
+                        'tanggal'       => $tanggal,
+                        'jumlah'        => $quantity,
+                        'tipe'          => 1,
+                        'id_biaya_produksi' => $lastInsertId
+                    ];
+
+                    $this->stok_bahan->save($dataStokBahanBaku);
+                    
+                    $bahan = $this->bahan->find($idBahan);
+
+                     // Update kolom yang diinginkan
+                    $bahan['stok'] += $quantity;
+                    $bahan['stok_penjualan'] += $quantity;
+
+                    // Simpan perubahan ke database
+                    $this->bahan->update($idBahan, $bahan);
+
                     $respond = [
                         'status' => TRUE,
                         'notif' => "Data Berhasil ditambahkan",
@@ -202,8 +314,10 @@ class BiayaProduksi extends BaseController{
     public function getdata(){
         $id = $this->request->getPost('id');
 
-        $data = $this->db->table('biaya_produksi')
-            ->where('id', $id)
+        $data = $this->db->table('biaya_produksi b')
+            ->join('stok_bahan_baku as bb', 'bb.id_biaya_produksi = b.id', 'left')
+            ->where('b.id', $id)
+            ->select('b.*, bb.id AS id_stok_bahan_baku')
             ->get()->getRow();
 
         if ($data) {

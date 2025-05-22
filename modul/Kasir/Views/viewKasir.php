@@ -263,8 +263,10 @@ $id_toko = $this->session->get('id_toko');
                                                         $totalv = $this->db->query("SELECT COUNT(id) as total FROM varian WHERE id_barang = '$key->id' AND status = 1")->getRow()->total;
                                                         $bahan = $this->db->query("SELECT SUM(b.harga * a.qty) as harga, SUM(b.biaya * a.qty) as biaya FROM bahan_barang a JOIN bahan_baku b ON a.id_bahan_baku = b.id WHERE a.id_barang = '$key->id'")->getRow();
                                                         if ($bahan) {
-                                                            $harga_jual = $key->harga_jual + $bahan->harga;
-                                                            $harga_modal = $key->harga_modal + $bahan->biaya;
+                                                            // $harga_jual = $key->harga_jual + $bahan->harga; saat ini harga jual tetap harga jual tanpa akumulasi dari penambahan harga bahan
+                                                            $harga_jual = $key->harga_jual;
+                                                            // $harga_modal = $key->harga_modal + $bahan->biaya; saat ini harga modal tetap harga modal tanpa akumulasi dari penambahan harga bahan
+                                                            $harga_modal = $key->harga_modal;
                                                         } else {
                                                             $harga_jual = $key->harga_jual;
                                                             $harga_modal = $key->harga_modal;
@@ -1008,6 +1010,10 @@ $id_toko = $this->session->get('id_toko');
             }
 
             function add_barang(id, nama, harga, modal) {
+                console.log(id);
+                console.log(nama);
+                console.log(harga);
+                console.log(modal);
                 var html = `<tr class="pesanan" id="pesanan` + id + `">
                             <input type="hidden" name="id_barang[]" value="` + id + `" />
                             <input type="hidden" name="id_varian[]" value="" />

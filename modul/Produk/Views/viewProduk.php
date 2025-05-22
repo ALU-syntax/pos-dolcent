@@ -43,7 +43,7 @@
                                         <th>Kategori</th>
                                         <th>Varian</th>
                                         <th>Harga Jual</th>
-                                        <th>Kelola Stok</th>
+                                        <!-- <th>Kelola Stok</th> -->
                                         <th>Status</th>
                                         <th>Action</th>
                                     </tr>
@@ -137,7 +137,7 @@
                         <div class="col-12">
                             <hr>
                         </div>
-                        <div class="col-md-12 mb-3">
+                        <!-- <div class="col-md-12 mb-3">
                             <div class="form-check">
                                 <div class="custom-control custom-checkbox">
                                     <input type="checkbox" class="form-check-input form-check-primary" checked="" name="stokcheck" id="stokcheck">
@@ -154,7 +154,7 @@
                             <label for="stokmin" class="form-label">Stok Minimum</label>
                             <input type="text" class="form-control nomor" id="stokmin" name="stokmin" placeholder="Masukkan stok minimum">
                             <div class="invalid-feedback"></div>
-                        </div>
+                        </div> -->
                     </div>
             </div>
             <div class="modal-footer">
@@ -329,12 +329,12 @@
                     className: 'text-end',
                     width: 100
                 },
-                {
-                    data: 'stok',
-                    orderable: false,
-                    className: 'text-center',
-                    width: 100
-                },
+                // {
+                //     data: 'stok',
+                //     orderable: false,
+                //     className: 'text-center',
+                //     width: 100
+                // },
                 {
                     data: 'is_active',
                     orderable: false,

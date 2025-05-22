@@ -4,6 +4,9 @@
 <link href="/assets/extensions/datatables.net-responsive-bs5/css/responsive.bootstrap5.min.css" rel="stylesheet" />
 
 <link href="/assets/extensions/fancybox/fancybox.css" rel="stylesheet" />
+<link href="/assets/extensions/select2/dist/css/select2.min.css" rel="stylesheet" />
+<link href="/assets/extensions/select2-bootstrap-5-theme-1.3.0/select2-bootstrap-5-theme.min.css" rel="stylesheet" />
+<link href="/assets/extensions/select2-bootstrap-5-theme-1.3.0/select2-bootstrap-5-theme.rtl.min.css" rel="stylesheet" />
 
 <style>
     .img-preview {
@@ -75,7 +78,9 @@
                                 <thead>
                                     <tr>
                                         <th>No</th>
+                                        <th>Bahan Baku</th>
                                         <th>Nominal</th>
+                                        <th>Quantity</th>
                                         <th>Deskripsi</th>
                                         <th>Foto</th>
                                         <th>Tanggal</th>
@@ -104,11 +109,42 @@
             <div class="modal-body">
                 <form id="form" autocomplete="off">
                     <input type="hidden" name="id" id="id">
-                    <div class="mb-3">
-                        <label for="nominal" class="form-label">Nominal</label>
-                        <input type="text" class="form-control harga" id="nominal" name="nominal" placeholder="Masukkan nominal biaya produksi">
+                    <input type="hidden" name="id_stok_bahan_baku" id="id_stok_bahan_baku">
+
+                    <label for="bahanSelect2" class="form-label">Bahan Baku</label>
+                    <div class="mb-3 form-group d-flex">
+                        <select class="form-select w-100" name="id_bahan" id="bahanSelect2" required>
+                            <?php foreach ($bahan_baku as $key) : ?>
+                                <option value="<?php echo $key->id; ?>"><?php echo $key->nama_bahan; ?></option>
+                            <?php endforeach ?>
+                        </select>
                         <div class="invalid-feedback"></div>
                     </div>
+
+                    <div class="mb-3">
+                        <label for="nominal" class="form-label">Nominal</label>
+                        <input type="text" class="form-control harga" id="nominal" name="nominal" placeholder="Masukkan nominal biaya produksi" required>
+                        <div class="invalid-feedback"></div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="biaya_pengiriman" class="form-label">Biaya Pengiriman</label>
+                        <input type="text" class="form-control harga" id="biaya_pengiriman" name="biaya_pengiriman" placeholder="Masukkan nominal biaya pengiriman">
+                        <div class="invalid-feedback"></div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="quantity" class="form-label">Quantity</label>
+                        <input type="number" required class="form-control" id="quantity" name="quantity" placeholder="Masukkan quantity pembelian" min="1">
+                        <div class="invalid-feedback"></div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="biaya_lain" class="form-label">Biaya Lainnya</label>
+                        <input type="text" required class="form-control harga" id="biaya_lain" name="biaya_lain" placeholder="Masukkan biaya lainnya jika ada">
+                        <div class="invalid-feedback"></div>
+                    </div>
+
                     <hr>
                     <!-- <p class="text-center">Informasi Opsional</p> -->
                     <div class="mb-3">
@@ -163,6 +199,8 @@
 <script src="/assets/extensions/datatables.net-responsive-bs5/js/responsive.bootstrap5.min.js"></script>
 
 <script src="/assets/extensions/fancybox/fancybox.js"></script>
+<script src="/assets/extensions/select2/dist/js/select2.min.js"></script>
+<script src="/assets/extensions/select2/dist/js/select2.full.min.js"></script>
 
 <script>
     var table;
@@ -202,7 +240,17 @@
                     width: 10
                 },
                 {
+                    data: 'nama_bahan',
+                    orderable: false,
+                    width: 150
+                },
+                {
                     data: 'nominal',
+                    orderable: false,
+                    width: 200
+                },
+                {
+                    data: 'quantity',
                     orderable: false,
                     width: 200
                 },
@@ -238,6 +286,14 @@
             table.draw();
             changeBalance();
         });
+
+        $('#bahanSelect2').select2({
+            dropdownParent: modal,
+            placeholder: "Pilih Bahan",
+            allowClear: true // Untuk mengizinkan penghapusan opsi
+        });
+
+        $('.select2-container').addClass('w-100');
     });
 
     $(document).ready(function() {
@@ -313,8 +369,13 @@
                     $('#preview').html('<img src="/assets/img/biaya-produksi/' + response.data.foto + '" alt="Preview Gambar" class="img-preview rounded">');
 
                     $('#id').val(response.data.id);
+                    $('#id_stok_bahan_baku').val(response.data.id_stok_bahan_baku);
                     $('#deskripsi').val(response.data.deskripsi);
-                    $('#nominal').val('Rp. ' + response.data.nominal);
+                    $('#nominal').val(formatRupiah(response.data.nominal.toString(), "Rp. "));
+                     $('#bahanSelect2').val(response.data.id_bahan).trigger('change');
+                    $('#biaya_pengiriman').val(formatRupiah(response.data.biaya_pengiriman.toString(), "Rp. "));
+                    $('#quantity').val(response.data.quantity);
+                    $('#biaya_lain').val(formatRupiah(response.data.biaya_lain.toString(), "Rp. "));
 
                     let serverDate = response.data.tanggal;
                     let date = serverDate.split(' ')[0];
@@ -453,6 +514,7 @@
                 hideblockUI();
             },
             success: function(response) {
+                console.log(response)
                 if (response.status) {
                     console.log(response)
                     console.log(globalBalance)

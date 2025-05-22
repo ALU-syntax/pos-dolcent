@@ -194,8 +194,45 @@ class Penjualan extends BaseController
         $dataPenjualan = $this->db->table('penjualan')->where('id', $id);
         $dataPenjualan->update($data);
 
-        $builder = $this->db->table('detail_penjualan')->where('id_penjualan', $id);
+        $builder = $this->db->table('detail_penjualan as a')->where('id_penjualan', $id);
+        $detailPenjualan = $builder->get()->getResult();
         $builder->update($data);
+
+        // dd(print_r($builder->get()->getResult()));
+
+        $this->db->transStart();        
+
+        foreach ($detailPenjualan as $value) {
+            $bahanBarang = $this->db->table('bahan_barang')->where('id_barang', $value->id_barang)->get()->getResult();
+
+            foreach ($bahanBarang as $resep) {
+                $bahanBaku = $this->db->table('bahan_baku')->where('id', $resep->id_bahan_baku)->get()->getRow();
+
+                if ($bahanBaku) {
+                    $stokBaru = $bahanBaku->stok_penjualan + ($value->qty * $resep->qty);
+
+                    // Update stok menggunakan query builder
+                    $this->db->table('bahan_baku')
+                        ->where('id', $resep->id_bahan_baku)
+                        ->update(['stok_penjualan' => $stokBaru]);
+                }
+            }
+        }
+
+        $this->db->transComplete();
+
+        // foreach($builder->get()->getResult() as $value){
+        //     $bahanBarang = $this->db->table('bahan_barang')->where('id_barang', $value->id_barang)->get()->getResult();
+        //     foreach($bahanBarang as $resep){
+        //         $bahanBaku = $this->db->table('bahan_baku')->where('id', $resep->id_bahan_baku)->first();
+        //         $stokBaru = $bahanBaku->stok_penjualan + ($value->qty * $resep->qty);
+
+        //         $bahanBaku->update(['stok_penjualan' => $stokBaru]);
+        //     }
+        // }
+        // $syncBahanBaku = $builder->join('bahan_barang as b', 'b.id_barang = a.id_barang')
+        // ->join('bahan_baku as c', 'c.id = b.id_bahan_baku')
+        // ->select('b.qty AS qty_produksi, c.stok_penjualan');
 
         if ($builder) {
             $response = [

@@ -123,6 +123,43 @@
         </div>
     </div>
 </div>
+<!-- Modal stok -->
+<div class="modal fade" id="modals" tabindex="-1" aria-labelledby="modaldLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modaldLabel">Kelola stok bahan baku "<span><strong class="bahan"></strong></span>"</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p class="mb-0"><strong>Stok sekarang : <span id="stok-sekarang"></span></strong></p>
+                <small class="text-muted">Stok min : <span id="stok-min"></span></small>
+                <div id="list-stok">
+                </div>
+                <div id="aturstok" class="collapse">
+                    <hr>
+                    <div class="row">
+                        <div class="col-8">
+                            <select class="form-select" id="tipe" name="tipe">
+                                <option value="1">Penambahan Stok</option>
+                                <option value="2">Pengurangan Stok</option>
+                            </select>
+                            <div class="invalid-feedback"></div>
+                        </div>
+                        <div class="col-4">
+                            <input class="form-control nomor" type="number" id="jumlah" name="jumlah" placeholder="Qty">
+                            <div class="invalid-feedback"></div>
+                        </div>
+                    </div>
+                    <button class="btn btn-success mt-3 w-100" id="btnkonfirmasi">Konfirmasi</button>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary collapsed" data-bs-toggle="collapse" data-bs-target="#aturstok" aria-expanded="false" aria-controls="collapseExample"><i class="fas fa-sliders-h"></i>&nbsp; Atur Stok</button>
+            </div>
+        </div>
+    </div>
+</div>
 <?= $this->endSection() ?>
 <?= $this->section('js') ?>
 <script src="/assets/extensions/datatables.net/js/jquery.dataTables.min.js"></script>
@@ -134,6 +171,7 @@
     var table;
     var modal = $('#modal');
     var modald = $('#modald');
+    var modals = $('#modals');
 
     document.addEventListener("DOMContentLoaded", function() {
         table = $('#table').DataTable({
@@ -179,7 +217,7 @@
                     width: 200
                 },
                 {
-                    data: 'stok',
+                    data: 'stok_penjualan',
                     orderable: false,
                     className: 'text-end',
                     width: 200
@@ -426,5 +464,128 @@
             }
         });
     });
+
+    function stok(id) {
+        $.ajax({
+            type: "POST",
+            url: "/bahan/getStokBahan",
+            data: {
+                id: id
+            },
+            dataType: "JSON",
+            beforeSend: function() {
+                showblockUI();
+            },
+            complete: function() {
+                hideblockUI();
+            },
+            success: function(response) {
+                console.log(response)
+                $('.bahan').text(response.data.nama_bahan);
+                $('#stok-sekarang').text(response.data.stok_penjualan);
+                $('#stok-min').text(response.data.stokmin);
+
+                $('#list-stok').html(response.html);
+
+                $('#btnkonfirmasi').attr('onclick', 'updateStok(' + response.data.id + ')');
+                $('#jumlah').val('');
+                $('.collapse').removeClass('show');
+                $('#tipe, #jumlah').removeClass('is-invalid is-valid');
+                modals.modal('show');
+            },
+            error: function(jqXHR, textStatus, errorThrown, exception) {
+                var msg = '';
+                if (jqXHR.status === 0) {
+                    msg = 'Not connect.\n Verify Network.';
+                } else if (jqXHR.status == 404) {
+                    msg = 'Requested page not found. [404]';
+                } else if (jqXHR.status == 500) {
+                    msg = 'Internal Server Error [500].';
+                } else if (exception === 'parsererror') {
+                    msg = 'Requested JSON parse failed.';
+                } else if (exception === 'timeout') {
+                    msg = 'Time out error.';
+                } else if (exception === 'abort') {
+                    msg = 'Ajax request aborted.';
+                } else {
+                    msg = 'Uncaught Error.\n' + jqXHR.responseText;
+                }
+                alert(msg);
+            }
+        });
+    }
+
+    function updateStok(id_bahan) {
+        $.ajax({
+            type: "POST",
+            url: "/bahan/updateStokBahan",
+            data: {
+                id_bahan: id_bahan,
+                tipe: $('#tipe').val(),
+                jumlah: $('#jumlah').val()
+            },
+            dataType: "JSON",
+            beforeSend: function() {
+                showblockUI();
+            },
+            complete: function() {
+                hideblockUI();
+            },
+            success: function(response) {
+                console.log(response.data.jumlah);
+                if (response.status) {
+                    if (response.data.tipe == 1) {
+                        var html = `<div class="card mb-2 mt-2" style="background-color: #f2f7ff;">
+                            <div class="card-body">
+                                Penambahan Stok &nbsp;<span class="text-success">+` + response.jumlah + `</span>
+                                <br>
+                                <small style="font-size: x-small;">` + response.date + `</small>
+                            </div>
+                         </div>`;
+                    } else {
+                        var html = `<div class="card mb-2 mt-2" style="background-color: #f2f7ff;">
+                            <div class="card-body">
+                                Pengurangan Stok &nbsp;<span class="text-danger">-` + response.jumlah + `</span>
+                                <br>
+                                <small style="font-size: x-small;">` + response.date + `</small>
+                            </div>
+                         </div>`;
+                    }
+                    toastr.success('Berhasil update stok');
+                    $('#stok-sekarang').text(response.stok);
+                    $('#nostok').hide();
+                    $('#list-stok').append(html);
+                } else {
+                    $.each(response.errors, function(key, value) {
+                        $('[name="' + key + '"]').addClass('is-invalid');
+                        $('[name="' + key + '"]').next().text(value);
+                        if (value == "") {
+                            $('[name="' + key + '"]').removeClass('is-invalid');
+                            $('[name="' + key + '"]').addClass('is-valid');
+                        }
+                    });
+                }
+            },
+            error: function(jqXHR, textStatus, errorThrown, exception) {
+                var msg = '';
+                if (jqXHR.status === 0) {
+                    msg = 'Not connect.\n Verify Network.';
+                } else if (jqXHR.status == 404) {
+                    msg = 'Requested page not found. [404]';
+                } else if (jqXHR.status == 500) {
+                    msg = 'Internal Server Error [500].';
+                } else if (exception === 'parsererror') {
+                    msg = 'Requested JSON parse failed.';
+                } else if (exception === 'timeout') {
+                    msg = 'Time out error.';
+                } else if (exception === 'abort') {
+                    msg = 'Ajax request aborted.';
+                } else {
+                    msg = 'Uncaught Error.\n' + jqXHR.responseText;
+                }
+                alert(msg);
+            }
+        });
+    }
 </script>
 <?= $this->endSection() ?>
