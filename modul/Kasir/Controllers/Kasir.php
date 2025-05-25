@@ -4,8 +4,10 @@ namespace Modul\Kasir\Controllers;
 
 use App\Controllers\BaseController;
 use chillerlan\QRCode\QRCode;
+use CodeIgniter\I18n\Time;
 use Hermawan\DataTables\DataTable;
 use DateTime;
+use Modul\Kasir\Models\Model_petty_cashes;
 use Modul\Payment_gateway\Libraries\Npay;
 use Modul\Payment_gateway\Libraries\SmartPayment;
 use Modul\Kasir\Models\Model_detail_penjualan;
@@ -26,6 +28,7 @@ class Kasir extends BaseController
         $this->user      = new Model_user();
         $this->detail    = new Model_detail_penjualan();
         $this->stok_bahan = new Model_stok_bahan();
+        $this->petty_cashes = new Model_petty_cashes();
 
         // $midtransConfig = config('Midtrans');
         $this->session    = Services::session();
@@ -77,6 +80,17 @@ class Kasir extends BaseController
         // SMARTPAYMENT
         $smartpayment = $this->db->query("SELECT * FROM smartpayment WHERE id_toko = '$id_toko'")->getRow();
 
+        $cekPettyCash = $this->petty_cashes
+                                    ->join('user as u', 'u.id = petty_cashes.user_id_started', 'left')
+                                    ->join('toko as t', 't.id = petty_cashes.id_toko', 'left')
+                                    ->where('petty_cashes.id_toko', $id_toko)
+                                    ->where('close', null)
+                                    ->select('petty_cashes.*, u.nama AS nama_user_pembuka, t.nama_toko')
+                                    ->first();
+
+
+        
+
         $data = [
             'barang'    => $barang,
             'kategori'  => $kategori,
@@ -87,6 +101,7 @@ class Kasir extends BaseController
             'midtrans'  => $midtrans,
             'npay'      => $npay,
             'smartpayment' => $smartpayment,
+            'pettyCash' => $cekPettyCash
         ];
 
         return view('Modul\Kasir\Views\viewKasir', $data);
@@ -408,6 +423,7 @@ class Kasir extends BaseController
         $totalb       = $this->request->getPost('harga[]');
         $modal        = $this->request->getPost('modal[]');
         $tglCustom    = $this->request->getPost('tgl_custom');
+        $pettyCashId  = $this->request->getPost('id_petty_cash');
         
         if($tglCustom){
             // Membuat objek DateTime dari input
@@ -441,6 +457,7 @@ class Kasir extends BaseController
             // 'total'         => $total,
             'laba'          => $laba,
             'tipe_pesanan'  => $tipePesanan,
+            'id_petty_cash' => $pettyCashId
         ];
 
         if ($pelanggan) {
@@ -992,4 +1009,109 @@ class Kasir extends BaseController
             'data' => $data
         ]);          
     }
+
+    public function submitPettyCash(){
+        $rules = $this->validate([
+            'saldo_awal' => [
+                'label' => 'Saldo Awal',
+                'rules' => 'required',
+                'errors' => [
+                    'required' => '{field} harus diisi!'
+                ]
+            ]
+        ]);
+
+        if(!$rules){
+            $errors = [
+                'saldo_awal' => $this->validation->getError('saldo_awal'),
+            ];
+
+            $respond = [
+                'status' => FALSE,
+                'errors' => $errors
+            ];
+        }else{
+            $id_toko      = $this->session->get('id_toko');
+            $saldoAwal = $this->request->getPost('saldo_awal');
+            $idUser = $this->session->get("id");
+    
+            $data = [
+                'id_toko' => $id_toko,
+                'amount_awal' => getAmount($saldoAwal),
+                'user_id_started' => $idUser,
+                'open' => Time::now()->toDateTimeString()
+            ];
+            $this->petty_cashes->save($data);
+    
+            $idPettyCash = $this->petty_cashes->getInsertID();
+        
+            $respond = [
+                'status' => TRUE,
+                'notif' => "Petty Cash berhasil dibuka",
+                'id_petty_cash' => $idPettyCash,
+                'data' => $data
+            ];
+        }
+        echo json_encode($respond);
+    }
+
+    public function getTransactionByPettyCash(){
+        $pettyCashId = $this->request->getPost('id_petty_cash');
+        $id_toko = $this->session->get('id_toko');
+        
+        $data = $this->db->query("SELECT * FROM penjualan WHERE id_petty_cash = '$pettyCashId' AND id_tipe_bayar = 1 ORDER BY id ASC")->getResult();
+        $cekPettyCash = $this->petty_cashes
+                                    ->join('user as u', 'u.id = petty_cashes.user_id_started', 'left')
+                                    ->join('toko as t', 't.id = petty_cashes.id_toko', 'left')
+                                    ->where('petty_cashes.id_toko', $id_toko)
+                                    ->where('close', null)
+                                    ->select('petty_cashes.*, u.nama AS nama_user_pembuka, t.nama_toko')
+                                    ->first();
+
+
+        $respond = [
+                'status' => TRUE,
+                'dataTransaction' => $data,
+                'pettyCash' => $cekPettyCash
+            ];
+
+        echo json_encode($respond);
+    }
+
+    public function closePattyCash()
+    {
+        $dataEndingCash = $this->request->getPost('ending_cash');
+        $id_toko       = $this->session->get('id_toko');
+        $idUser        = $this->session->get('id');
+
+        // Data yang akan diupdate
+        $updateData = [
+            'amount_akhir' => getAmount($dataEndingCash),
+            'close' => Time::now()->toDateTimeString(),
+            'user_id_ended' => $idUser,
+        ];
+
+        // Menggunakan query builder dari model untuk update dengan kondisi
+        $updated = $this->petty_cashes
+            ->where('id_toko', $id_toko)
+            ->where('close', null)  // kondisi close IS NULL
+            ->set($updateData)
+            ->update();
+
+        if ($updated) {
+            $respond = [
+                'status' => TRUE,
+                'notif' => "Petty Cash berhasil ditutup",
+            ];
+        } else {
+            $respond = [
+                'status' => FALSE,
+                'notif' => "Gagal menutup Petty Cash atau sudah ditutup sebelumnya",
+            ];
+        }
+
+        echo json_encode($respond);
+    }
+
+    
 }

@@ -10,11 +10,13 @@
     $routes->post('smartpayment', 'Kasir::smartpayment');
     $routes->get('whatsapp/(:any)', 'Kasir::whatsapp/$1');
     $routes->get('whatsapp-image/(:any)/(:any)', 'Kasir::whatsappImage/$1/$2');
-
-
+    $routes->post('getTransactionByPettyCash', 'Kasir::getTransactionByPettyCash');
+    
+    $routes->post('storePettyCash', 'Kasir::submitPettyCash');
     $routes->post('npay/qr', 'Kasir::npayQr');
     $routes->post('npay/check', 'Kasir::npayCheck');
     $routes->post('npay/pay', 'Kasir::npayPay');
+    $routes->post('closePattyCash', 'Kasir::closePattyCash');
 });
 
 $routes->group('kasir', ['namespace' => 'Modul\Kasir\Controllers'], function ($routes) {

@@ -168,6 +168,11 @@ $id_toko = $this->session->get('id_toko');
                 </div>
                 <div class="aside-footer flex-column-auto pb-5 pb-lg-10" id="kt_aside_footer">
                     <div class="d-flex flex-center w-100 scroll-px">
+                        <a href="javascript:void(0);" class="btn btn-custom" onclick="showPettyCashModal()" id="pattyCashBtn"><i class="fas fa-cash-register"></i></a>
+                    </div>
+                </div>
+                <div class="aside-footer flex-column-auto pb-5 pb-lg-10" id="kt_aside_footer">
+                    <div class="d-flex flex-center w-100 scroll-px">
                         <a href="javascript:void(0);" class="btn btn-custom" id="fullScreenBtn"><i class="fas fa-tv"></i></a>
                     </div>
                 </div>
@@ -661,6 +666,193 @@ $id_toko = $this->session->get('id_toko');
             </div>
         </div>
 
+        <!-- Modal PattyCash -->
+         <div class="modal modal-xl fade" id="modalpc" tabindex="-1">
+             <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" id="btnClosePattyCash" class="btn btn-secondary btn-lg"
+                            data-bs-dismiss="modal">Batal</button>
+                        <h5 class="modal-title mx-auto text-center" style="padding-right: 75px;" id="productModalLabel">
+                            <strong id="namaProduct">Mulai Shift</strong><br>
+                        </h5>
+                    </div>
+                    <div class="modal-body">
+                        <!-- Payment Options -->
+                        <div class="mt-0">
+                            <div class="row d-flex justify-content-center">
+                                <img style="width: 20%;" src="/assets/img/cashier-machine.png" alt="">
+                            </div>
+                        </div>
+                        <hr>
+    
+                        <form id="formOpenPettyCash"  method="POST"
+                            enctype="multipart/form-data">
+    
+                            <div class=" mt-2">
+                                <div class="row">
+                                    <div class="form-group w-100">
+                                        <div class="input-group input-group-lg">
+                                            <span class="input-group-text" id="inputGroup-sizing-lg">Saldo Tunai</span>
+                                            <input type="text" name="saldo_awal" id="saldo_awal" class="form-control"
+                                                aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="row">
+                                <button type="submit" id="btnSubmitPattyCash"
+                                class="btn btn-primary btn-lg mt-4 ms-3" style="width: 96%">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+         </div>
+
+         <!-- Modal Close PattyCash -->
+          <div class="modal modal-xl fade" id="modalcpc" tabindex="-1">
+             <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" id="btnCancelClosePattyCash" class="btn btn-secondary btn-lg"
+                            data-bs-dismiss="modal">Batal</button>
+                        <h5 class="modal-title mx-auto text-center" style="padding-right: 75px;" >
+                            <strong >Shift Aktif</strong><br>
+                        </h5>
+                    </div>
+                    <div class="modal-body" style="padding-top: 0;">
+                        <!-- Payment Options -->
+                        <div  id="end-current-shift-section">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <h5>Actual Ending Cash</h5>
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-control"
+                                                            id="endingCash"
+                                                            placeholder="Ending cash">
+                                                    </div>
+                                                    <div class="row mt-2 d-none"
+                                                        id="container-difference">
+                                                        <hr>
+                                                        <div class="col-6">
+                                                            <h5 class="text-muted ms-4">Difference
+                                                            </h5>
+                                                        </div>
+                                                        <div class="col-6 me-auto">
+                                                            <div id="difference"></div>
+                                                        </div>
+                                                        <hr>
+                                                    </div>
+
+                                                    <button
+                                                        class="btn btn-danger w-100 btn-lg mt-2"
+                                                        id="btnEndCurrentShift">End
+                                                        Current Shift</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card"
+                                        style="overflow-y: auto; height: calc(100vh - 380px);">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-12">
+
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <div class="row">
+                                                                <strong>SHIFT DETAILS</strong>
+                                                            </div>
+                                                            <hr>
+
+                                                            <div class="row">
+                                                                <div class="col-6">Name</div>
+                                                                <div class="col-6"
+                                                                    id="txt-name-end-current-shift">
+                                                                    Ardian</div>
+                                                            </div>
+                                                            <hr>
+
+                                                            <div class="row">
+                                                                <div class="col-6">Outlet</div>
+                                                                <div class="col-6"
+                                                                    id="txt-outlet-end-current-shift">
+                                                                    Outlet 1</div>
+                                                            </div>
+                                                            <hr>
+
+                                                            <div class="row">
+                                                                <div class="col-6">Starting Shift
+                                                                </div>
+                                                                <div class="col-6"
+                                                                    id="txt-start-end-current-shift">
+                                                                    Thursday,
+                                                                    blabla</div>
+                                                            </div>
+                                                            <hr>
+
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <div class="row">
+                                                                <strong>CASH</strong>
+                                                            </div>
+                                                            <hr>
+
+                                                            <div class="row">
+                                                                <div class="col-6">Starting Cash
+                                                                    In Drawer</div>
+                                                                <div class="col-6"
+                                                                    id="txt-starting-cash-end-current-shift">
+                                                                    Rp. 50.000
+                                                                </div>
+                                                            </div>
+                                                            <hr>
+
+                                                            <div class="row">
+                                                                <div class="col-6">Cash Sales
+                                                                </div>
+                                                                <div class="col-6"
+                                                                    id="txt-sales-end-current-shift">
+                                                                    Rp. 70.000
+                                                                </div>
+                                                            </div>
+                                                            <hr>
+
+                                                            <div class="row">
+                                                                <div class="col-6">Expected Ending
+                                                                    Cash</div>
+                                                                <div class="col-6"
+                                                                    id="txt-expected-ending-end-current-shift">
+                                                                    Rp. 121.000
+                                                                </div>
+                                                            </div>
+                                                            <hr>
+
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </div>
+
         <script src="/assets/pos/js/plugins.bundle.js"></script>
         <script src="/assets/pos/js/scripts.bundle.js"></script>
 
@@ -687,14 +879,41 @@ $id_toko = $this->session->get('id_toko');
             var modald = $('#modald');
             var modalp = $('#modalp');
             var modals = $('#modals');
+            var modalpc = $('#modalpc');
+            var modalcpc = $('#modalcpc');
             var modalSmartpayment = $('#modal-smartpayment');
             var modalNpay = $('#modal-npay');
             let npayInterval = null;
             let npayData = null;
             var sessionDataDiv = document.getElementById('session-data');
             var logo = sessionDataDiv.getAttribute('data-logo');
+            var pettyCash = <?= json_encode($pettyCash) ?>;
+            var pettyCashId = pettyCash ? pettyCash.id : null;
+            var finalExpectedEndingCash = 0;
 
             $(document).ready(function() {
+                var endingCashInput = document.getElementById('endingCash');
+
+                if (endingCashInput) {
+                    endingCashInput.addEventListener("keyup", function(e) {
+                        this.value = formatRupiah(this.value, "Rp. ");
+                        if (this.value == '' || this.value == 'Rp. ') {
+                            $('#container-difference').addClass('d-none');
+                            $('#difference').text(formatRupiah("0", "Rp. "));
+                        } else {
+                            $('#container-difference').removeClass('d-none');
+
+                            let hargaInput = this.value.match(/\d+/g).join('');
+                            let different = hargaInput - finalExpectedEndingCash;
+                            if (different > 0) {
+                                $('#difference').text(formatRupiah(different.toString(), "Rp. "));
+                            } else {
+                                $('#difference').text("-" + formatRupiah(different.toString(), "Rp. "));
+                            }
+                        }
+                    })
+                }
+
                 $('#nohp').on('input', function() {
                     var input = $(this).val();
                     input = input.replace(/\D/g, '');
@@ -754,6 +973,61 @@ $id_toko = $this->session->get('id_toko');
                         reader.readAsDataURL(file);
                     }
                 });
+
+                $('#btnEndCurrentShift').off().on('click', function(a){
+                    if($('#endingCash').val() == ''){
+                        toastr.warning("Input Ending Cash tidak boleh kosong");
+                        return
+                    }
+                    let hasilEndingCash = $('#endingCash').val();
+                    $.ajax({
+                        url: '/kasir/closePattyCash',
+                        type: 'POST',
+                        dataType: 'JSON',
+                        data: {
+                            ending_cash: hasilEndingCash
+                        },
+                        beforeSend: function() {
+                            showblockUI();
+                            $('#btnEndCurrentShift').addClass("btn-load").attr("disabled", true).html(
+                                    `<span class="d-flex align-items-center">
+                            <span class="spinner-border flex-shrink-0"></span><span class="flex-grow-1 ms-2"> Loading...  </span></span>`
+                                );
+                        },
+                        complete: function() {
+                            hideblockUI();
+                            $('#btnEndCurrentShift').removeClass("btn-load").removeAttr("disabled").text("End Current Shift");
+                        },
+                        success: function(response) {
+                            console.log(response);
+                            if(response.status){
+                                toastr.success(response.notif);
+                                modalcpc.modal('hide');
+                                pettyCashId = null;
+                            }
+                        },
+                        error: function(jqXHR, textStatus, errorThrown, exception) {
+                            var msg = '';
+                            if (jqXHR.status === 0) {
+                                msg = 'Not connect.\n Verify Network.';
+                            } else if (jqXHR.status == 404) {
+                                msg = 'Requested page not found. [404]';
+                            } else if (jqXHR.status == 500) {
+                                msg = 'Internal Server Error [500].';
+                            } else if (exception === 'parsererror') {
+                                msg = 'Requested JSON parse failed.';
+                            } else if (exception === 'timeout') {
+                                msg = 'Time out error.';
+                            } else if (exception === 'abort') {
+                                msg = 'Ajax request aborted.';
+                            } else {
+                                msg = 'Uncaught Error.\n' + jqXHR.responseText;
+                            }
+                            alert(msg);
+                            $('#btnEndCurrentShift').removeClass("btn-load").removeAttr("disabled").text("End Current Shift");
+                        }
+                    }); 
+                });
             });
 
             function showblockUI() {
@@ -770,6 +1044,96 @@ $id_toko = $this->session->get('id_toko');
                         color: '#fff'
                     }
                 });
+            }
+
+            function formatRupiah(angka, prefix) {
+                var number_string = angka.replace(/[^,\d]/g, "").toString(),
+                    split = number_string.split(","),
+                    sisa = split[0].length % 3,
+                    rupiah = split[0].substr(0, sisa),
+                    ribuan = split[0].substr(sisa).match(/\d{3}/gi);
+
+                if (ribuan) {
+                    separator = sisa ? "." : "";
+                    rupiah += separator + ribuan.join(".");
+                }
+
+                rupiah = split[1] != undefined ? rupiah + "," + split[1] : rupiah;
+                return prefix == undefined ? rupiah : rupiah ? "Rp. " + rupiah : "";
+            }
+
+            function showPettyCashModal(){
+                if(pettyCashId){
+                    $.ajax({
+                        url: '/kasir/getTransactionByPettyCash',
+                        type: 'POST',
+                        dataType: 'JSON',
+                        data: {
+                            id_petty_cash: pettyCashId
+                        },
+                        beforeSend: function() {
+                            showblockUI();
+                        },
+                        complete: function() {
+                            hideblockUI();
+                        },
+                        success: function(response) {
+                            console.log(response);
+                            if (response.status) {
+                                $('#endingCash').val('');
+                                pettyCash = response.pettyCash;
+                                let expectedEndingCash = parseInt(pettyCash.amount_awal);
+                                let sales = 0;
+                                
+                                response.dataTransaction.forEach(function(item){
+                                    sales += parseInt(item.total);
+                                    expectedEndingCash += parseInt(item.total);
+                                });
+
+                                finalExpectedEndingCash = expectedEndingCash;
+
+                                $('#txt-name-end-current-shift').text(pettyCash.nama_user_pembuka);
+                                $('#txt-outlet-end-current-shift').text(pettyCash.nama_toko);
+                                $('#txt-start-end-current-shift').text(pettyCash.open);
+                                $('#txt-starting-cash-end-current-shift').text(formatRupiah(pettyCash.amount_awal.toString(), "Rp. "))
+                                $('#txt-sales-end-current-shift').text(formatRupiah(sales.toString(), "Rp. "));
+                                $('#txt-expected-ending-end-current-shift').text(formatRupiah(expectedEndingCash.toString(), "Rp. "));
+                                modalcpc.modal('show');
+                            } else {
+                                toastr.warning('Maaf, gagal mendapatkan data patty cash');
+                            }
+                        },
+                        error: function(jqXHR, textStatus, errorThrown, exception) {
+                            var msg = '';
+                            if (jqXHR.status === 0) {
+                                msg = 'Not connect.\n Verify Network.';
+                            } else if (jqXHR.status == 404) {
+                                msg = 'Requested page not found. [404]';
+                            } else if (jqXHR.status == 500) {
+                                msg = 'Internal Server Error [500].';
+                            } else if (exception === 'parsererror') {
+                                msg = 'Requested JSON parse failed.';
+                            } else if (exception === 'timeout') {
+                                msg = 'Time out error.';
+                            } else if (exception === 'abort') {
+                                msg = 'Ajax request aborted.';
+                            } else {
+                                msg = 'Uncaught Error.\n' + jqXHR.responseText;
+                            }
+                            alert(msg);
+                        }
+                    });
+                }else{
+                    $('#saldo_awal').val('');
+
+                    let saldoAwalInput = document.getElementById('saldo_awal');
+
+                    saldoAwalInput.addEventListener("keyup", function(e) {
+                        this.value = formatRupiah(this.value, "Rp. ");
+                    })
+
+                    modalpc.modal('show');
+                }
             }
 
             function hideblockUI() {
@@ -1338,64 +1702,72 @@ $id_toko = $this->session->get('id_toko');
             function simpanTransaksi() {
                 var form = $('#form')[0];
                 var formData = new FormData(form);
+                formData.append('id_petty_cash', pettyCashId);
                 console.log(formData);
-                var url = "/kasir/simpan";
-                $.ajax({
-                    type: "POST",
-                    url: url,
-                    data: formData,
-                    processData: false,
-                    contentType: false,
-                    dataType: "JSON",
-                    beforeSend: function() {
-                        showblockUI();
-                    },
-                    complete: function() {
-                        hideblockUI();
-                    },
-                    success: function(response) {
-                        if (response.status) {
-                            toastr.success('Transaksi berhasil');
-                            $('#totaltrx').text(response.total);
-                            $('#metodetrx').text(response.metode);
-                            // $('#btnstruk').attr('href', '/kasir/struk/' + response.id);
-                            $('#btnstruk').attr('href', 'intent://cetak-struk?id=' + response.id);
-                            $('#btnSettingDevice').attr('href', 'intent://list-bluetooth-device');
-                            console.log("intent://cetak-struk?id=" + response.id)
-                            
 
-                            if(response.pelanggan) {
-                                $('#btninvoice').data('id', response.id)
-                                $('#btninvoice').data('nohp', response.pelanggan.nohp)
+                if(pettyCashId){
+                    var url = "/kasir/simpan";
+                    formData.append('id_petty_cash', pettyCashId);
+
+                    $.ajax({
+                        type: "POST",
+                        url: url,
+                        data: formData,
+                        processData: false,
+                        contentType: false,
+                        dataType: "JSON",
+                        beforeSend: function() {
+                            showblockUI();
+                        },
+                        complete: function() {
+                            hideblockUI();
+                        },
+                        success: function(response) {
+                            if (response.status) {
+                                toastr.success('Transaksi berhasil');
+                                $('#totaltrx').text(response.total);
+                                $('#metodetrx').text(response.metode);
+                                // $('#btnstruk').attr('href', '/kasir/struk/' + response.id);
+                                $('#btnstruk').attr('href', 'intent://cetak-struk?id=' + response.id);
+                                $('#btnSettingDevice').attr('href', 'intent://list-bluetooth-device');
+                                console.log("intent://cetak-struk?id=" + response.id)
+                                
+    
+                                if(response.pelanggan) {
+                                    $('#btninvoice').data('id', response.id)
+                                    $('#btninvoice').data('nohp', response.pelanggan.nohp)
+                                } else {
+                                    $('#btninvoice').attr('href', response.waLink);
+                                }
+    
+                                modals.modal('show');
                             } else {
-                                $('#btninvoice').attr('href', response.waLink);
+                                toastr.warning('Transaksi gagal');
                             }
-
-                            modals.modal('show');
-                        } else {
-                            toastr.warning('Transaksi gagal');
+                        },
+                        error: function(jqXHR, textStatus, errorThrown, exception) {
+                            var msg = '';
+                            if (jqXHR.status === 0) {
+                                msg = 'Not connect.\n Verify Network.';
+                            } else if (jqXHR.status == 404) {
+                                msg = 'Requested page not found. [404]';
+                            } else if (jqXHR.status == 500) {
+                                msg = 'Internal Server Error [500].';
+                            } else if (exception === 'parsererror') {
+                                msg = 'Requested JSON parse failed.';
+                            } else if (exception === 'timeout') {
+                                msg = 'Time out error.';
+                            } else if (exception === 'abort') {
+                                msg = 'Ajax request aborted.';
+                            } else {
+                                msg = 'Uncaught Error.\n' + jqXHR.responseText;
+                            }
+                            alert(msg);
                         }
-                    },
-                    error: function(jqXHR, textStatus, errorThrown, exception) {
-                        var msg = '';
-                        if (jqXHR.status === 0) {
-                            msg = 'Not connect.\n Verify Network.';
-                        } else if (jqXHR.status == 404) {
-                            msg = 'Requested page not found. [404]';
-                        } else if (jqXHR.status == 500) {
-                            msg = 'Internal Server Error [500].';
-                        } else if (exception === 'parsererror') {
-                            msg = 'Requested JSON parse failed.';
-                        } else if (exception === 'timeout') {
-                            msg = 'Time out error.';
-                        } else if (exception === 'abort') {
-                            msg = 'Ajax request aborted.';
-                        } else {
-                            msg = 'Uncaught Error.\n' + jqXHR.responseText;
-                        }
-                        alert(msg);
-                    }
-                });
+                    });
+                }else{
+                    showPettyCashModal();
+                }
             }
 
             $('#pelanggan').select2({
@@ -1826,6 +2198,59 @@ $id_toko = $this->session->get('id_toko');
                     }
                 });
             })
+
+            $('#formOpenPettyCash').submit(function(e){
+                e.preventDefault()
+
+                var form = $('#formOpenPettyCash')[0];
+                var formData = new FormData(form);
+
+                console.log(formData);
+
+                $.ajax({
+                    type: "POST",
+                    url: "/kasir/storePettyCash",
+                    data: formData,
+                    processData: false,
+                    contentType: false,
+                    dataType: "JSON",
+                    beforeSend: function() {
+                        showblockUI();
+                    },
+                    complete: function() {
+                        hideblockUI();
+                    },
+                    success: function(response) {
+                        console.log(response);
+                        if(response.status) {
+                            pettyCashId = response.id_petty_cash;
+                            toastr.success(response.notif);
+                            modalpc.modal('hide');
+                        }else{
+                            toastr.warning("Saldo awal tidak boleh kosong");
+                        }
+                    },
+                    error: function(jqXHR, textStatus, errorThrown, exception) {
+                        var msg = '';
+                        if (jqXHR.status === 0) {
+                            msg = 'Not connect.\n Verify Network.';
+                        } else if (jqXHR.status == 404) {
+                            msg = 'Requested page not found. [404]';
+                        } else if (jqXHR.status == 500) {
+                            msg = 'Internal Server Error [500].';
+                        } else if (exception === 'parsererror') {
+                            msg = 'Requested JSON parse failed.';
+                        } else if (exception === 'timeout') {
+                            msg = 'Time out error.';
+                        } else if (exception === 'abort') {
+                            msg = 'Ajax request aborted.';
+                        } else {
+                            msg = 'Uncaught Error.\n' + jqXHR.responseText;
+                        }
+                        alert(msg);
+                    }
+                });
+            });
 
             // $('#btninvoice').click(function(e) {
             //     const el = $(this);

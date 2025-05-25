@@ -8,37 +8,36 @@ use CodeIgniter\Database\ConnectionInterface;
 
 use CodeIgniter\Validation\ValidationInterface;
 
-class Model_penjualan extends Model
+class Model_petty_cashes extends Model
 {
     public function __construct(ConnectionInterface &$db = null, ValidationInterface $validation = null)
     {
         parent::__construct($db, $validation);
     }
 
-    protected $table              = 'penjualan';
+    protected $table              = 'petty_cashes';
     protected $primaryKey         = 'id';
     protected $useAutoIncrement   = true;
     protected $returnType         = 'array';
+    protected $useTimestamps = true;
+    
+    public function getUserStarted($id)
+    {
+        return $this->db->table('users')
+                        ->where('id', $id)
+                        ->get()
+                        ->getRow();
+    }
 
     protected $allowedFields      = [
         'id_toko',
-        'id_user',
-        'id_pelanggan',
-        'id_tipe_bayar',
-        'id_discount',
-        'pelanggan',
-        'subtotal',
-        'ppn',
-        'biaya_layanan',
-        'total',
-        'laba',
-        'tgl',
-        'discount',
-        'buktibayar',
-        'tipe_pesanan',
-        'tanggal_preorder',
-        'status_preorder',
-        'id_list_barang',
-        'id_petty_cash',
+        'amount_awal',
+        'amount_akhir',
+        'user_id_started',
+        'user_id_ended',
+        'open',
+        'close',
+        'created_at',
+        'updated_at'
     ];
 }
