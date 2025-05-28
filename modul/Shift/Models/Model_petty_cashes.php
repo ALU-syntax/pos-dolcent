@@ -1,6 +1,6 @@
 <?php
 
-namespace Modul\Kasir\Models;
+namespace Modul\Shift\Models;
 
 use CodeIgniter\Model;
 

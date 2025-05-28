@@ -26,6 +26,7 @@ class Model_stok_bahan extends Model
         'jumlah',
         'tipe',
         'delete',
-        'id_biaya_produksi'
+        'id_biaya_produksi',
+        'id_detail_penjualan'
     ];
 }

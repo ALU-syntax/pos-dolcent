@@ -245,16 +245,16 @@ class Bahan extends BaseController
     public function getStokBahan()
     {
         $id = $this->request->getPost('id');
-        $stok = $this->db->query("SELECT * FROM stok_bahan_baku WHERE id_bahan = '$id'")->getResult();
-        $sale = $this->db->table('detail_penjualan as a')
-                ->select('a.qty, b.tgl, c.qty AS qty_produksi, d.nama_barang')
-                ->join('penjualan as b', 'b.id = a.id_penjualan')
-                ->join('bahan_barang as c', 'c.id_barang = a.id_barang')
-                ->join('barang as d', 'd.id = c.id_barang')
-                ->where('c.id_bahan_baku', $id)
-                ->where('a.delete <>', 1)
-                ->get()
-                ->getResult();
+        $stok = $this->db->query("SELECT sbb.*, dp.barang AS nama_barang FROM stok_bahan_baku sbb LEFT JOIN detail_penjualan dp ON dp.id = sbb.id_detail_penjualan WHERE id_bahan = '$id'")->getResult();
+        // $sale = $this->db->table('detail_penjualan as a')
+        //         ->select('a.qty, b.tgl, c.qty AS qty_produksi, d.nama_barang')
+        //         ->join('penjualan as b', 'b.id = a.id_penjualan')
+        //         ->join('bahan_barang as c', 'c.id_barang = a.id_barang')
+        //         ->join('barang as d', 'd.id = c.id_barang')
+        //         ->where('c.id_bahan_baku', $id)
+        //         ->where('a.delete <>', 1)
+        //         ->get()
+        //         ->getResult();
 
         $html = '';
 
@@ -271,13 +271,23 @@ class Bahan extends BaseController
                             </div>
                          </div>';
                 } else {
-                    $html .= '<div class="card mb-2 mt-2" style="background-color: #f2f7ff;">
+                    if($key->id_detail_penjualan){
+                        $html .= '<div class="card mb-2 mt-2" style="background-color: #f2f7ff;">
+                            <div class="card-body">
+                                Penjualan ' . $key->nama_barang . ' &nbsp;<span class="text-danger">-' . $key->jumlah . '</span>
+                                <br>
+                                <small style="font-size: x-small;">' . $date . '</small>
+                            </div>
+                         </div>';
+                    }else{
+                        $html .= '<div class="card mb-2 mt-2" style="background-color: #f2f7ff;">
                             <div class="card-body">
                                 Pengurangan Stok &nbsp;<span class="text-danger">-' . $key->jumlah . '</span>
                                 <br>
                                 <small style="font-size: x-small;">' . $date . '</small>
                             </div>
                          </div>';
+                    }
                 }
             }
         } else {
@@ -288,19 +298,19 @@ class Bahan extends BaseController
                          </div>';
         }
 
-        if ($sale) {
-            foreach ($sale as $key) {
-                $date = new DateTime($key->tgl);
-                $date = $date->format('d F Y, H:i');
-                $html .= '<div class="card mb-2 mt-2" style="background-color: #f2f7ff;">
-                            <div class="card-body">
-                                Penjualan ' . $key->nama_barang . ' &nbsp;<span class="text-danger">-' . $key->qty_produksi . '</span>
-                                <br>
-                                <small style="font-size: x-small;">' . $date . '</small>
-                            </div>
-                         </div>';
-            }
-        }
+        // if ($sale) {
+        //     foreach ($sale as $key) {
+        //         $date = new DateTime($key->tgl);
+        //         $date = $date->format('d F Y, H:i');
+        //         $html .= '<div class="card mb-2 mt-2" style="background-color: #f2f7ff;">
+        //                     <div class="card-body">
+        //                         Penjualan ' . $key->nama_barang . ' &nbsp;<span class="text-danger">-' . $key->qty_produksi . '</span>
+        //                         <br>
+        //                         <small style="font-size: x-small;">' . $date . '</small>
+        //                     </div>
+        //                  </div>';
+        //     }
+        // }
 
         $response = [
             'html'  => $html,

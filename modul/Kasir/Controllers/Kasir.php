@@ -7,7 +7,7 @@ use chillerlan\QRCode\QRCode;
 use CodeIgniter\I18n\Time;
 use Hermawan\DataTables\DataTable;
 use DateTime;
-use Modul\Kasir\Models\Model_petty_cashes;
+use Modul\Shift\Models\Model_petty_cashes;
 use Modul\Payment_gateway\Libraries\Npay;
 use Modul\Payment_gateway\Libraries\SmartPayment;
 use Modul\Kasir\Models\Model_detail_penjualan;
@@ -503,6 +503,9 @@ class Kasir extends BaseController
                 $varian         = $this->db->table('varian')->where('id', $id_varian[$key])->update(['stok' => $new_stok]);
             }
 
+            $save = $this->detail->save($data_detail);
+            $id_detail_penjualan = $this->detail->getInsertID();
+
             $bahan = $this->db->query("SELECT a.*, b.stok, b.stok_penjualan, b.id AS id_bahan FROM bahan_barang a JOIN bahan_baku b ON a.id_bahan_baku = b.id WHERE a.id_barang = '$id_barang[$key]'")->getResult();
             if ($bahan) {
                 foreach ($bahan as $kuy) {
@@ -510,18 +513,18 @@ class Kasir extends BaseController
                     $new_stok_penjualan = $kuy->stok_penjualan - $kuy->qty * $qty[$key];
                     $updateBahan = $this->db->table("bahan_baku")->where("id", $kuy->id_bahan_baku)->update(["stok" => $new_stok, "stok_penjualan" => $new_stok_penjualan]);
 
-                    // $dataStokBahan = [
-                    //     'id_bahan' => $kuy->id_bahan,
-                    //     'tanggal' => $tgl,
-                    //     'jumlah' => $kuy->qty * $qty[$key],
-                    //     'tipe' => 2
-                    // ];
+                    $dataStokBahan = [
+                        'id_bahan' => $kuy->id_bahan,
+                        'tanggal' => $tgl,
+                        'jumlah' => $kuy->qty * $qty[$key],
+                        'tipe' => 2,
+                        'id_detail_penjualan' => $id_detail_penjualan
+                    ];
 
-                    // $this->stok_bahan->save($dataStokBahan);
+                    $this->stok_bahan->save($dataStokBahan);
                 }
             }
 
-            $save = $this->detail->save($data_detail);
         }
 
         if ($save) {
