@@ -12,15 +12,24 @@ function isLabelChecked($label)
 
 function getAmount($money)
 {
-    $cleanString = preg_replace('/([^0-9\.,])/i', '', $money);
-    $onlyNumbersString = preg_replace('/([^0-9])/i', '', $money);
+    // Hilangkan semua karakter kecuali angka, titik dan koma
+    $money = preg_replace('/[^\d.,]/', '', $money);
 
-    $separatorsCountToBeErased = strlen($cleanString) - strlen($onlyNumbersString) - 1;
+    // Jika format Indonesia (misalnya "10.000,50") → ubah menjadi "10000.50"
+    if (strpos($money, ',') !== false && strpos($money, '.') !== false) {
+        $money = str_replace('.', '', $money); // hilangkan pemisah ribuan
+        $money = str_replace(',', '.', $money); // ubah koma jadi titik desimal
+    }
+    // Jika hanya koma → asumsikan sebagai desimal
+    else if (strpos($money, ',') !== false) {
+        $money = str_replace(',', '.', $money);
+    }
+    // Jika hanya titik → asumsikan sebagai pemisah ribuan (hilangkan saja)
+    else {
+        $money = str_replace('.', '', $money);
+    }
 
-    $stringWithCommaOrDot = preg_replace('/([,\.])/', '', $cleanString, $separatorsCountToBeErased);
-    $removedThousandSeparator = preg_replace('/(\.|,)(?=[0-9]{3,}$)/', '',  $stringWithCommaOrDot);
-
-    return (float) str_replace(',', '.', $removedThousandSeparator);
+    return (float) $money;
 }
 
 function encrypt_url($string)
