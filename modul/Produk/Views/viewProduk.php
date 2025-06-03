@@ -107,9 +107,9 @@
                             <textarea class="form-control" name="deskripsi" id="deskripsi" placeholder="Masukkan deskripsi produk"></textarea>
                         </div>
                         <div class="col-12 mb-2 mt-2">
-                            <div class="alert alert-info mb-4" role="alert">
+                            <!-- <div class="alert alert-info mb-4" role="alert">
                                 Jika mengisi bahan baku total harga jual barang akan ditambah dengan harga bahan yang digunakan.
-                            </div>
+                            </div> -->
                             <div class="card p-2 rounded border">
                                 <label for="bahan" class="form-label">Pilih Bahan Baku</label>
                                 <select class="form-control mb-" id="bahan" multiple>
@@ -597,6 +597,8 @@
     function tambah() {
         $('#id').val('');
         $('#preview').empty();
+        $('#bahan').empty();
+        $("#tbody").empty();
 
         $('#form')[0].reset();
         var form = $('#form input, #form select');
