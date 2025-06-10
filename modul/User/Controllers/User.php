@@ -18,12 +18,14 @@ class User extends BaseController
     public function index()
     {
         $app_menu = $this->db->query("SELECT id, nama_menu FROM app_menu WHERE status = 1 ORDER BY posisi ASC")->getResult();
+        $toko = $this->db->query("SELECT * FROM toko WHERE deleted_at IS NULL ORDER BY nama_toko ASC")->getResult();
 
         $data_page = [
             'menu'     => 'user',
             'submenu'  => 'user',
             'title'    => 'Data User',
-            'app_menu' => $app_menu
+            'app_menu' => $app_menu,
+            'toko'     => $toko,
         ];
 
         return view('Modul\User\Views\viewUser', $data_page);
@@ -33,16 +35,25 @@ class User extends BaseController
     {
         $id_toko = $this->session->get('id_toko');        
 
-        $builder = $this->db->table('user')->where('id_toko', $id_toko)->where('email <>', 'supersuperadmin@mail.com')->orderBy('id', 'DESC');
+        $builder = $this->db->table('user')
+        ->select('user.id, user.email, user.nama as user_nama, user.id_toko, user.nohp, user.status, toko.nama_toko as nama_toko')
+        ->join('toko', 'toko.id = user.id_toko')
+        ->where('user.email <>', 'supersuperadmin@mail.com')
+        ->orderBy('user.id', 'DESC');
+
+
+        if($this->session->get('email') != 'supersuperadmin@mail.com') {
+            $builder->where('id_toko', $id_toko);
+        }
 
         return DataTable::of($builder)
             ->addNumbering('no')
-            ->setSearchableColumns(['LOWER(nama)'])
+            ->setSearchableColumns(['LOWER(user_nama)'])
             ->add('action', function ($row) {
                 return '
                 <button type="button" class="btn btn-light" title="Edit Akses Menu" onclick="aksesMenu(\'' . $row->id . '\')"><i class="fas fa-tasks"></i></button>
                 <button type="button" class="btn btn-light" title="Edit Data" onclick="edit(\'' . $row->id . '\')"><i class="fa fa-edit"></i></button>
-                <button type="button" class="btn btn-light" title="Hapus Data" onclick="hapus(\'' . $row->id . '\', \'' . $row->nama . '\')"><i class="fa fa-trash"></i></button>';
+                <button type="button" class="btn btn-light" title="Hapus Data" onclick="hapus(\'' . $row->id . '\', \'' . $row->user_nama . '\')"><i class="fa fa-trash"></i></button>';
             })->add('is_active', function ($row) {
                 return '<div class="form-switch">
                             <input type="checkbox" class="form-check-input"  onclick="changeStatus(\'' . $row->id . '\');" id="set_active' . $row->id . '" ' . isChecked($row->status) . '>
@@ -107,6 +118,13 @@ class User extends BaseController
                         'is_unique'    => '{field} telah terdaftar',
                     ]
                 ],
+                'id_toko' => [
+                    'label'  => 'Toko',
+                    'rules'  => 'required',
+                    'errors' => [
+                        'required'     => '{field} harus diisi',
+                    ]
+                ],
             ]);
         } else {
             $rules = $this->validate([
@@ -134,6 +152,13 @@ class User extends BaseController
                         'is_unique'    => '{field} telah terdaftar',
                     ]
                 ],
+                'id_toko' => [
+                    'label'  => 'Toko',
+                    'rules'  => 'required',
+                    'errors' => [
+                        'required'     => '{field} harus diisi',
+                    ]
+                ],
                 'pw' => [
                     'label'  => 'Password',
                     'rules'  => 'required|min_length[6]',
@@ -156,6 +181,7 @@ class User extends BaseController
                 'email'     => $this->validation->getError('email'),
                 'nohp'      => $this->validation->getError('nohp'),
                 'pw'        => $this->validation->getError('pw'),
+                'id_toko'   => $this->validation->getError('id_toko'),
             ];
 
             $respond = [
@@ -164,7 +190,8 @@ class User extends BaseController
             ];
         } else {
             $id        = $this->request->getPost('id');
-            $id_toko   = $this->session->get('id_toko');
+            // $id_toko   = $this->session->get('id_toko');
+            $id_toko   = $this->request->getPost('id_toko');
             $pw        = $this->request->getPost('pw');
 
             $data = [

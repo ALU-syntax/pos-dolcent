@@ -37,6 +37,7 @@ $this->db         = Database::connect();
                                         <th>No</th>
                                         <th>Nama</th>
                                         <th>E-mail</th>
+                                        <th>Toko</th>
                                         <th>Nomor HP</th>
                                         <th>Status</th>
                                         <th>Action</th>
@@ -54,7 +55,8 @@ $this->db         = Database::connect();
 </section>
 
 <!-- Modal -->
-<div class="modal fade" id="modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+<div class="modal fade" id="modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-scrollable">
         <div class="modal-content">
             <div class="modal-header">
@@ -66,23 +68,39 @@ $this->db         = Database::connect();
                     <input type="hidden" name="id" id="id">
                     <div class="mb-3">
                         <label for="nama" class="form-label">Nama</label>
-                        <input type="text" class="form-control" id="nama" name="nama" placeholder="Masukkan nama pelanggan">
+                        <input type="text" class="form-control" id="nama" name="nama"
+                            placeholder="Masukkan nama pelanggan">
                         <div class="invalid-feedback"></div>
                     </div>
                     <div class="mb-3">
                         <label for="email" class="form-label">E-mail</label>
-                        <input type="email" class="form-control" id="email" name="email" placeholder="Masukkan e-mail user">
+                        <input type="email" class="form-control" id="email" name="email"
+                            placeholder="Masukkan e-mail user">
                         <div class="invalid-feedback"></div>
                     </div>
                     <div class="mb-3">
                         <label for="nohp" class="form-label">Nomor HP</label>
-                        <input type="number" class="form-control" id="nohp" name="nohp" placeholder="Masukkan nomor hp user">
+                        <input type="number" class="form-control" id="nohp" name="nohp"
+                            placeholder="Masukkan nomor hp user">
                         <div class="invalid-feedback"></div>
                     </div>
-                    <label for="pw" class="form-label">Password <small class="text-muted" id="alertpw">*Isi jika ingin merubah password</small></label>
+                    <div class="mb-3">
+                        <label for="id_toko" class="form-label">Toko</label>
+                        <select class="form-select w-100" name="id_toko" id="id_toko">
+                            <option value="" disabled selected>Pilih Toko</option>
+                            <?php foreach ($toko as $key) : ?>
+                                <option value="<?php echo $key->id; ?>"><?php echo $key->nama_toko; ?></option>
+                            <?php endforeach ?>
+                        </select>
+                        <div class="invalid-feedback"></div>
+                    </div>
+
+                    <label for="pw" class="form-label">Password <small class="text-muted" id="alertpw">*Isi jika ingin
+                            merubah password</small></label>
                     <div class="input-group mb-3">
                         <input type="password" id="pw" name="pw" class="form-control" placeholder="Masukkan password">
-                        <span class="input-group-text" style="cursor: pointer;" id="pwtoggle"><i class="fas fa-eye-slash"></i></span>
+                        <span class="input-group-text" style="cursor: pointer;" id="pwtoggle"><i
+                                class="fas fa-eye-slash"></i></span>
                     </div>
             </div>
             <div class="modal-footer">
@@ -95,7 +113,8 @@ $this->db         = Database::connect();
 </div>
 
 <!-- Modal Akses Menu -->
-<div class="modal modal-lg fade" id="modala" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+<div class="modal modal-lg fade" id="modala" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-scrollable">
         <div class="modal-content">
             <div class="modal-header">
@@ -110,25 +129,28 @@ $this->db         = Database::connect();
                     </div>
                     <?php foreach ($app_menu as $key) :
                         $child = $this->db->query("SELECT id, nama_child FROM app_child_menu WHERE id_app_menu = '$key->id' AND status = 1 ORDER BY posisi ASC")->getResult(); ?>
-                        <div class="form-check mb-2">
-                            <input class="form-check-input menu" type="checkbox" value="<?php echo $key->id; ?>" id="menu<?php echo $key->id; ?>" name="menu[]">
-                            <label class="form-check-label fw-bold" for="menu<?php echo $key->id; ?>">
-                                <?php echo $key->nama_menu; ?>
-                            </label>
+                    <div class="form-check mb-2">
+                        <input class="form-check-input menu" type="checkbox" value="<?php echo $key->id; ?>"
+                            id="menu<?php echo $key->id; ?>" name="menu[]">
+                        <label class="form-check-label fw-bold" for="menu<?php echo $key->id; ?>">
+                            <?php echo $key->nama_menu; ?>
+                        </label>
+                    </div>
+                    <div class="row">
+                        <?php foreach ($child as $kuy) : ?>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="form-check">
+                                <input class="form-check-input child" type="checkbox" value="<?php echo $kuy->id; ?>"
+                                    id="child<?php echo $kuy->id; ?>" data-parent="menu<?php echo $key->id; ?>"
+                                    name="child[]">
+                                <label class="form-check-label" for="child<?php echo $kuy->id; ?>">
+                                    <?php echo $kuy->nama_child; ?>
+                                </label>
+                            </div>
                         </div>
-                        <div class="row">
-                            <?php foreach ($child as $kuy) : ?>
-                                <div class="col-lg-4 col-md-6">
-                                    <div class="form-check">
-                                        <input class="form-check-input child" type="checkbox" value="<?php echo $kuy->id; ?>" id="child<?php echo $kuy->id; ?>" data-parent="menu<?php echo $key->id; ?>" name="child[]">
-                                        <label class="form-check-label" for="child<?php echo $kuy->id; ?>">
-                                            <?php echo $kuy->nama_child; ?>
-                                        </label>
-                                    </div>
-                                </div>
-                            <?php endforeach; ?>
-                        </div>
-                        <hr>
+                        <?php endforeach; ?>
+                    </div>
+                    <hr>
                     <?php endforeach; ?>
             </div>
             <div class="modal-footer">
@@ -145,7 +167,8 @@ $this->db         = Database::connect();
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="modaldLabel">Hapus data user "<span><strong id="pelanggan"></strong></span>"</h5>
+                <h5 class="modal-title" id="modaldLabel">Hapus data user "<span><strong id="pelanggan"></strong></span>"
+                </h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
@@ -171,7 +194,7 @@ $this->db         = Database::connect();
     var modala = $('#modala');
     var modald = $('#modald');
 
-    document.addEventListener("DOMContentLoaded", function() {
+    document.addEventListener("DOMContentLoaded", function () {
         table = $('#table').DataTable({
             processing: true,
             serverSide: true,
@@ -193,12 +216,17 @@ $this->db         = Database::connect();
                     width: 10
                 },
                 {
-                    data: 'nama',
+                    data: 'user_nama',
                     orderable: false,
                     width: 100
                 },
                 {
                     data: 'email',
+                    orderable: false,
+                    width: 100
+                },
+                {
+                    data: 'nama_toko',
                     orderable: false,
                     width: 100
                 },
@@ -225,15 +253,15 @@ $this->db         = Database::connect();
         });
     });
 
-    $(document).ready(function() {
-        $(".menu").change(function() {
+    $(document).ready(function () {
+        $(".menu").change(function () {
             var isChecked = $(this).prop("checked");
 
             var parentID = $(this).attr("id");
             $(".child[data-parent='" + parentID + "']").prop("checked", isChecked);
         });
 
-        $(".child").change(function() {
+        $(".child").change(function () {
             var parentID = $(this).attr("data-parent");
 
             var isAnyChildChecked = $(".child[data-parent='" + parentID + "']:checked").length > 0;
@@ -250,13 +278,13 @@ $this->db         = Database::connect();
                 id: id
             },
             dataType: "JSON",
-            beforeSend: function() {
+            beforeSend: function () {
                 showblockUI();
             },
-            complete: function() {
+            complete: function () {
                 hideblockUI();
             },
-            success: function(response) {
+            success: function (response) {
                 if (response.status) {
                     isChecked.next().text($(isChecked).is(':checked') ? 'Aktif' : 'Nonaktif');
                     toastr.success('Data Berhasil Diperbaharui');
@@ -265,7 +293,7 @@ $this->db         = Database::connect();
                     toastr.error('Data gagal Diperbaharui');
                 }
             },
-            error: function(jqXHR, textStatus, errorThrown) {
+            error: function (jqXHR, textStatus, errorThrown) {
                 isChecked.prop('checked', isChecked.is(':checked') ? null : 'checked');
 
             },
@@ -294,19 +322,20 @@ $this->db         = Database::connect();
                 id: id
             },
             dataType: "JSON",
-            beforeSend: function() {
+            beforeSend: function () {
                 showblockUI();
             },
-            complete: function() {
+            complete: function () {
                 hideblockUI();
             },
-            success: function(response) {
+            success: function (response) {
+                console.log(response);
                 if (response.status) {
-                    $.each(response.child, function(index, childID) {
+                    $.each(response.child, function (index, childID) {
                         $("#child" + childID).prop("checked", true);
                     });
 
-                    $.each(response.menu, function(index, menuID) {
+                    $.each(response.menu, function (index, menuID) {
                         $("#menu" + menuID).prop("checked", true);
                     });
 
@@ -319,11 +348,12 @@ $this->db         = Database::connect();
                     $('#nama').val(response.data.nama);
                     $('#email').val(response.data.email);
                     $('#nohp').val(response.data.nohp);
+                    $("#id_toko").val(response.data.id_toko).attr("selected", "selected");
                     $('#title').text('Edit data user');
                     modal.modal('show');
                 }
             },
-            error: function(jqXHR, textStatus, errorThrown, exception) {
+            error: function (jqXHR, textStatus, errorThrown, exception) {
                 var msg = '';
                 if (jqXHR.status === 0) {
                     msg = 'Not connect.\n Verify Network.';
@@ -353,20 +383,20 @@ $this->db         = Database::connect();
                 id: id
             },
             dataType: "JSON",
-            beforeSend: function() {
+            beforeSend: function () {
                 showblockUI();
             },
-            complete: function() {
+            complete: function () {
                 hideblockUI();
             },
-            success: function(response) {
+            success: function (response) {
                 if (response.status) {
                     $('#formakses')[0].reset();
                     $('#alert').addClass('d-none');
-                    $.each(response.child, function(index, childID) {
+                    $.each(response.child, function (index, childID) {
                         $("#child" + childID).prop("checked", true);
                     });
-                    $.each(response.menu, function(index, menuID) {
+                    $.each(response.menu, function (index, menuID) {
                         $("#menu" + menuID).prop("checked", true);
                     });
                     $('#id_akses').val(response.akses);
@@ -375,7 +405,7 @@ $this->db         = Database::connect();
                     toastr.warning('Maaf, tidak menemukan data');
                 }
             },
-            error: function(jqXHR, textStatus, errorThrown, exception) {
+            error: function (jqXHR, textStatus, errorThrown, exception) {
                 var msg = '';
                 if (jqXHR.status === 0) {
                     msg = 'Not connect.\n Verify Network.';
@@ -411,18 +441,18 @@ $this->db         = Database::connect();
             data: {
                 id: id
             },
-            beforeSend: function() {
+            beforeSend: function () {
                 showblockUI();
             },
-            complete: function() {
+            complete: function () {
                 hideblockUI();
             },
-            success: function(data) {
+            success: function (data) {
                 toastr.success('Data Berhasil dihapus');
                 modald.modal('hide');
                 table.ajax.reload();
             },
-            error: function(jqXHR, textStatus, errorThrown) {
+            error: function (jqXHR, textStatus, errorThrown) {
                 var msg = '';
                 if (jqXHR.status === 0) {
                     msg = 'Not connect.\n Verify Network.';
@@ -444,7 +474,7 @@ $this->db         = Database::connect();
         });
     }
 
-    $("#pwtoggle").click(function() {
+    $("#pwtoggle").click(function () {
         if ($("#pw").attr('type') == 'password') {
             $("#pw").attr('type', 'text');
             $(this).html('<i class="fas fa-eye"></i>');
@@ -454,27 +484,27 @@ $this->db         = Database::connect();
         }
     });
 
-    $('#form').submit(function(e) {
+    $('#form').submit(function (e) {
         e.preventDefault();
         $.ajax({
             type: "POST",
             url: "/user/simpan",
             data: $(this).serialize(),
             dataType: "JSON",
-            beforeSend: function() {
+            beforeSend: function () {
                 showblockUI();
             },
-            complete: function() {
+            complete: function () {
                 hideblockUI();
             },
-            success: function(response) {
+            success: function (response) {
                 if (response.status) {
                     $('#form')[0].reset();
                     table.ajax.reload();
                     toastr.success(response.notif);
                     modal.modal('hide');
                 } else {
-                    $.each(response.errors, function(key, value) {
+                    $.each(response.errors, function (key, value) {
                         $('[name="' + key + '"]').addClass('is-invalid');
                         $('[name="' + key + '"]').next().text(value);
                         if (value == "") {
@@ -484,7 +514,7 @@ $this->db         = Database::connect();
                     });
                 }
             },
-            error: function(jqXHR, textStatus, errorThrown, exception) {
+            error: function (jqXHR, textStatus, errorThrown, exception) {
                 var msg = '';
                 if (jqXHR.status === 0) {
                     msg = 'Not connect.\n Verify Network.';
@@ -506,26 +536,26 @@ $this->db         = Database::connect();
         });
     });
 
-    $('#formakses').submit(function(e) {
+    $('#formakses').submit(function (e) {
         e.preventDefault();
         $.ajax({
             type: "POST",
             url: "/user/simpanAkses",
             data: $(this).serialize(),
             dataType: "JSON",
-            beforeSend: function() {
+            beforeSend: function () {
                 showblockUI();
             },
-            complete: function() {
+            complete: function () {
                 hideblockUI();
             },
-            success: function(response) {
+            success: function (response) {
                 if (response.status) {
                     table.ajax.reload();
                     toastr.success("Akses user berhasil diperbaharui");
                     modala.modal('hide');
                 } else {
-                    $.each(response.errors, function(key, value) {
+                    $.each(response.errors, function (key, value) {
                         $('[name="' + key + '"]').addClass('is-invalid');
                         $('[name="' + key + '"]').next().text(value);
                         if (value == "") {
@@ -535,7 +565,7 @@ $this->db         = Database::connect();
                     });
                 }
             },
-            error: function(jqXHR, textStatus, errorThrown, exception) {
+            error: function (jqXHR, textStatus, errorThrown, exception) {
                 var msg = '';
                 if (jqXHR.status === 0) {
                     msg = 'Not connect.\n Verify Network.';
