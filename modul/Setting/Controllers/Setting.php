@@ -73,7 +73,8 @@ class Setting extends BaseController
                 'errors' => $errors
             ];
         } else {
-            $id        = $this->session->get('id_toko');
+            // $id        = $this->session->get('id_toko');
+            $id        = $this->request->getPost('id');
             $nama      = $this->request->getPost('nama');
             $email     = $this->request->getPost('email');
             $nohp      = $this->request->getPost('nohp');
@@ -117,8 +118,14 @@ class Setting extends BaseController
             $save = $this->toko->save($data);
 
             if ($save) {
+                if ($id) {
+                    $notif = "Data berhasil diperbaharui";
+                } else {
+                    $notif = "Data berhasil ditambahkan";
+                }
                 $respond = [
                     'status' => TRUE,
+                    'notif'  => $notif
                 ];
             } else {
                 $respond = [
@@ -128,4 +135,57 @@ class Setting extends BaseController
         }
         echo json_encode($respond);
     }
+
+    public function datatable(){
+        $builder = $this->db->table('toko');
+        $builder->select('id, nama_toko, email, nohp, alamat, logo');
+        $builder->where('deleted_at', null);
+        $builder->orderBy('id', 'DESC');
+
+        return DataTable::of($builder)
+            ->addNumbering('no')
+            ->add('action', function ($row) {
+                return '<button type="button" class="btn btn-light" title="Edit Data" onclick="edit(\'' . $row->id . '\')"><i class="fa fa-edit"></i></button>
+                <button type="button" class="btn btn-light" title="Hapus Data" onclick="hapus(\'' . $row->id . '\', \'' . $row->nama_toko . '\')"><i class="fa fa-trash"></i></button>';
+            })
+            ->toJson(true);
+    }
+
+    public function getData(){
+        $id = $this->request->getPost('id');
+
+        $data = $this->toko->find($id);
+        
+        if ($data) {
+            $respond = [
+                'status' => TRUE,
+                'data'   => $data
+            ];
+        } else {
+            $respond = [
+                'status' => FALSE,
+                'errors' => 'Data tidak ditemukan'
+            ];
+        }
+        echo json_encode($respond);
+    }
+
+    public function hapus()
+    {
+        $id = $this->request->getPost('id');
+
+        try {
+            $this->toko->delete($id);
+            return $this->response->setJSON(['status' => true]);
+        } catch (\CodeIgniter\Database\Exceptions\DatabaseException $e) {
+            $errorMessage = $e->getMessage();
+
+            if (strpos($errorMessage, 'foreign key constraint') !== false) {
+                return $this->response->setJSON(['status' => false]);
+            } else {
+                return $this->response->setJSON(['status' => false]);
+            }
+        }
+    }
+
 }

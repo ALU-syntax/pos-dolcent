@@ -18,6 +18,8 @@ class Model_toko extends Model
     protected $table              = 'toko';
     protected $primaryKey         = 'id';
     protected $useAutoIncrement   = true;
+    protected $useSoftDeletes = true;
+    protected $deletedField  = 'deleted_at'; // nama kolom soft delete, default 'deleted_at'
     protected $returnType         = 'array';
 
     protected $allowedFields      = [
