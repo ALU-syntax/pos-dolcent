@@ -113,7 +113,7 @@ class Setting extends BaseController
                 $ses_data['logo'] = $namafile;
             }
 
-            $this->session->set($ses_data);
+            // $this->session->set($ses_data);
 
             $save = $this->toko->save($data);
 

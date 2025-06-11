@@ -19,7 +19,7 @@ $id_toko = $this->session->get('id_toko');
     <title>CIL space POS</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="shortcut icon" href="/assets/img/logo-chillspace-mateblack.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="/assets/img/logo/<?php echo $this->session->get('logo'); ?>" type="image/x-icon" />
     <link rel="stylesheet" href="/assets/pos/css/struk.css">
     <!--<link rel="icon" href="/assets/img/your-logo.png">-->
     <!--<link rel="stylesheet" href="/assets/extensions/%40fortawesome/fontawesome-free/css/all.min.css" />-->
@@ -161,7 +161,7 @@ $id_toko = $this->session->get('id_toko');
             <div id="kt_aside" class="aside " data-kt-drawer="true" data-kt-drawer-name="aside" data-kt-drawer-activate="{default: true, lg: false}" data-kt-drawer-overlay="true" data-kt-drawer-width="auto" data-kt-drawer-direction="start" data-kt-drawer-toggle="#kt_aside_toggle">
                 <div class="aside-logo flex-column-auto pt-10 pt-lg-20" id="kt_aside_logo">
                     <a href="javascript:void(0)">
-                        <img alt="Logo" src="/assets/img/logo-chillspace-mateblack.png" height="30" />
+                        <img alt="Logo" src="/assets/img/logo/<?php echo $this->session->get('logo'); ?>" height="30" />
                     </a>
                 </div>
                 <div class="aside-menu flex-column-fluid pt-0 pb-7 py-lg-10" id="kt_aside_menu">
@@ -192,7 +192,7 @@ $id_toko = $this->session->get('id_toko');
                 <div class="header-mobile py-3">
                     <div class="container d-flex flex-stack">
                         <div class="d-flex align-items-center flex-grow-1 flex-lg-grow-0">
-                            <img alt="Logo" src="/assets/img/logo-chillspace-mateblack.svg" class="h-35px" />
+                            <img alt="Logo" src="/assets/img/logo/<?php echo $this->session->get('logo'); ?>" class="h-35px" />
                         </div>
                         <button class="btn btn-icon btn-active-color-primary me-n4" id="kt_aside_toggle">
                             <i class="fas fa-stream fs-2x"><span class="path1"></span><span class="path2"></span></i> </button>
@@ -204,7 +204,7 @@ $id_toko = $this->session->get('id_toko');
                         <div class="page-title d-flex flex-column align-items-start justify-content-center flex-wrap me-lg-20 py-3 py-lg-0 me-3">
                             <h1 class="d-flex flex-column text-dark fw-bold my-1">
                                 <span class="text-white fs-1">
-                                    Kasir CIL SPACE </span>
+                                    Kasir <?php echo $this->session->get('nama_toko'); ?> </span>
                             </h1>
                         </div>
                         <div class="d-flex align-items-center flex-wrap">
@@ -398,7 +398,7 @@ $id_toko = $this->session->get('id_toko');
                                                                 </label>
                                                             </div>
                                                         <?php endforeach; ?>
-                                                        <!-- <?php if ($midtrans->client_key != null) : ?>
+                                                        <!-- <?php // if ($midtrans->client_key != null) : ?>
                                                             <div class="col-md-4 col-6 mb-4">
                                                                 <label class="btn bg-light btn-color-gray-600 btn-active-text-gray-800 border border-3 border-gray-100 border-active-primary btn-active-light-primary w-100 px-4" data-kt-button="true">
                                                                     <input class="btn-check" type="radio" name="method" value="midtrans" id="midtrans" />
@@ -406,8 +406,8 @@ $id_toko = $this->session->get('id_toko');
                                                                     <span class="fs-7 fw-bold d-block">Midtrans</span>
                                                                 </label>
                                                             </div>
-                                                        <?php endif; ?>
-                                                        <?php if ($npay->api_key != null) : ?>
+                                                        <?php // endif; ?>
+                                                        <?php // if ($npay->api_key != null) : ?>
                                                             <div class="col-md-4 col-6 mb-4">
                                                                 <label class="btn bg-light btn-color-gray-600 btn-active-text-gray-800 border border-3 border-gray-100 border-active-primary btn-active-light-primary w-100 px-4" data-kt-button="true">
                                                                     <input class="btn-check" type="radio" name="method" value="npay" id="npay" />
@@ -415,8 +415,8 @@ $id_toko = $this->session->get('id_toko');
                                                                     <span class="fs-7 fw-bold d-block">NPAY</span>
                                                                 </label>
                                                             </div>
-                                                        <?php endif; ?>
-                                                        <?php if ($smartpayment->host != null) : ?>
+                                                        <?php // endif; ?>
+                                                        <?php // if ($smartpayment->host != null) : ?>
                                                             <div class="col-md-4 col-6 mb-4">
                                                                 <label class="btn bg-light btn-color-gray-600 btn-active-text-gray-800 border border-3 border-gray-100 border-active-primary btn-active-light-primary w-100 px-4" data-kt-button="true">
                                                                     <input class="btn-check" type="radio" name="method" value="smartpayment" id="smartpayment" />
@@ -424,7 +424,7 @@ $id_toko = $this->session->get('id_toko');
                                                                     <span class="fs-9 fw-bold d-block">SMARTPAYMENT</span>
                                                                 </label>
                                                             </div>
-                                                        <?php endif; ?> -->
+                                                        <?php // endif; ?> -->
 
                                                         <!-- <label for="tipe_pesanan" class="form-label mt-4">Tipe Pembayaran</label>
                                                         <div class="form-check">
@@ -869,7 +869,7 @@ $id_toko = $this->session->get('id_toko');
         <script src="/assets/extensions/datatables.net-bs5/js/dataTables.bootstrap5.min.js"></script>
         <script src="/assets/extensions/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
         <script src="/assets/extensions/datatables.net-responsive-bs5/js/responsive.bootstrap5.min.js"></script>
-        <script src="https://app.midtrans.com/snap/snap.js" data-client-key="<?php echo $midtrans->client_key; ?>"></script>
+        <!-- <script src="https://app.midtrans.com/snap/snap.js" data-client-key="<?php // echo $midtrans->client_key; ?>"></script> -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.min.js"></script>
         <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image-more/2.8.0/dom-to-image-more.min.js"></script>-->
 
@@ -1350,8 +1350,10 @@ $id_toko = $this->session->get('id_toko');
                         totalHarga += parseFloat($(this).val());
                     });
 
+                    console.log(<?php echo $toko->biaya_layanan ? $toko->biaya_layanan : 0; ?>)
                     var ppn = totalHarga * <?php echo $toko->ppn; ?> / 100;
-                    totalHarga = totalHarga + ppn + <?php echo $toko->biaya_layanan; ?>;
+                    totalHarga = totalHarga + ppn + <?php echo $toko->biaya_layanan ? $toko->biaya_layanan : 0; ?>;
+                    
 
                     if ($('#tipedc').val() == 1) {
                         var discount = totalHarga * jumlah / 100;
@@ -1422,6 +1424,7 @@ $id_toko = $this->session->get('id_toko');
                         totalHarga += parseFloat($(this).val());
                     });
 
+                    console.log(<?php echo $toko->biaya_layanan ? $toko->biaya_layanan : 0; ?>)
                     var ppn = totalHarga * <?php echo $toko->ppn; ?> / 100;
                     totalHarga = totalHarga + ppn;
 
@@ -1473,7 +1476,7 @@ $id_toko = $this->session->get('id_toko');
                 });
 
                 var ppn = totalHarga * <?php echo $toko->ppn; ?> / 100;
-                totalHarga = totalHarga + ppn + <?php echo $toko->biaya_layanan; ?>;
+                totalHarga = totalHarga + ppn + <?php echo $toko->biaya_layanan ? $toko->biaya_layanan : 0; ?>;
 
                 if ($('#tipedc').val() == 1) {
                     var discount = totalHarga * jumlah / 100;
@@ -1516,7 +1519,7 @@ $id_toko = $this->session->get('id_toko');
                 });
 
                 var ppn = totalHarga * <?php echo $toko->ppn; ?> / 100;
-                totalHarga = totalHarga + ppn + <?php echo $toko->biaya_layanan; ?>;
+                totalHarga = totalHarga + ppn + <?php echo $toko->biaya_layanan ? $toko->biaya_layanan : 0; ?>;
 
                 if ($('#tipedc').val() == 1) {
                     var discount = totalHarga * jumlah / 100;
@@ -1559,7 +1562,7 @@ $id_toko = $this->session->get('id_toko');
                     });
 
                     var ppn = totalHarga * <?php echo $toko->ppn; ?> / 100;
-                    totalHarga = totalHarga + ppn + <?php echo $toko->biaya_layanan; ?>;
+                    totalHarga = totalHarga + ppn + <?php echo $toko->biaya_layanan ? $toko->biaya_layanan : 0; ?>;
 
                     if ($('#tipedc').val() == 1) {
                         var discount = totalHarga * jumlah / 100;
@@ -1603,6 +1606,7 @@ $id_toko = $this->session->get('id_toko');
                     totalHarga += parseFloat($(this).val());
                 });
 
+                console.log(<?php echo $toko->biaya_layanan ? $toko->biaya_layanan : 0; ?>)
                 var ppn = totalHarga * <?php echo $toko->ppn; ?> / 100;
                 totalHarga = totalHarga + ppn;
 
@@ -1830,6 +1834,7 @@ $id_toko = $this->session->get('id_toko');
                                 totalHarga += parseFloat($(this).val());
                             });
 
+                            console.log(<?php echo $toko->biaya_layanan ? $toko->biaya_layanan : 0; ?>)
                             var ppn = totalHarga * <?php echo $toko->ppn; ?> / 100;
                             totalHarga = totalHarga + ppn;
 

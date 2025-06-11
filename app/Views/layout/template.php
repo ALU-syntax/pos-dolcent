@@ -118,7 +118,8 @@ $child = explode(',', $akses_menu->child);
                 <div class="sidebar-header position-relative">
                     <div class="d-flex justify-content-between align-items-center">
                         <div class="logo">
-                            <a href="/dashboard"><img src="/assets/img/logo-chillspace-mateblack.png" alt="Logo" style="height: 40px;" /></a>
+                            <!-- <a href="/dashboard"><img src="/assets/img/logo-chillspace-mateblack.png" alt="Logo" style="height: 40px;" /></a> -->
+                            <a href="/dashboard"><img src="/assets/img/logo/<?php echo $this->session->get('logo'); ?>" alt="Logo" style="height: 40px;" /></a>
                         </div>
                         <div class="theme-toggle d-flex gap-2 align-items-center mt-2">
                             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--system-uicons" width="20" height="20" preserveAspectRatio="xMidYMid meet" viewBox="0 0 21 21">
@@ -146,7 +147,7 @@ $child = explode(',', $akses_menu->child);
                 </div>
                 <div class="sidebar-menu">
                     <ul class="menu">
-                        <li class="sidebar-title">Menu</li>
+                        <li class="sidebar-title"><?php echo $this->session->get('nama_toko'); ?></li>
 
                         <?php foreach ($main_menu as $key) : ?>
                             <?php if ($key->has_child == 1) {
