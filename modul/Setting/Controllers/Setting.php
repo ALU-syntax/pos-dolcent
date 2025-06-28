@@ -102,6 +102,9 @@ class Setting extends BaseController
             if ($foto->isValid() && !$foto->hasMoved()) {
                 $namafile = $foto->getRandomName();
                 $foto->move(ROOTPATH . 'public/assets/img/logo/', $namafile);
+                // $foto->move(APPPATH . 'public/assets/img/logo/', $namafile);
+                // Path penyimpanan gambar harus sesuai dengan root public domain cilspace.neidra.my.id
+                // $foto->move('/home/uuytuuac/cilspace.neidra.my.id/assets/img/logo/', $namafile);
 
                 if ($id) {
                     $foto = $this->db->table('toko')->select('logo')->where('id', $id)->get()->getRow();

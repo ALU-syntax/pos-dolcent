@@ -1376,10 +1376,10 @@ $id_toko = $this->session->get('id_toko');
             }
 
             function add_barang(id, nama, harga, modal) {
-                console.log(id);
-                console.log(nama);
-                console.log(harga);
-                console.log(modal);
+                // console.log(id);
+                // console.log(nama);
+                // console.log(harga);
+                // console.log(modal);
                 var html = `<tr class="pesanan" id="pesanan` + id + `">
                             <input type="hidden" name="id_barang[]" value="` + id + `" />
                             <input type="hidden" name="id_varian[]" value="" />
@@ -1426,7 +1426,7 @@ $id_toko = $this->session->get('id_toko');
 
                     console.log(<?php echo $toko->biaya_layanan ? $toko->biaya_layanan : 0; ?>)
                     var ppn = totalHarga * <?php echo $toko->ppn; ?> / 100;
-                    totalHarga = totalHarga + ppn;
+                    totalHarga = totalHarga + ppn  + <?php echo $toko->biaya_layanan ? $toko->biaya_layanan : 0; ?>;
 
                     console.log(ppn);
 
@@ -1900,6 +1900,7 @@ $id_toko = $this->session->get('id_toko');
                         hideblockUI();
                     },
                     success: function(response) {
+                        console.log(response);
                         if (response.status) {
                             $('#product').html(response.html);
                         } else {

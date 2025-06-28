@@ -476,7 +476,7 @@
     var modald = $('#modald');
     var listProductChoose = [];
     var ppn = <?php echo $toko-> ppn; ?> ;
-    var biayaLayanan = <?php echo $toko-> biaya_layanan; ?> ;
+    var biayaLayanan = <?php echo $toko->biaya_layanan ? $toko->biaya_layanan : 0; ?>;
     var nominalDiskon = 0;
     var satuanDiskon = 0;
     var idDiskon = 0;

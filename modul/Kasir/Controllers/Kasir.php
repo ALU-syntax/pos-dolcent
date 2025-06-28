@@ -271,14 +271,17 @@ class Kasir extends BaseController
                     $foto = '<h1 class="prod-icon">' . substr($key->nama_barang, 0, 1) . '</h1>';
                 }
 
-                $bahan = $this->db->query("SELECT SUM(b.harga * a.qty) as harga, SUM(b.biaya * a.qty) as biaya FROM bahan_barang a JOIN bahan_baku b ON a.id_bahan_baku = b.id WHERE a.id_barang = '$key->id'")->getRow();
-                if ($bahan) {
-                    $harga_jual = $key->harga_jual + $bahan->harga;
-                    $harga_modal = $key->harga_modal + $bahan->biaya;
-                } else {
-                    $harga_jual = $key->harga_jual;
-                    $harga_modal = $key->harga_modal;
-                }
+                // $bahan = $this->db->query("SELECT SUM(b.harga * a.qty) as harga, SUM(b.biaya * a.qty) as biaya FROM bahan_barang a JOIN bahan_baku b ON a.id_bahan_baku = b.id WHERE a.id_barang = '$key->id'")->getRow();
+                // if ($bahan) {
+                //     $harga_jual = $key->harga_jual + $bahan->harga;
+                //     $harga_modal = $key->harga_modal + $bahan->biaya;
+                // } else {
+                //     $harga_jual = $key->harga_jual;
+                //     $harga_modal = $key->harga_modal;
+                // }
+
+                $harga_jual = $key->harga_jual;
+                $harga_modal = $key->harga_modal;
 
                 if ($totalv >= 1) {
                     $html .= '<div class="card card-flush flex-row-fluid p-6 pb-5 mw-100 barang ' . $key->nama_barang . '" style="width: 180px; cursor: pointer;" data-nama="' . $key->nama_barang . '">
@@ -293,12 +296,12 @@ class Kasir extends BaseController
                                                             </div>
                                                         </div>';
                 } else {
-                    $html .= '<div class="card card-flush flex-row-fluid p-6 pb-5 mw-100 barang ' . $key->nama_barang . '" style="width: 180px; cursor: pointer;" data-nama="' . $key->nama_barang . '">
-                                                            <div class="card-body text-center" onclick="add_barang(\'' . $key->id . '\', \'' . $key->nama_barang . '\', \'' . $harga_jual . '\', \'' . $harga_modal . '\')">
+                    $html .= '<div class="card card-flush flex-row-fluid p-6 pb-5 mw-100 barang ' . $key->nama_barang . '" style="width: 180px; cursor: pointer;" data-nama="addslashes(' . $key->nama_barang . ')">
+                                                            <div class="card-body text-center" onclick="add_barang(\'' . $key->id . '\', addslashes(' . $key->nama_barang . '), \'' . $harga_jual . '\', \'' . $harga_modal . '\')">
                                                                ' . $foto . '
                                                                 <div class="mb-2">
                                                                     <div class="text-center">
-                                                                        <span class="fw-bold text-gray-800 cursor-pointer text-hover-primary fs-3 fs-xl-1" onclick="add_barang(\'' . $key->id . '\', \'' . $key->nama_barang . '\', \'' . $harga_jual . '\', \'' . $harga_modal . '\')">' . $key->nama_barang . '</span>
+                                                                        <span class="fw-bold text-gray-800 cursor-pointer text-hover-primary fs-3 fs-xl-1" onclick="add_barang(\'' . $key->id . '\', addslashes(' . $key->nama_barang . '), \'' . $harga_jual . '\', \'' . $harga_modal . '\')">' . $key->nama_barang . '</span>
                                                                         <span class="text-gray-400 fw-semibold d-block fs-6 mt-n1">' . $totalv . ' Varian</span>
                                                                     </div>
                                                                 </div>

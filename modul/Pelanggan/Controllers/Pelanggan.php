@@ -88,10 +88,7 @@ class Pelanggan extends BaseController
             ],
             'alamat' => [
                 'label' => 'Alamat',
-                'rules' => 'required',
-                'errors' => [
-                    'required' => '{field} harus diisi!'
-                    ]
+                'rules' => 'permit_empty',
                 ]
         ]);
 
