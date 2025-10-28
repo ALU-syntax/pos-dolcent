@@ -135,7 +135,7 @@
                                 <!-- <p class="fw-bold text-end me-2 mt-3 text-dark">Total Harga <span class="ms-4" id="totalharga">Rp 0</span></p> -->
                             </div>
                         </div>
-                        <div class="col-12">
+                        <!-- <div class="col-12">
                             <hr>
                         </div>
                         <div class="col-md-12 mb-3">
@@ -155,7 +155,7 @@
                             <label for="stokmin" class="form-label">Stok Minimum</label>
                             <input type="text" class="form-control nomor" id="stokmin" name="stokmin" placeholder="Masukkan stok minimum">
                             <div class="invalid-feedback"></div>
-                        </div>
+                        </div> -->
                     </div>
             </div>
             <div class="modal-footer">
