@@ -16,7 +16,7 @@ $id_toko = $this->session->get('id_toko');
 <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
 
 <head>
-    <title>CIL space POS</title>
+    <title>DOLCENT POS</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="shortcut icon" href="/assets/img/logo/<?php echo $this->session->get('logo'); ?>" type="image/x-icon" />
@@ -318,13 +318,13 @@ $id_toko = $this->session->get('id_toko');
                                                 <h3 class="card-title fw-bold text-gray-800 fs-2qx">Pesanan Saat Ini</h3>
 
                                                 <div class="card-toolbar">
-                                                    <button type="button" class="btn btn-light-primary fs-4 fw-bold py-4" onclick="clear_all()">Clear All</button>
+                                                    <button type="button" class="btn btn-light-primary fs-4 fw-bold py-4" style="background-color: #9a83003e !important;" onclick="clear_all()">Clear All</button>
                                                 </div>
 
                                                 <select class="form-control" id="pelanggan" name="pelanggan">
                                                 </select>
 
-                                                <button class="btn btn-primary btn-sm mt-4 w-100" type="button" onclick="tambah()" style="margin-bottom: 20px !important;"><i class="fas fa-user-plus"></i> Tambah Pelanggan</button>
+                                                <button class="btn btn-primary btn-sm mt-4 w-100" type="button" onclick="tambah()" style="margin-bottom: 20px !important; background-color: #9A8400 !important;"><i class="fas fa-user-plus"></i> Tambah Pelanggan</button>
                                             </div>
 
                                             <!--begin::Body-->
@@ -344,7 +344,7 @@ $id_toko = $this->session->get('id_toko');
                                                     </table>
                                                 </div>
 
-                                                <div class="d-flex flex-stack rounded-3 p-6 mb-11" style="background-color: #3b527f;">
+                                                <div class="d-flex flex-stack rounded-3 p-6 mb-11" style="background-color: #9A8400;">
                                                     <div class="fs-6 fw-bold text-white">
                                                         <span class="d-block mb-2">Subtotal</span>
                                                         <span class="d-block mb-2">PPN(<?php echo $toko->ppn; ?>%)</span>
@@ -448,7 +448,7 @@ $id_toko = $this->session->get('id_toko');
                                                         <div id="preview" class="mt-3"></div>
                                                     </div>
 
-                                                    <button type="submit" class="btn  fs-1 w-100 py-4" style="background-color: #3b527f; color: white;" disabled id="btn-submit">Submit Order</button>
+                                                    <button type="submit" class="btn  fs-1 w-100 py-4" style="background-color: #9A8400; color: white;" disabled id="btn-submit">Submit Order</button>
                                                 </div>
                                                 <!--end::Payment Method-->
                                             </div>
@@ -588,7 +588,7 @@ $id_toko = $this->session->get('id_toko');
                         </center>
                     </div>
                     <div class="d-flex justify-content-center mb-4">
-                        <a type="submit" class="btn btn-primary w-50" href="/kasir">Buat Pesanan Baru</a>
+                        <a type="submit" class="btn btn-primary w-50" style="background-color: #9A8400 !important;" href="/kasir">Buat Pesanan Baru</a>
                     </div>
                 </div>
             </div>
@@ -703,7 +703,7 @@ $id_toko = $this->session->get('id_toko');
     
                             <div class="row">
                                 <button type="submit" id="btnSubmitPattyCash"
-                                class="btn btn-primary btn-lg mt-4 ms-3" style="width: 96%">Submit</button>
+                                class="btn btn-primary btn-lg mt-4 ms-3" style="width: 96%; background-color: #9A8400 !important;">Submit</button>
                             </div>
                         </form>
                     </div>
@@ -1750,6 +1750,7 @@ $id_toko = $this->session->get('id_toko');
                             }
                         },
                         error: function(jqXHR, textStatus, errorThrown, exception) {
+                            // console.log('Dump from server:', jqXHR.responseText); 
                             var msg = '';
                             if (jqXHR.status === 0) {
                                 msg = 'Not connect.\n Verify Network.';

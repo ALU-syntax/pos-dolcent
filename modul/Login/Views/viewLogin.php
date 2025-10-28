@@ -6,9 +6,9 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CIL SPACE - Login</title>
+    <title>DOLCENT - Login</title>
 
-    <link rel="icon" href="/assets/img/logo-cilspace.png" type="image/x-icon" />
+    <link rel="icon" href="/assets/img/logo-dolcent.jpg" type="image/x-icon" />
     <script async type="module" crossorigin src="/assets/compiled/js/auth-forgot-password.html"></script>
     <link rel="stylesheet" href="/assets/compiled/css/auth-forgot-password.css" />
     <link rel="stylesheet" href="/assets/compiled/css/app.css" />
@@ -17,7 +17,7 @@
 
     <style>
         .bg-right {
-            background-image: url('/assets/img/backdrop-cilsoace.png') !important;
+            background-image: url('/assets/img/logo-dolcent.jpg') !important;
             background-repeat: no-repeat !important;
             background-size: cover !important;
         }

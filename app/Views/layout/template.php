@@ -23,9 +23,9 @@ $child = explode(',', $akses_menu->child);
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title><?php echo $title; ?> - CIL SPACE POS -</title>
+    <title><?php echo $title; ?> - DOLCENT POS -</title>
 
-    <link rel="shortcut icon" href="/assets/img/logo-cilspace.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="/assets/img/logo-dolcent.png" type="image/x-icon" />
     <link rel="stylesheet" href="/assets/compiled/css/app.css" />
     <link rel="stylesheet" href="/assets/compiled/css/app-dark.css" />
     <link href="/assets/extensions/toastr/toastr.min.css" rel="stylesheet" />

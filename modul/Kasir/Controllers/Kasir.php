@@ -5,6 +5,7 @@ namespace Modul\Kasir\Controllers;
 use App\Controllers\BaseController;
 use chillerlan\QRCode\QRCode;
 use CodeIgniter\I18n\Time;
+use CodeIgniter\Log\Logger;
 use Hermawan\DataTables\DataTable;
 use DateTime;
 use Modul\Shift\Models\Model_petty_cashes;
@@ -34,7 +35,8 @@ class Kasir extends BaseController
         $this->session    = Services::session();
         $this->db         = Database::connect();
 
-        $id_toko = 1;
+        // $id_toko = 1;
+        $id_toko = $this->session->get('id_toko');
         $midtrans = $this->db->query("SELECT * FROM midtrans WHERE id_toko = '$id_toko'")->getRow();
 
         Config::$serverKey = $midtrans->server_key;
@@ -489,6 +491,11 @@ class Kasir extends BaseController
         $save = $this->penjualan->save($data);
         $id_penjualan = $this->penjualan->getInsertID();
 
+        // logger()->debug('Payload: ' . json_encode($data));
+        // d($barang);
+        // dd($barang);
+        // dump($barang);
+        
         foreach ($barang as $key => $value) {
             $data_detail = [
                 'id_penjualan'  => $id_penjualan,

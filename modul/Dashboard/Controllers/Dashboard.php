@@ -511,7 +511,7 @@ class Dashboard extends BaseController
         $sheet->getStyle('A1:D1')->getAlignment()->setVertical(Alignment::VERTICAL_CENTER);
 
         $sheet->mergeCells('A4:D4');
-        $sheet->setCellValue('A4', "Total Penjualan CIL SPACE PENJUALAN (OMZET)");
+        $sheet->setCellValue('A4', "Total Penjualan DOLCENT (OMZET)");
         $sheet->getStyle('A4')->getFont()->setBold(true);
 
         $rowOmzet = 5;

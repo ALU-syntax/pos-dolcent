@@ -19,7 +19,7 @@ $this->session    = Services::session();
     <meta property="og:description" content="Rincian pembelian anda di <?php echo $penjualan->nama_toko; ?>" />
     <meta property="og:url" content="https://bukutoko.alifalghifari.site" />
     <meta property="og:image" content="/assets/img/struk.jpg" />
-    <title>Struk Penjualan - CIL SPACE</title>
+    <title>Struk Penjualan - DOLCENT</title>
     <link rel="stylesheet" href="/assets/pos/css/struk.css">
     <link rel="icon" href="/assets/img/your-logo.png">
     <link rel="stylesheet" href="/assets/extensions/%40fortawesome/fontawesome-free/css/all.min.css" />

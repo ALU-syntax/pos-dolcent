@@ -93,7 +93,8 @@
                         </div>
                         <div class="col-md-4 mb-3">
                             <label for="modal" class="form-label">Harga Modal</label>
-                            <input type="text" class="form-control harga" id="harga_modal" name="modal" placeholder="Otomatis dari bahan baku" readonly>
+                            <input type="text" class="form-control harga" id="harga_modal" name="modal" placeholder="Otomatis dari bahan baku" value="0" readonly>
+                            <small><i>*otomatis dari bahan baku</i></small>
                             <div class="invalid-feedback"></div>
                         </div>
                         <div class="col-md-4 mb-3">
@@ -137,7 +138,7 @@
                         <div class="col-12">
                             <hr>
                         </div>
-                        <!-- <div class="col-md-12 mb-3">
+                        <div class="col-md-12 mb-3">
                             <div class="form-check">
                                 <div class="custom-control custom-checkbox">
                                     <input type="checkbox" class="form-check-input form-check-primary" checked="" name="stokcheck" id="stokcheck">
@@ -154,7 +155,7 @@
                             <label for="stokmin" class="form-label">Stok Minimum</label>
                             <input type="text" class="form-control nomor" id="stokmin" name="stokmin" placeholder="Masukkan stok minimum">
                             <div class="invalid-feedback"></div>
-                        </div> -->
+                        </div>
                     </div>
             </div>
             <div class="modal-footer">
