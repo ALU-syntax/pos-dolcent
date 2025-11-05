@@ -20,7 +20,6 @@ $id_toko = $this->session->get('id_toko');
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="shortcut icon" href="/assets/img/logo/<?php echo $this->session->get('logo'); ?>" type="image/x-icon" />
-    <?php echo dd($pettyCash); ?>
     <link rel="stylesheet" href="/assets/pos/css/struk.css">
     <!--<link rel="icon" href="/assets/img/your-logo.png">-->
     <!--<link rel="stylesheet" href="/assets/extensions/%40fortawesome/fontawesome-free/css/all.min.css" />-->
