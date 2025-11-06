@@ -623,8 +623,9 @@ class Kasir extends BaseController
     public function apiStruk($id){
         $id = base64_decode($id);
         $penjualan = $this->db->table('penjualan as a')
-            ->select('a.*, c.nama_toko, c.nohp, c.alamat, d.nama_tipe, e.nama as kasir')
+            ->select('a.*, c.nama_toko, c.nohp, c.alamat, d.nama_tipe, e.nama as kasir, f.*')
             ->join('toko as c', 'c.id = a.id_toko')->join('tipe_bayar as d', 'd.id = a.id_tipe_bayar')->join('user as e', 'a.id_user = e.id')
+            ->join('discount as f', 'f.id = a.id_discount','left')
             ->where('a.id', $id)->get()->getRow();
         $detail = $this->db->table('detail_penjualan')->where('id_penjualan', $id)->get()->getResult();
 
