@@ -771,7 +771,9 @@ class Produk extends BaseController
 
             if ($foto->isValid() && !$foto->hasMoved()) {
                 $namafile = $foto->getRandomName();
-                $foto->move(ROOTPATH . 'public/assets/img/barang/', $namafile);
+                // $foto->move(ROOTPATH . 'public/assets/img/barang/', $namafile); //local
+                $foto->move(FCPATH . 'assets/img/barang/', $namafile); //production
+                
                 if ($id) {
                     $foto = $this->db->table('barang')->select('foto')->where('id', $id)->get()->getRow();
                     $path = 'assets/img/barang/';
